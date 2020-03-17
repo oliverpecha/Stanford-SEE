@@ -1,16 +1,16 @@
 /*
- * File: House_Book.java
+ * File: DrawHouse.java
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
- * This file solves problem 4 on chapter 2.
+ * This file solves problem 4 on chapter 2 of Programming Exercises from the Art of Java.
  */
 
 import acm.graphics.*;
 import acm.program.*;
 import java.awt.*;
 
-public class House_Book extends GraphicsProgram {	
+public class DrawHouse extends GraphicsProgram {	
 	public void run() {
 
 		//roof

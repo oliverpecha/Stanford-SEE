@@ -1,11 +1,9 @@
 /*
  * File: Target.java
  * Name: Oliver Pecha
- * Section Leader: Online Learning
  * -----------------
- * This file solves problem 6 on chapter 2 of Programming Exercises from the Art of Java.
+ * This file is the starter file for the Target problem.
  */
-
 
 import acm.graphics.*;
 import acm.program.*;
