@@ -31,7 +31,6 @@ public class BuildHouse extends GraphicsProgram {
 		add(new GLine(xAxis, yAxis-HEIGHT/2-ROOF_HEIGHT, xAxis+WIDHT/2, yAxis-HEIGHT/2));
 		
 		//main structure
-		//add(new GRect(150, 200, 300, 200 ));
 		add(new GRect(xAxis-WIDHT/2, yAxis-HEIGHT/2, WIDHT, HEIGHT));
 		
 		//door
