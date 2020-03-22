@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="CS106A/Programming Exercises from the Art of Java, Chapter 3 (Expressions)/acm.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
