@@ -1,9 +1,9 @@
 /*
  * File: Countdown.java
- * --------------------
- * This program counts backwards from the value START
- * to zero, as in the countdown preceding a rocket
- * launch.
+ * Name: Oliver Pecha
+ * Section Leader: Online Learning
+ * -----------------
+ * Rewrite the Countdown program given in Figure 4-8 so that it uses a while loop instead of a for loop.
  */
 
 import acm.program.*;
@@ -11,7 +11,10 @@ import acm.program.*;
 public class Countdown extends ConsoleProgram {
 
 	public void run() {
-		for (int t = START; t >= 0; t--) {
+		int t = START;
+		println(t);
+		while (t >= 1) {
+		t = t-1;
 			println(t);
 		}
 		println("Liftoff!");
