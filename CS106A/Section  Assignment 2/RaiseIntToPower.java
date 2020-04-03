@@ -23,7 +23,7 @@ public class RaiseIntToPower extends ConsoleProgram {
 				
 	}
 	
-	
+	//method to raise power
 	private int raiseIntToPower(int n, int k) {
 		return (int) Math.pow(n, k);
 		
