@@ -1,9 +1,9 @@
 /*
- * File: RaiseIntToPower.java
+ * File: NDigits.java
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
- * Book / Chapter 5 / Programming Exercise 3
+ * Book / Chapter 5 / Programming Exercise 4
  * -----------------
  * Write a method nDigits(n) that returns the number of digits in the integer n, which you may assume is positive. 
  * Design a main program to test your method. For hints about how to write this program, you might want to look back 

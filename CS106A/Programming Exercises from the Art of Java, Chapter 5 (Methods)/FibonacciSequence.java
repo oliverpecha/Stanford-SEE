@@ -1,5 +1,5 @@
 /*
- * File: Quadratic.java
+ * File: FibonacciSequence.java
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------

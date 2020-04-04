@@ -1,5 +1,5 @@
 /*
- * File: RaiseIntToPower.java
+ * File: RaiseIntToPowerNegatives.java
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
