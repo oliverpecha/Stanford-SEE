@@ -1,5 +1,5 @@
 /*
- * File: NDigits.java
+ * File: CountDigits.java
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
@@ -12,16 +12,15 @@
 
 import acm.program.*;
 
-public class NDigits extends ConsoleProgram {
+public class CountDigits extends ConsoleProgram {
 
 	public void run() {
 		println("This program sums the digits in an integer.");
 		int k = readInt("Enter a positive integer: ");
-		println("The sum of the digits is " + nDigits(k));
+		println("The sum of the digits is " + countDigits(k));
 	}
 	
-	private int nDigits(int n) {
-
+	private int countDigits(int n) {
 			int dsum = 0;
 			while (n > 0) {
 				dsum += n % 10;

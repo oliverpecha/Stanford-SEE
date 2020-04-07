@@ -1,10 +1,12 @@
 /*
  * File: DrawTrain.java
- * --------------------
- * This program draws a three-car train consisting on an engine,
- * a boxcar, and a caboose.  This implementation of the program,
- * however, is incomplete, and contains only the methods given
- * in the text.
+ * Name: Oliver Pecha
+ * Section Leader: Online Learning
+ * -----------------
+ * Book / Chapter 5 / Programming Exercise 8
+ * -----------------
+ * Complete the implementation of the DrawTrain program by supplying the missing methods: 
+ * draSmokestack, drawCab, drawCowcatcher, and drawCaboose.
  */
 
 import acm.graphics.*;
@@ -15,12 +17,15 @@ public class DrawTrain extends GraphicsProgram {
 
 	public void run() {
 		double trainWidth = 3 * CAR_WIDTH + 4 * CONNECTOR;
-		double x = (getWidth() - trainWidth) / 2;
-		double y = getHeight();
+		double x = X_AXIS / 2;
+		double y = Y_AXIS * 2;
 		double dx = CAR_WIDTH + CONNECTOR;
+		
+		screen();
+		
 		drawEngine(x, y);
 		drawBoxcar(x + dx, y, Color.GREEN);
-		drawCaboose(x + 2 * dx, y);
+		drawCaboose(x + 2 * dx, y, Color.RED);
 	}
 
 /* Draws an engine whose origin is at (x, y) */
@@ -31,19 +36,24 @@ public class DrawTrain extends GraphicsProgram {
 		drawCowcatcher(x, y);
 	}
 
-/* Draws the smokestack */
+/* Draws the smokestack */ 
 	private void drawSmokestack(double x, double y) {
-		// You fill this in //
+		GRect smokestack = new GRect(x + CONNECTOR + SMOKESTACK_INSET, y - CAR_BASELINE - CAR_HEIGHT - SMOKESTACK_HEIGHT, SMOKESTACK_WIDTH, SMOKESTACK_HEIGHT);
+		smokestack.setFilled(true);
+		add(smokestack);
 	}
 
 /* Draws the engine cab */
 	private void drawEngineCab(double x, double y) {
-		// You fill this in //
+		GRect engineCab = new GRect(x + CONNECTOR + CAR_WIDTH - CAB_WIDTH, y - CAR_BASELINE - CAR_HEIGHT - CAB_HEIGHT, CAB_WIDTH, CAB_HEIGHT);
+		engineCab.setFilled(true);
+		add(engineCab);
 	}
 
 /* Draws the cowcatcher in the front of the engine */
 	private void drawCowcatcher(double x, double y) {
-		// You fill this in //
+		add(new GLine(x, y - CAR_BASELINE , x + CONNECTOR, y - CAR_BASELINE - CAR_HEIGHT / 2));
+		add(new GLine(x + CONNECTOR / 2, y - CAR_BASELINE , x + CONNECTOR, y - CAR_BASELINE - CAR_HEIGHT / 2));
 	}
 
 /* Draws a boxcar in the specified color */
@@ -57,8 +67,14 @@ public class DrawTrain extends GraphicsProgram {
 	}
 
 /* Draws a red caboose */
-	private void drawCaboose(double x, double y) {
-		// You fill this in //
+	private void drawCaboose(double x, double y, Color color) {
+		drawCarFrame(x, y, color);
+		GRect cupola = new GRect(x + CONNECTOR + (CAR_WIDTH - CUPOLA_WIDTH) / 2, y - CAR_BASELINE - CAR_HEIGHT - CUPOLA_HEIGHT, CUPOLA_WIDTH, CUPOLA_HEIGHT);
+		cupola.setFilled(true);
+		cupola.setFillColor(color);
+		add(cupola);
+		
+		
 	}
 
 /* Draws the common part of a train car */
@@ -84,7 +100,24 @@ public class DrawTrain extends GraphicsProgram {
 		add(wheel);
 	}
 
+// Representation of the Theoretical Screen Size
+	private void screen() {
+		add(new GRect ( 0, 0, xScreenSize, yScreenSize));
+	}
+		
+// Creates two lines to illustrate xAxis and yAxis
+	private void axis() {
+		add(new GLine ( X_AXIS, -3000, X_AXIS, 3000));
+		add(new GLine ( -3000, Y_AXIS, 3000, Y_AXIS));
+	}
+		
 /* Private constants */
+	
+// Parameters that define size of the Theoretical Screen Size
+	private static final int xScreenSize = 600;
+	private static final int yScreenSize = 400;
+	private static final int X_AXIS = xScreenSize / 2;
+	private static final int Y_AXIS = yScreenSize / 2;
 
 /* Dimensions of the frame of a train car */
 	private static final double CAR_WIDTH = 75;
