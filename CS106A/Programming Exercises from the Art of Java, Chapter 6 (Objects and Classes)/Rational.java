@@ -1,8 +1,10 @@
+
 /*
  * File: Rational.java
  * -------------------
  * This file defines a simple class for representing rational numbers.
  */
+import java.math.BigInteger;
 
 /**
  * The Rational class is used to represent rational numbers, which
@@ -14,15 +16,21 @@ public class Rational {
  * Creates a new Rational initialized to zero.
  */
 	public Rational() {
-		this(0);
+		// original
+		// this(0);
+		BigInteger.valueOf(0);
 	}
 
 /**
  * Creates a new Rational from the integer argument.
  * @param n The initial value
  */
-	public Rational(int n) {
-		this(n, 1);
+	public Rational(BigInteger n) {
+		// original
+		// this(n, 1);
+		BigInteger one = null;
+		one.valueOf(1);
+		n.divide(one);
 	}
 
 /**
@@ -30,12 +38,17 @@ public class Rational {
  * @param x The numerator of the rational number
  * @param y The denominator of the rational number
  */
-	public Rational(int x, int y) {
-		int g = gcd(Math.abs(x), Math.abs(y));
-		num = x / g;
-		den = Math.abs(y) / g;
-		if (y < 0) num = -num;
+	public Rational(BigInteger x, BigInteger y) {
+
+		BigInteger g = gcd(x.abs(), y.abs());
+		
+		num = x.divide(g);
+		den = y.abs().divide(g);	
+		int comparevalue = y.compareTo(BigInteger.valueOf(0));
+		if (comparevalue < 0) num = num.negate();
+		
 	}
+
 
 /**
  * Adds the rational number r to this one and returns the sum.
@@ -43,8 +56,26 @@ public class Rational {
  * @return The sum of the current number and r
  */
 	public Rational add(Rational r) {
-		return new Rational(this.num * r.den + r.num * this.den,
-		                    this.den * r.den);
+		// original
+		// return new Rational(this.num * r.den + r.num * this.den, this.den * r.den);
+		// New implementation:
+		// BigInteger object to store result 
+			BigInteger mult1; 
+			BigInteger mult2; 
+			BigInteger mult3; 
+			BigInteger add; 
+        // Convert the string input to BigInteger 
+	        BigInteger a  = this.num; 
+	        BigInteger b  = r.num; 
+	        BigInteger c  = this.den; 
+	        BigInteger d  = r.den; 
+        // Using multiply() method 
+        	mult1 = a.multiply(d); 
+        	mult2 = b.multiply(c);
+        	mult3 = c.multiply(d); 
+        	add = mult1.add(mult2);
+    	// return result 
+        	return new Rational(add, mult3);	
 	}
 
 /**
@@ -53,8 +84,26 @@ public class Rational {
  * @return The result of subtracting r from the current number
  */
 	public Rational subtract(Rational r) {
-		return new Rational(this.num * r.den - r.num * this.den,
-		                    this.den * r.den);
+		// original
+		// return new Rational(this.num * r.den - r.num * this.den, this.den * r.den);
+		// New implementation:
+		// BigInteger object to store result 
+			BigInteger mult1; 
+			BigInteger mult2; 
+			BigInteger mult3; 
+			BigInteger substraction; 
+        // Convert the string input to BigInteger 
+	        BigInteger a  = this.num; 
+	        BigInteger b  = r.num; 
+	        BigInteger c  = this.den; 
+	        BigInteger d  = r.den; 
+        // Using multiply() method 
+        	mult1 = a.multiply(d); 
+        	mult2 = b.multiply(c);
+        	mult3 = c.multiply(d); 
+        	substraction = mult1.subtract(mult2);
+    	// return result 
+        	return new Rational(substraction, mult3);	
 	}
 
 /**
@@ -63,7 +112,22 @@ public class Rational {
  * @return The result of multiplying the current number by r
  */
 	public Rational multiply(Rational r) {
-		return new Rational(this.num * r.num, this.den * r.den);
+		// original
+		// return new Rational(this.num * r.num, this.den * r.den);
+		// New implementation:
+		// BigInteger object to store result 
+			BigInteger mult1; 
+			BigInteger mult2; 
+        // Convert the string input to BigInteger 
+	        BigInteger a  = this.num; 
+	        BigInteger b  = r.num; 
+	        BigInteger c  = this.den; 
+	        BigInteger d  = r.den; 
+        // Using multiply() method 
+        	mult1 = a.multiply(b); 
+        	mult2 = c.multiply(d); 
+    	// return result 
+        	return new Rational(mult1, mult2);
 	}
 
 /**
@@ -72,7 +136,22 @@ public class Rational {
  * @return The result of dividing the current number by r
  */
 	public Rational divide(Rational r) {
-		return new Rational(this.num * r.den, this.den * r.num);
+		// original
+		// return new Rational(this.num * r.den, this.den * r.num); 
+		// New implementation:
+		// BigInteger object to store result 
+			BigInteger mult1; 
+			BigInteger mult2; 
+	    // Convert the string input to BigInteger 
+	        BigInteger a  = this.num; 
+	        BigInteger b  = r.num; 
+	        BigInteger c  = this.den; 
+	        BigInteger d  = r.den; 
+	    // Using multiply() method 
+	    	mult1 = a.multiply(d); 
+	    	mult2 = c.multiply(b); 
+    	// return result 
+	    	return new Rational(mult1, mult2);
 	}
 
 /**
@@ -80,7 +159,11 @@ public class Rational {
  * @return The string representation of this rational number
  */
 	public String toString() {
-		if (den == 1) {
+		// original
+		// if (den == 1) {
+		BigInteger one = null;
+		one.valueOf(1);
+		if (den.equals(one)) {  
 			return "" + num;
 		} else {
 			return num + "/" + den;
@@ -93,18 +176,19 @@ public class Rational {
  * @param y Second integer
  * @return The greatest common divisor of x and y
  */
-	private int gcd(int x, int y) {
-		int r = x % y;
-		while (r != 0) {
+	private BigInteger gcd(BigInteger x, BigInteger y) {
+		BigInteger r = x.mod(y);
+		int comparevalue = r.compareTo(BigInteger.valueOf(0));
+		while (comparevalue != 0) {
 			x = y;
 			y = r;
-			r = x % y;
+			r = x.mod(y);
 		}
 		return y;
 	}
 
 /* Private instance variables */
-	private int num;     /* The numerator of this Rational   */
-	private int den;     /* The denominator of this Rational */
+	private BigInteger num;     /* The numerator of this Rational   */
+	private BigInteger den;     /* The denominator of this Rational */
 
 }

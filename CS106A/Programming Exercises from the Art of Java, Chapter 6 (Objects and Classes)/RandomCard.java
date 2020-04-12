@@ -17,9 +17,9 @@ import acm.util.RandomGenerator;
 public class RandomCard extends ConsoleProgram {
 
 	private RandomGenerator luck = RandomGenerator.getInstance();
-	
+
 	public void run() {
-		
+
 		int rankInt = luck.nextInt(13);
 		int suitInt = luck.nextInt(4);
 		String rank = null;

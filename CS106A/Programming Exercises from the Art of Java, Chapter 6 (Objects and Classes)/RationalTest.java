@@ -5,13 +5,19 @@
  */
 
 import acm.program.*;
+import java.math.BigInteger;
 
 public class RationalTest extends ConsoleProgram {
 
 	public void run() {
-		Rational a = new Rational(1, 2);
-		Rational b = new Rational(1, 3);
-		Rational c = new Rational(1, 6);
+		BigInteger one  = new BigInteger("1"); 
+		BigInteger two  = new BigInteger("2"); 
+		BigInteger three = new BigInteger("3"); 
+		BigInteger six  = new BigInteger("6"); 
+
+		Rational a = new Rational(one, two);
+		Rational b = new Rational(one, three);
+		Rational c = new Rational(one, six);
 		Rational sum = a.add(b).add(c);
 		println(a + " + " + b + " + " + c + " = " + sum);
 		testDoubles();
