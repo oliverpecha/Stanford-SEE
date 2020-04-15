@@ -1,3 +1,15 @@
 /Acronym.class
 /IsEnglishVowel.class
 /PigLatin.class
+/isEnglishConsonant.class
+/RandomWord.class
+/CapitalizeWords.class
+/CapitalizeWordsTest.class
+/Capitalize.class
+/PluralWords.class
+/DateString.class
+/DateStringTest.class
+/MyIndexOf.class
+/WordGame.class
+/WordGameTest.class
+/PresentParticiple.class
