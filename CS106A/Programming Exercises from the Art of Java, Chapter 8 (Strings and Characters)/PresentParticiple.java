@@ -23,6 +23,74 @@
  *  the participle using these rules. Write a ConsoleProgram to test your method
  */
 
-public class PresentParticiple {
+import acm.program.*;
+
+public class PresentParticiple extends ConsoleProgram {
+
+	public void run() {
+		println("a) contitions are tested below");
+		println("    The past participle for " + ENDS_E_PRECEDES_CONSONANT + " is " + presentParticiple(ENDS_E_PRECEDES_CONSONANT));
+		println("    The past participle for " + ENDS_E_PRECEDES_VOWEL + " is " + presentParticiple(ENDS_E_PRECEDES_VOWEL));
+		println("    The past participle for " + OTHERS_FOUR + " is " + presentParticiple(OTHERS_FOUR));
+		println("\nb) contitions are tested below");
+		println("    The past participle for " + ENDS_CONSONANT_PRECEDES_VOWEL + " is " + presentParticiple(ENDS_CONSONANT_PRECEDES_VOWEL));
+		println("    The past participle for " + ENDS_CONSONANT_PRECEDES_CONSONANT + " is " + presentParticiple(ENDS_CONSONANT_PRECEDES_CONSONANT));
+		println("    The past participle for " + OTHERS_FIVE + " is " + presentParticiple(OTHERS_FIVE));
+		println("    The past participle for " + OTHERS_SIX + " is " + presentParticiple(OTHERS_SIX));
+		println("\nc) contitions are tested below");
+		println("    The past participle for " + OTHERS_ONE + " is " + presentParticiple(OTHERS_ONE));
+		println("    The past participle for " + OTHERS_TWO + " is " + presentParticiple(OTHERS_TWO));
+		println("    The past participle for " + OTHERS_THREE + " is " + presentParticiple(OTHERS_THREE));
+
+
+	}
+	
+	private String presentParticiple(String word) {
+
+		int wordlenght = word.length();
+		char lastChar = word.charAt(wordlenght-1);
+		// Condition a)
+		if (lastChar == 'e') {
+			lastChar = word.charAt(wordlenght-2);
+			if (!isEnglishVowel(lastChar)) {
+				word = word.substring(0,wordlenght-1).concat("ing");			}
+			else word = word.concat("ing");
+		}
+		// Condition b)
+		else if (!isEnglishVowel(lastChar)) {
+			lastChar = word.charAt(wordlenght-2);
+			if (isEnglishVowel(lastChar)) {
+			lastChar = word.charAt(wordlenght-1);
+			word = word.concat("" + lastChar).concat("ing");
+			}
+			else word = word.concat("ing");
+		}
+		// Condition c)
+		else word = word.concat("ing");
+		// Returns Present Participle
+		return word;
+	}
+	
+	/* Returns true if the character is a vowel */
+	private boolean isEnglishVowel(char ch) {
+		switch (Character.toLowerCase(ch)) {
+			case 'a': case 'e': case 'i': case 'o': case 'u':
+				return true;
+			default:
+				return false;
+		}
+	}
+
+	private static final String ENDS_E_PRECEDES_CONSONANT = "move";
+	private static final String ENDS_E_PRECEDES_VOWEL = "see";
+	private static final String ENDS_CONSONANT_PRECEDES_VOWEL = "jam";
+	private static final String ENDS_CONSONANT_PRECEDES_CONSONANT = "walk";
+	private static final String OTHERS_ONE = "go";
+	private static final String OTHERS_TWO = "echo";
+	private static final String OTHERS_THREE = "blush";
+	private static final String OTHERS_FOUR = "increase";
+	private static final String OTHERS_FIVE = "book";
+	private static final String OTHERS_SIX= "obey";
+
 
 }
