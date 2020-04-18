@@ -48,11 +48,11 @@ public class IsPalindrome extends ConsoleProgram {
 					if (!isPalindrome) break;
 				// if so far characters are equal find out if there is other char to evaluate and prepare the loop to restart
 				// move an increasing and decreasing position as long as moving doesn't result in checking past half of the word 
-					if (currentIncreasingPosition +1 != currentDecreasingPosition) {
+					if (currentIncreasingPosition + 1 != currentDecreasingPosition) {
 						currentIncreasingPosition++;
 						currentDecreasingPosition--;
 					}
-				// if last testing of chars was positive and no more characters can be tested, exit the loop
+				// if last testing of chars was positive and no more characters can be tested because length is odd, exit the loop
 					else break;	
 				}
 			//*****************************************
