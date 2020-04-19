@@ -3,7 +3,7 @@
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
- * Book / Chapter 8 / Programming Exercise Bonus 11
+ * Book / Chapter 8 / Programming Exercise Bonus 13
  * -----------------
  *  When large numbers are written out on paper, it is traditional—at least in the United States—to use commas to separate the digits into groups 
  *  of three. For example, the number one million is usually written in the following form:
