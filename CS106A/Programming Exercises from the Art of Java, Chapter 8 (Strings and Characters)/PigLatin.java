@@ -141,6 +141,8 @@ public class PigLatin extends ConsoleProgram {
 		}
 		return result;
 	}
+
+/* Returns a word that has been Capitalized, regardless of the previous casing */
 	private String capitalizedWord(String word) {
 		word = word.toLowerCase();
 		String capitalized = null;
