@@ -13,7 +13,6 @@
 import acm.program.*;
 import acm.util.RandomGenerator;
 import java.awt.Color;
-
 import acm.graphics.*;
 
 public class BlackSquareAnimator extends GraphicsProgram {
