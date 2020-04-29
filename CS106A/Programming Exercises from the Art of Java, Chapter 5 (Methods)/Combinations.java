@@ -39,8 +39,6 @@ public class Combinations extends GraphicsProgram {
 				System.out.println("C(" + v + "," + r + ") /// " + "" + x1 + "-" + x2 + "= " + xOper + ", " + (200 + 30 * v));
 			}
 		}
-		
-		
 	}
 
 /*
