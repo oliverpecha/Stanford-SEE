@@ -27,7 +27,7 @@ public class TimesSquare extends GraphicsProgram {
 
 /* String to use as the headline label */
 	private static final String HEADLINE =
-	  "When in the course of human events it becomes necessary " +
+	  "When \nin the course of human events it becomes necessary " +
 	  "for one people to dissolve the political bands which " +
 	  "connected them with another . . .";
 

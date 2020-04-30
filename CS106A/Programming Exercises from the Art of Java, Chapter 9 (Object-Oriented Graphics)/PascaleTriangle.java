@@ -3,7 +3,7 @@
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
- * Book / Chapter 5 / Programming Exercise 9
+ * Book / Chapter 5 / Programming Exercise 10
  * -----------------
  * Chapter 5 introduced the function combinations (n,k), which returns the number of ways in which one can choose k items out of a 
  * set of n distinct objects. One of the classic ways to visualize the combinations function is called Pascal’s Triangle after the 
@@ -18,8 +18,7 @@
  * The top circle should be centered horizontally a few pixels below the top of the window. Your program should then generate additional 
  * rows of the triangle as long as all the circles in the new tow will fit on the canvas. As soon as the circles in a row would extends 
  * past the sides or the bottom of the window, your program should top.
-
- *  */
+*/
 
 import acm.program.*;
 
