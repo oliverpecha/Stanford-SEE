@@ -14,7 +14,13 @@ public class Caboose extends TrainCar {
 /* Create the caboose */
 	public Caboose() {
 		super(Color.RED);
-		// You fill in the rest //
-	}
-
+		GRect cupola = new GRect(0 + CONNECTOR + (CAR_WIDTH - CUPOLA_WIDTH) / 2, 0 - CAR_BASELINE - CAR_HEIGHT - CUPOLA_HEIGHT, CUPOLA_WIDTH, CUPOLA_HEIGHT);
+		cupola.setFilled(true);
+		cupola.setFillColor(Color.RED);
+		add(cupola);	
+		}
+	
+	/* Dimensions of the cupola on the caboose */
+	private static final double CUPOLA_WIDTH = 35;
+	private static final double CUPOLA_HEIGHT = 8;
 }

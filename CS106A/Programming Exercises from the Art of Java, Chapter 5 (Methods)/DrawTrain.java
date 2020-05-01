@@ -73,8 +73,6 @@ public class DrawTrain extends GraphicsProgram {
 		cupola.setFilled(true);
 		cupola.setFillColor(color);
 		add(cupola);
-		
-		
 	}
 
 /* Draws the common part of a train car */
