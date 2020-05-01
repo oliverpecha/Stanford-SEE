@@ -15,7 +15,6 @@
  * The numbers in parentheses show the values for this diagram, but you must be able to change those values in your program.
  */
 
-
 import acm.graphics.*;
 import acm.program.*;
 
@@ -46,7 +45,6 @@ public class Pyramid extends GraphicsProgram {
 		}
 	}
 	
-
 	// Parameters that define size of the pyramid
 	private static final int BRICK_WIDTH = 30;
 	private static final int BRICK_HEIGHT = 12;
