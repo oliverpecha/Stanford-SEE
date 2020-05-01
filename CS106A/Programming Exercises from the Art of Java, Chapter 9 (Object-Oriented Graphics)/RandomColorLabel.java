@@ -3,7 +3,7 @@
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
- * Book / Chapter 9 / Programming Exercise 3
+ * Book / Chapter 9 / Programming Exercise 3 & Bonus 11
  * -----------------
  * Write a GraphicsProgram that creates GLabels for each of the color names RED, ORANGE, YELLOW, GREEN, CYAN, BLUE, and MAGENTA, 
  * and then puts those labels up on the screen in a random position. The color of each label, however, should be randomly chosen 
@@ -14,27 +14,32 @@
 import acm.program.*;
 import acm.util.RandomGenerator;
 import java.awt.Color;
+import java.awt.event.MouseEvent;
+
 import acm.graphics.*;
 
 public class RandomColorLabel extends GraphicsProgram {
-
-	RandomGenerator luck = new RandomGenerator();
-
+	
 	public void init() {
 	    setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
+		addMouseListeners();
 	}
-
+	
+	RandomGenerator luck = new RandomGenerator();
+	GLabel changingLabel = new GLabel(" ");
+	Color currentColor = null;
+	int randomColor = 0;
+	
 	public void run() {
-		int randomColor = 0;
 		int randomXPosition = 0;
 		int randomYPosition = 0;
 		int LabelWidth = 0;
 		int LabelHeight = 0;
-		GLabel changingLabel = new GLabel(" ");
 			while (true) {
 				randomColor = luck.nextInt(1,7);
+				currentColor = colorAssigner(randomColor);
 				changingLabel.setLabel(colorStringAssigner(randomColor));
-				changingLabel.setColor(colorAssigner(randomColor));
+				changingLabel.setColor(currentColor);
 				changingLabel.setFont((String)"-" + FONT_SIZE);
 				LabelWidth = (int) changingLabel.getWidth();
 				LabelHeight = (int) changingLabel.getHeight();
@@ -44,6 +49,14 @@ public class RandomColorLabel extends GraphicsProgram {
 				pause(PAUSE);
 			}
 	}
+	
+	public void mousePressed(MouseEvent e) {
+		changingLabel.setColor(colorIntAssigner(randomColor));
+    }
+	
+	public void mouseReleased(MouseEvent e) {
+		changingLabel.setColor(currentColor);
+    }
 	
 	private String colorStringAssigner(int number) {
 		String result = null;
@@ -55,6 +68,20 @@ public class RandomColorLabel extends GraphicsProgram {
 		case 5: result = CYAN; break;
 		case 6: result = BLUE; break;
 		case 7: result = MAGENTA; break;
+		}
+		return result;
+	}
+	
+	private Color colorIntAssigner(int number) {
+		Color result = null;
+		switch (number) {
+		case 1: result = Color.RED; break;
+		case 2: result = Color.ORANGE; break;
+		case 3: result = Color.YELLOW; break;
+		case 4: result = Color.GREEN; break;
+		case 5: result = Color.CYAN; break;
+		case 6: result = Color.BLUE; break;
+		case 7: result = Color.MAGENTA; break;
 		}
 		return result;
 	}

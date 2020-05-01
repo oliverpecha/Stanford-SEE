@@ -90,6 +90,7 @@ public class SlotMachine extends GraphicsProgram {
 			dialogThree.setLabel("To play, you need at least $" + COST_TO_PLAY + ".");
 	}
 	
+	
 	/* This method returns a new int representing a symbol. */
 	public int symbolReset() {
 			int dice = luck.nextInt(1,6);
