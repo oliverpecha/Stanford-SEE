@@ -3,33 +3,18 @@
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
- * Book / Chapter 9 / Programming Exercise 13
+ * Book / Chapter 9 / Programming Exercise 14
  * -----------------
- * In casinos from Monte Carlo to Las Vegas, one of the most common gambling devices is the slot machine - the “one-armed bandit.” A typical 
- * slot machine has three wheels that spin around behind a  narrow window. Each wheel is marked with the following symbols: 
- * CHERRY, LEMON, ORANGE, PLUM, BELL, BAR. The window, however, allows you to see only one symbol on each wheel at a time. 
- * For example, the window might show the following configuration:
- * If you put a silver dollar onto a slot machine and pull the handle on its side, the wheels pin around and eventually come to rest in some 
- * new configuration. If the configuration matches one of a set of winning patterns printed on the front of the slot machine, you get back 
- * some money. If not, you’re out a dollar. The following table shows a typical set of winning patterns, along with their associated payoffs:
- * -----------------	
- * 		BAR		BAR		BAR 		pays	$250
- * 		BELL 	BELL 	BELL/BAR 	pays	$20
- * 		PLUM	PLUM	PLUM/BAR	pays	$14
- * 		ORANGE	ORANGE	ORANGE/BAR	pays	$10
- * 		CHERRY	CHERRY	CHERRY		pays	$7
- * 		CHERRY	CHERRY	-			pays	$5
- * 		CHERRY	-		-			pays	$2
- * -----------------
- * The notation BELL/BAR means that either a BELL or a BAR can appear in that position, and the dash means that any symbol at all can appear. 
- * This, getting a CHERRY in the first position is automatically good for two dollars, no matter what appears on the other wheels. 
- * The LEMON symbol never pays off, even if you happen to line up three of them.
- * Write a program that simulates playing a slot machine. Your program should provide the user decides to quit. During each round, your program 
- * should take away a dollar, simulate the spinning of the wheels, evaluate the result, and pay the user an appropriate winnings. For example, 
- * a user might be lucky enough to see the following sample run:
- * -----------------
- * Even though doing so is not realistic (and would make the slot machine unprofitable for the casino), you should assume that each of the six 
- * symbols is equally on each wheel.
+ * The slot machine program introduced as exercise 5 in Chapter 6 becomes much more exciting of you change it from a ConsoleProgram to a 
+ * GraphicsProgram. Suppose that you have the following image files:
+ * In addition to these six images, it is also useful to have a image file called Empty.gif that is simply an empty box of the same size.
+ * Rewrite the slot machine program so that it uses these images along with a few GLabel objects to display the outcome of each spin of the 
+ * machine. Your program should begin by putting up three boxes containing the Empty.gif image to create a display that looks like this:
+ * When you click the mouse (which you can detect by calling the waitforClick method introduced in Figure 9-2), you should generate three 
+ * random symbols and install them in the boxes, updating the GLabels to keep the user informed of the progress of the game. For example, 
+ * after clicking the mouse, you might see the following configuration:
+ * You can add suspense to the game by resetting the boxes to the empty symbol before each spin and then calling pause after displaying 
+ * each symbol.
  */
 
 import acm.program.*;
