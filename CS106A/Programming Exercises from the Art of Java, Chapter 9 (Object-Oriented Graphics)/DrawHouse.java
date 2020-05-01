@@ -3,7 +3,7 @@
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
- * Book / Chapter 5 / Programming Exercise 9
+ * Book / Chapter 9 / Programming Exercise Bonus 7
  * -----------------
  * Write a GrpahicsProgram that draws a line drawing of the house shown on the following diagram:
  * Make sure that you use stepwise refinement to decompose this figure into useful pieces. 
@@ -89,7 +89,7 @@ public class DrawHouse extends GraphicsProgram {
 			add(new GLine(X_AXIS - totalHouseWidth / 2, yScreenSize - LEVEL_HEIGHT * 2, X_AXIS, yScreenSize - LEVEL_HEIGHT - LEVEL_HEIGHT * 5 / 3));
 			add(new GLine(X_AXIS + totalHouseWidth / 2, yScreenSize - LEVEL_HEIGHT * 2, X_AXIS, yScreenSize - LEVEL_HEIGHT - LEVEL_HEIGHT * 5 / 3));
 		}
-			
+		
 	}
 
 	
