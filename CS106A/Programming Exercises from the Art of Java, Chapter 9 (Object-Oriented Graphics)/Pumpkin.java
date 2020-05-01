@@ -1,4 +1,3 @@
-
 /*
  * File: Pumpkin.java
  * Name: Oliver Pecha

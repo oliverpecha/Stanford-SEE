@@ -1,5 +1,5 @@
 /*
- * File: DigitalRoot.java
+ * File: Pyramid.java
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
