@@ -25,10 +25,9 @@ public class DrawFace extends GraphicsProgram {
 		double y = getHeight() / 2;
 		face = new GFace(FACE_WIDTH, FACE_HEIGHT);
 		add(face, x, y);
+		// Records initial position of pupils
 		pupilRstart = face.pupilR.getLocation();
 		pupilLstart = face.pupilL.getLocation();
-		//System.out.println((face.pupilR.getLocation()));	
-		//System.out.println("face.rightInEye.getX() " + face.pupilR.getX() +"//"+ (face.pupilR.getX() + face.pupilR.getWidth() / 2));
 	}
 			
 /* Called on mouse move to move inner eyes accordingly */
