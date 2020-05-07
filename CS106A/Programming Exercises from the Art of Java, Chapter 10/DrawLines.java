@@ -26,6 +26,7 @@ public class DrawLines extends GraphicsProgram {
 /* Called on mouse drag to reset the endpoint */
 	public void mouseDragged(MouseEvent e) {
 		line.setEndPoint(e.getX(), e.getY());
+		
 	}
 
 /* Private instance variables */
