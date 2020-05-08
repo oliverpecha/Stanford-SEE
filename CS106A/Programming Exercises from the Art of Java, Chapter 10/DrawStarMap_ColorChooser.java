@@ -1,10 +1,10 @@
 /*
  * File: DrawStarMap_ColorChooser.java
- * -----------------------------------
- * This program creates a five-pointed star every time the
- * user clicks the mouse on the canvas.  This version extends
- * the previous version by adding a chooser to select the
- * color of the star.
+ * Name: Oliver Pecha
+ * Section Leader: Online Learning
+ * -----------------
+ * Book / Chapter 9 / Programming Exercise 6
+ * -----------------
  */
 
 import acm.program.*;
@@ -21,6 +21,7 @@ public class DrawStarMap_ColorChooser extends GraphicsProgram {
 
 /* Initializes the graphical user interface */
 	public void init() {
+		setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
 		setBackground(Color.GRAY);
 		add(new JButton("Clear"), SOUTH);
 		sizeSlider = new JSlider(MIN_SIZE, MAX_SIZE, INITIAL_SIZE);
@@ -36,27 +37,15 @@ public class DrawStarMap_ColorChooser extends GraphicsProgram {
 /* Initializes the color chooser */
 	private void initColorChooser() {
 		colorChooser = new JComboBox();
-		colorChooser.addItem("White");
-		colorChooser.addItem("Red");
-		colorChooser.addItem("Yellow");
-		colorChooser.addItem("Orange");
-		colorChooser.addItem("Green");
-		colorChooser.addItem("Blue");
-		colorChooser.addItem("Black");
+		colorChooser.addItem(new LabeledColor(Color.WHITE, "White"));
+		colorChooser.addItem(new LabeledColor(Color.RED, "Red"));
+		colorChooser.addItem(new LabeledColor(Color.YELLOW, "Yellow"));
+		colorChooser.addItem(new LabeledColor(Color.ORANGE, "Orange"));
+		colorChooser.addItem(new LabeledColor(Color.GREEN, "Green"));
+		colorChooser.addItem(new LabeledColor(Color.BLUE, "Blue"));
+		colorChooser.addItem(new LabeledColor(Color.BLACK, "Black"));
 		colorChooser.setEditable(false);
 		colorChooser.setSelectedItem("White");
-	}
-
-/* Returns the current color */
-	private Color getCurrentColor() {
-		String name = (String) colorChooser.getSelectedItem();
-		if (name.equals("Red")) return Color.RED;
-		if (name.equals("Yellow")) return Color.YELLOW;
-		if (name.equals("Orange")) return Color.ORANGE;
-		if (name.equals("Green")) return Color.GREEN;
-		if (name.equals("Blue")) return Color.BLUE;
-		if (name.equals("Black")) return Color.BLACK;
-		return Color.WHITE;
 	}
 
 /* Returns the current size */
@@ -68,7 +57,7 @@ public class DrawStarMap_ColorChooser extends GraphicsProgram {
 	public void mouseClicked(MouseEvent e) {
 		GStar star = new GStar(getCurrentSize());
 		star.setFilled(true);
-		star.setColor(getCurrentColor());
+		star.setColor((Color) colorChooser.getSelectedItem());
 		add(star, e.getX(), e.getY());
 	}
 
@@ -83,9 +72,25 @@ public class DrawStarMap_ColorChooser extends GraphicsProgram {
 	private static final int MIN_SIZE = 1;
 	private static final int MAX_SIZE = 50;
 	private static final int INITIAL_SIZE = 16;
+	private static final int SCREEN_WIDTH = 900;
+	private static final int SCREEN_HEIGHT = 500;
 
 /* Private instance variables */
 	private JSlider sizeSlider;
 	private JComboBox colorChooser;
 
+	
+	class LabeledColor extends Color{
+	
+		LabeledColor(Color color, String colorName) {
+			super(color.getRGB());
+			colorString = colorName;
+		}
+		
+		public String toString(){
+			return colorString;
+		}
+		
+		String colorString;
+	}
 }
