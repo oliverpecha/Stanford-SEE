@@ -3,7 +3,7 @@
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
- * Book / Chapter 4 / Programming Exercise 7 & 8
+ * Book / Chapter 10 / Programming Exercise 8 & 9
  * -----------------
  */
 
