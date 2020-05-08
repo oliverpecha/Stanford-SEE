@@ -25,7 +25,6 @@ public class DrawRectangle extends GraphicsProgram {
 		rect = new GRect(0,0);
 		rect.setFilled(true);
 		add(rect,rectStart);
-		System.out.println("\nPressed. rectStart: " + rectStart);
 	}
 	
 	public void mouseDragged(MouseEvent e) {
@@ -56,9 +55,7 @@ public class DrawRectangle extends GraphicsProgram {
 	}
 	
 	GRect rect;
-	GPoint rectStart;
-	GPoint rectCurrent;
-	GPoint rectEnd;
+	GPoint rectStart, rectCurrent, rectEnd;
 	private static final int SCREEN_WIDTH = 900;
 	private static final int SCREEN_HEIGHT = 500;
 }

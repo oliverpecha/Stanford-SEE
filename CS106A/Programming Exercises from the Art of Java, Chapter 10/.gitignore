@@ -33,3 +33,10 @@
 /GFace.class
 /DrawRectangle.class
 /DrawLinesTEEEEMP.class
+/SimpleDraw.class
+/SimpleDraw$Button.class
+/SimpleDraw$ButtonRect.class
+/SimpleDraw$ButtonRectFilled.class
+/SimpleDraw$ButtonOval.class
+/SimpleDraw$ButtonOvalFilled.class
+/SimpleDraw$ButtonLine.class
