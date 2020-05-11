@@ -1,5 +1,5 @@
 /*
- * File: DrawFace.java
+ * File: LenghtConverter.java
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------

@@ -1,6 +1,10 @@
 /*
  * File: Calculator.java
- * ---------------------
+ * Name: Oliver Pecha
+ * Section Leader: Online Learning
+ * -----------------
+ * Book / Chapter 10 / Programming Exercise 11
+ * -----------------
  * This program implements a calculator as an illustration of the TableLayout
  * class.
  */
@@ -16,7 +20,8 @@ public class Calculator extends Program {
 
 /* Initialize the user interface */
 	public void init() {
-		setLayout(new TableLayout(5, 4));
+		setSize(220,320);
+		setLayout(new TableLayout(6, 4));
 		display = new CalculatorDisplay();
 		add(display, "gridwidth=4 height=" + BUTTON_SIZE);
 		addButtons();
@@ -31,6 +36,7 @@ public class Calculator extends Program {
 /* Adds the buttons to the calculator */
 	private void addButtons() {
 		String constraint = "width=" + BUTTON_SIZE + " height=" + BUTTON_SIZE;
+		String constraintForEquals = "gridwidth=4 height=" + BUTTON_SIZE;
 		add(new DigitButton(7), constraint);
 		add(new DigitButton(8), constraint);
 		add(new DigitButton(9), constraint);
@@ -45,8 +51,9 @@ public class Calculator extends Program {
 		add(new MultiplyButton(), constraint);
 		add(new ClearButton(), constraint);
 		add(new DigitButton(0), constraint);
-		add(new EqualsButton(), constraint);
+		add(new DecimalButton(), constraint);
 		add(new DivideButton(), constraint);
+		add(new EqualsButton(), constraintForEquals);
 	}
 
 /* Private constants */
@@ -54,7 +61,6 @@ public class Calculator extends Program {
 
 /* Private instance variables */
 	private CalculatorDisplay display;
-
 }
 
 /*
@@ -74,7 +80,7 @@ public class Calculator extends Program {
  *   not, the digit is added to the end of the existing value.  The code uses the
  *   boolean variable startNewValue to record this state.
  */
-class CalculatorDisplay extends IntField {
+class CalculatorDisplay extends DoubleField {
 
 /* Creates a new calculator display that is not directly editable by the user */
 	public CalculatorDisplay() {
@@ -86,27 +92,43 @@ class CalculatorDisplay extends IntField {
 	}
 
 /* Adds a digit to the display, clearing the old value if startNewValue is set */
-	public void addDigit(int digit) {
-		int value = (startNewValue) ? 0 : getValue();
-		setValue(10 * value + digit);
+	public void addDigit(double digit) {
+		int nonDecimal = 10;
+		if (decimals) {
+			nonDecimal = 1;
+			memoryDecimal = memoryDecimal * 10;
+		}
+		double value = (startNewValue) ? 0 : getValue();
+		setValue(nonDecimal * value + digit / memoryDecimal);
 		startNewValue = false;
 	}
-
+	
 /* Sets a new operator, applying the previous one if one exists */
 	public void setOperator(OperatorButton button) {
-		if (op == null) {
-			memory = getValue();
-		} else {
-			memory = op.apply(memory, getValue());
-			setValue(memory);
-		}
-		op = button;
-		startNewValue = true;
+			if (button != null && button.toString().startsWith("DecimalButton")) {
+				startNewValue = false;
+				decimals = true;
+			}
+			else {
+				if (op == null) {
+				memory = getValue();
+				}  
+				else {
+					memory = op.apply(memory, getValue());
+					setValue(memory);
+				}
+				op = button;
+				startNewValue = true;
+				memoryDecimal = 1;
+				decimals = false;
+			}
 	}
-
+	
 /* Private instance variables */
 	private OperatorButton op;      /* The last operator button pressed */
-	private int memory;             /* The value to which the operator is applied */
+	private double memory;             /* The value to which the operator is applied */
+	private double memoryDecimal = 1;
+	private boolean decimals;
 	private boolean startNewValue;  /* Set after an operator to start a new value */
 }
 
@@ -124,7 +146,6 @@ abstract class CalculatorButton extends JButton {
 
 /* Called when the button is clicked (every subclass must implement this method) */
 	public abstract void action(CalculatorDisplay display);
-
 }
 
 /*
@@ -162,7 +183,7 @@ abstract class OperatorButton extends CalculatorButton {
 	}
 
 /* Applies this operator (every subclass must implement this method) */
-	public abstract int apply(int lhs, int rhs);
+	public abstract double apply(double lhs, double rhs);
 }
 
 /*
@@ -171,22 +192,39 @@ abstract class OperatorButton extends CalculatorButton {
  */
 class AddButton extends OperatorButton {
 	public AddButton() { super("+"); }
-	public int apply(int lhs, int rhs) { return lhs + rhs; }
+	public double apply(double lhs, double rhs) { return lhs + rhs; }
 }
 
 class SubtractButton extends OperatorButton {
 	public SubtractButton() { super("-"); }
-	public int apply(int lhs, int rhs) { return lhs - rhs; }
+	public double apply(double lhs, double rhs) { return lhs - rhs; }
 }
 
 class MultiplyButton extends OperatorButton {
 	public MultiplyButton() { super("x"); }
-	public int apply(int lhs, int rhs) { return lhs * rhs; }
+	public double apply(double lhs, double rhs) { return lhs * rhs; }
 }
 
 class DivideButton extends OperatorButton {
-	public DivideButton() { super("/"); }
-	public int apply(int lhs, int rhs) { return lhs / rhs; }
+	
+	public DivideButton() { 
+		super("/"); 
+	}
+	
+	public double apply(double lhs, double rhs) { 
+		return lhs / rhs; 
+	}
+}
+
+class DecimalButton extends OperatorButton {
+	
+	public DecimalButton() { 
+		super("."); 
+	}
+	
+	public double apply(double lhs, double rhs) { 
+		return 0; 
+	}
 }
 
 /*
