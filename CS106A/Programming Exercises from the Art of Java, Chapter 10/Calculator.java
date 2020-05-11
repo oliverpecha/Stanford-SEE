@@ -3,7 +3,7 @@
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
- * Book / Chapter 10 / Programming Exercise 11
+ * Book / Chapter 10 / Programming Exercise 12
  * -----------------
  * This program implements a calculator as an illustration of the TableLayout
  * class.
