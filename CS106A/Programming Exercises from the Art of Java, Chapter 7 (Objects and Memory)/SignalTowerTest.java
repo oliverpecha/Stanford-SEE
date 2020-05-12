@@ -12,6 +12,7 @@ public class SignalTowerTest extends ConsoleProgram {
 
 	public void run() {
 		createSignalTowers();
+		pause(1000);
 		minasTirith.signal();
 	}
 
