@@ -21,10 +21,14 @@ public class GymnasticsJudge extends ConsoleProgram {
 			scores[i] = readDouble("Score for judge " + (i + 1) + ": ");
 		}
 		double total = 0;
+		double max = scores[0];
+		double min = scores[0];
 		for (int i = 0; i < nJudges; i++) {
+			if (scores[i] < min) min = scores[i];
+			if (scores[i] > max) max = scores[i];
 			total += scores[i];
 		}
-		double averageScore = total / nJudges;
+		double averageScore = (total - max - min) / (nJudges - 2);
 		println("The average score is " + averageScore);
 	}
 
