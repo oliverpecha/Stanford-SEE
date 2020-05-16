@@ -10,3 +10,5 @@
 /isMagicSquare.class
 /SudokuChecker.class
 /Eratosthenes.class
+/LineGraph.class
+/LineGraph$DataPoint.class

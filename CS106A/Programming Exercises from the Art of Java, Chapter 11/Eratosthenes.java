@@ -5,6 +5,28 @@
  * -----------------
  * Book / Chapter 11 / Programming Exercise 6.
  * -----------------
+ * In the third century B.C.E., the Greek astronomer Eratosthenes developed an algorithm for finding all the prime numbers up to 
+ * some upper limit N. To apply the algorithm, you start by writing down a list of the integers between 2 and N. For example, 
+ * if N were 20, you would begin by writing down the following list:
+ * 2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20
+ * You then begin by circling the first number in the list, indicating that you have found a prime. You then go through the rest of 
+ * the list and cross off every multiple of the value you have just circled, since none of those multiples can be prime. 
+ * Thus, after executing the first step of the algorithm, you will have circled the number 2 and crossed off every multiple of two, 
+ * as follows:
+ *  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20
+ * []     x     x     x      x      x        x       x       x       x
+ * From here, you simply repeat the process by circling the first number in the list that is neither crossed off nor circled, and 
+ * then crossing off its multiples. In this example, you would circle 3 as a prime and cross off all multiples of 3 in the rest 
+ * of the list, which would result in the following state:
+ *  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20
+ * [] []  x     x     x  x   x      x        x   x   x       x       x
+ * Eventually, every number in the list will either be circled or crossed out, as shown in this diagram:
+ *  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20
+ * [] []  x []  x []  x  x   x  []  x   []   x  x   x  []   x  []   x
+ * The circled numbers are the primes; the crossed-out numbers are composites. This algorithm for generating a list of primes is 
+ * called the sieve of Eratosthenes.
+ * Write a program that uses the sieve of Eratosthenes to generate a list of the primes
+ * between 2 and 1000.
  */
 
 import acm.program.*;
