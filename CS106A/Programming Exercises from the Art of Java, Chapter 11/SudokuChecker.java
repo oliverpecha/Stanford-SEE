@@ -93,7 +93,7 @@ public class SudokuChecker extends ConsoleProgram {
 					if (correctSudoku) {
 					for (int h = 0; h + hb * 3 < 3 + hb * 3; h++) {	
 						if (correctSudoku) {
-						/* 	- Testing value is encapsulated between 3x3 "blocks". 
+						/* 	- Testing value (currentInt) is encapsulated between 3x3 "blocks". 
 							- currentInt increments one by one as methods above, but this time columns and rows are limited to 3 values 
 						 	instead of 9 (both vertically and horizontally). This achieves testing designated 3x3 blocks.
 						 	- Testing block changes horizontally to the right by adding a multiple of 3 to the standard single increments 
