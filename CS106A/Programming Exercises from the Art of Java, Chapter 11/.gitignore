@@ -13,3 +13,13 @@
 /LineGraph.class
 /LineGraph$DataPoint.class
 /MorseCode.class
+/MorseCodeVisual.class
+/MorseCodeVisual$Dash.class
+/MorseCodeVisual$Dot.class
+/MorseCodeVisual$MorseToken.class
+/MorseCodeVisual$TokenToMorse.class
+/MorseCodeVisual$CharToMorseGLabel$Dash.class
+/MorseCodeVisual$CharToMorseGLabel$Dot.class
+/MorseCodeVisual$CharToMorseGLabel.class
+/MorseCodeVisual$CharToMorse.class
+/MorseCodeVisual$MorseChar.class
