@@ -1,5 +1,5 @@
 /*
- * File: MorseCode.java
+ * File: MorseCodeVisual.java
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
