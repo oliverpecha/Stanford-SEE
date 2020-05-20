@@ -22,7 +22,7 @@ import java.awt.Color;
 import acm.graphics.*;
 
 public class LensImaging extends GraphicsProgram {
-
+	
 	public void init() {
 		setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
 	}
@@ -56,7 +56,7 @@ public class LensImaging extends GraphicsProgram {
 		GImage candleR = new GImage("Candle.gif");
 		candleR.setSize(candleWidht, candleHeight);
 		add(candleR, x + candleDistance, y - candleHeight / 2);
-		GImage candleL = new GImage("CandleFlipped.gif");
+		GImage candleL = flipVertical(candleR);
 		candleL.setSize(candleScaling * candleWidht, candleScaling * candleHeight);
 		add(candleL, x - adjacent - (candleScaling * candleWidht) - candleMargin, y - candleSmall / 2);
 		
@@ -73,6 +73,36 @@ public class LensImaging extends GraphicsProgram {
 					y - candleSmall / 2 + i * rayDistanceSmall));
 		}
 	
+	}
+	
+	private GImage flipVertical(GImage image) {
+		int [][] array = image.getPixelArray();
+		int vertical = array.length;
+		int horizontal = array[0].length;
+		for (int v = 0; v < vertical / 2; v++) {
+			for (int h = 0; h < horizontal; h++) {
+				int origin = array[v][h];
+				int temporary = array[vertical - 1 - v][h];
+				array[vertical - 1 - v][h] = origin;
+				array[v][h] = temporary;
+			}
+		}		
+		return new GImage(array);
+	}
+	
+	private GImage rotateLeft(GImage image) {
+		int [][] array = image.getPixelArray();
+		int vertical = array.length;
+		int horizontal = array[0].length;
+		for (int v = 0; v < vertical / 2; v++) {
+			for (int h = 0; h < horizontal; h++) {
+				int origin = array[v][h];
+				int temporary = array[vertical - 1 - v][h];
+				array[vertical - 1 - v][h] = origin;
+				array[v][h] = temporary;
+			}
+		}		
+		return new GImage(array);
 	}
 	
 	/* Constants that contain Screen Size value */
