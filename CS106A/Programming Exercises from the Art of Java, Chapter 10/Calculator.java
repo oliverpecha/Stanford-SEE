@@ -30,6 +30,7 @@ public class Calculator extends Program {
 
 /* Called in response to an action event */
 	public void actionPerformed(ActionEvent e) {
+		System.out.println("e.getSource() " + e.getSource());
 		((CalculatorButton) e.getSource()).action(display);
 	}
 

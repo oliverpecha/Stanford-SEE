@@ -14,18 +14,12 @@ public class TemperatureConverter extends Program {
 
 /** Initialize the graphical user interface */
 	public void init() {
+		setSize(300,200);
 		setLayout(new TableLayout(2, 3));
-		fahrenheitField = new IntField(32);
-		fahrenheitField.setActionCommand("F -> C");
-		fahrenheitField.addActionListener(this);
-		celsiusField = new IntField(0);
-		celsiusField.setActionCommand("C -> F");
-		celsiusField.addActionListener(this);
+		
 		add(new JLabel("Degrees Fahrenheit"));
-		add(fahrenheitField);
 		add(new JButton("F -> C"));
 		add(new JLabel("Degrees Celsius"));
-		add(celsiusField);
 		add(new JButton("C -> F"));
 		addActionListeners();
 	}
