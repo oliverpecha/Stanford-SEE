@@ -1,5 +1,5 @@
 /*
- * File: FlipAndRotateTest.java
+ * File: MakeNegativeColorTest.java
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
