@@ -8,3 +8,5 @@
 /SelectionSortString.class
 /Median.class
 /Median$DoubleArraySorter.class
+/Mode$DoubleArraySorter.class
+/Mode.class
