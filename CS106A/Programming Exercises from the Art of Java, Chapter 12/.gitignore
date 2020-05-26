@@ -6,3 +6,5 @@
 /IsSortedTest.class
 /IsSortedTest$1.class
 /SelectionSortString.class
+/Median.class
+/Median$DoubleArraySorter.class
