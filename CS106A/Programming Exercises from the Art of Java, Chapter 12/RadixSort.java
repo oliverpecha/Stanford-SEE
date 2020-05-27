@@ -3,7 +3,7 @@
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
- * Book / Chapter 12 / Programming Exercise 9
+ * Book / Chapter 12 / Programming Exercise 10
  * -----------------
  * Complete the implementation of the radix sort algorithm that will sort an array of nonnegative integers up to ten digits in length. 
  * A pseudocode version of the algorithm appears on page 480.
