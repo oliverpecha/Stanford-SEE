@@ -28,7 +28,6 @@ public class Greek extends ConsoleProgram {
 	
 /*  Turns Characters from multidimensional ArrayList into Square Objects given conditions apply and places them accordingly  */	
 	private void randomizeAndPrint(ArrayList<ArrayList<Character>> array)  {
-		int labelCount = 1;
 		for (int y = 0; y < array.size(); y++) {
 			String line = "";
 			for (int x = 0; x < array.get(y).size(); x++) {
