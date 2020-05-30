@@ -14,10 +14,10 @@
  */
 
 /** This class implements a simplified version of the Map interface */
-public class SimpleStringMapOwn {
+public class SimpleStringMapExperiment {
 
 /** Creates a new SimpleStringMap with no key/value pairs */
-	public SimpleStringMapOwn() {
+	public SimpleStringMapExperiment() {
 		bucketArray = new HashEntry[N_BUCKETS];
 	}
 
@@ -28,6 +28,7 @@ public class SimpleStringMapOwn {
  */
 	public void put(String key, String value) {
 		int bucket = Math.abs(key.hashCode()) % N_BUCKETS;
+		System.out.println("put(): " + key + " " + " = " + value + " into " + bucket);
 		HashEntry entry = findEntry(bucketArray[bucket], key);
 		if (entry == null) {
 			entry = new HashEntry(key, value);
@@ -59,14 +60,41 @@ public class SimpleStringMapOwn {
  */
 	private HashEntry findEntry(HashEntry entry, String key) {
 		while (entry != null) {
+			System.out.println("findEntry(): entry.getKey():" + entry.getKey() + ", entry.getLink() " + entry.getLink());
 			if (entry.getKey().equals(key)) return entry;
 			entry = entry.getLink();
 		}
 		return null;
 	}
 
+/*
+ * My entries........................................................................................
+ */
+	public int getArrayLenght() {
+		return bucketArray.length;
+	}
+	
+	public HashEntry getLink(int bucket) {
+		HashEntry element = bucketArray[bucket];
+		return element.getLink();
+	}
+	
+	public HashEntry getBucket(int bucket) {
+		return bucketArray[bucket];
+	}
+	
+	public String getInfo(String key) {
+		int bucket = Math.abs(key.hashCode()) % N_BUCKETS;
+		HashEntry entry = findEntry(bucketArray[bucket], key);
+		if (entry == null) {
+			return null;
+		} else {
+			return "Get info from " + key + " key, which has " + key.hashCode() + " hasCode, and should be in " + bucket + " bucket";
+		}
+	}
+	
 /* Private constants */
-	private static final int N_BUCKETS = 7;
+	private static final int N_BUCKETS = 2;
 
 /* Private instance variables */
 	private HashEntry[] bucketArray;

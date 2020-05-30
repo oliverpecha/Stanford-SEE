@@ -1,7 +1,11 @@
 /*
- * File: TestSimpleStringMap.java
- * ------------------------------
- * This program tests the SimpleStringMap class.
+ * File: SimpleStringMapOwn.java
+ * Name: Oliver Pecha
+ * Section Leader: Online Learning
+ * -----------------
+ * Book / Chapter 13 / Programming Exercise 1
+ * -----------------
+ * This program tests the SimpleStringMapE1 class.
  */
 
 import acm.program.*;
@@ -19,10 +23,10 @@ import acm.program.*;
  * The first assigns the value to the map under the specified key;
  * The second looks up the key and displays its value.
  */
-public class TestSimpleStringMapOwn extends ConsoleProgram {
+public class TestSimpleStringMapE1 extends ConsoleProgram {
 
 	public void run() {
-		SimpleStringMapOwn symbolTable = new SimpleStringMapOwn();
+		SimpleStringMapE1 symbolTable = new SimpleStringMapE1();
 		while (true) {
 			String line = readLine("-> ");
 			if (line.length() == 0) break;
