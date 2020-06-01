@@ -1,5 +1,5 @@
 /*
- * File: SimpleStringMapOwn.java
+ * File: SimpleStringMapOwnE1.java
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
