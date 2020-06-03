@@ -19,10 +19,10 @@ import acm.program.*;
  * The first assigns the value to the map under the specified key;
  * The second looks up the key and displays its value.
  */
-public class TestSimpleStringMapE3 extends ConsoleProgram {
+public class TestSimpleStringMapE3E4 extends ConsoleProgram {
 
 	public void run() {
-		SimpleStringMapE3 symbolTable = new SimpleStringMapE3();
+		SimpleStringMapE3E4 symbolTable = new SimpleStringMapE3E4();
 		while (true) {
 			
 
@@ -33,7 +33,6 @@ public class TestSimpleStringMapE3 extends ConsoleProgram {
 			}
 			int minus = line.indexOf("-");
 			if (minus > 0) {
-				//System.out.println("minus call!!");
 				String key = line.substring(0, minus).trim();
 				symbolTable.delete(key);
 			}

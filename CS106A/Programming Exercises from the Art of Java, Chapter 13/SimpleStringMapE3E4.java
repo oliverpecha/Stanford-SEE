@@ -3,7 +3,7 @@
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
- * Book / Chapter 13 / Programming Exercise 3
+ * Book / Chapter 13 / Programming Exercise 3 and 4
  * -----------------
  * This file implements a simplified version of the Map interface
  * that supports only the get and put methods.  This version uses
@@ -14,10 +14,10 @@
  */
 
 /** This class implements a simplified version of the Map interface */
-public class SimpleStringMapE3 {
+public class SimpleStringMapE3E4 {
 
 /** Creates a new SimpleStringMap with no key/value pairs */
-	public SimpleStringMapE3() {
+	public SimpleStringMapE3E4() {
 		bucketArray = new HashEntry[N_BUCKETS];
 	}
 
@@ -27,16 +27,60 @@ public class SimpleStringMapE3 {
  * @param value The new value to be associated with key
  */
 	public void put(String key, String value) {
-		int bucket = Math.abs(key.hashCode()) % N_BUCKETS;
+		// If entering a new key means that totalKeys are more than half the available buckets, double the bucketArray
+		if (totalKeys + 1 > bucketArray.length / 2) {
+			System.out.println("bucketArray will be doubled as it's " + bucketArray.length + " long, and there is " + totalKeys + " totalKeys");
+			doubleArray(bucketArray.length);
+		}
+		// Hash the key to match it to a bucket, look in such bucket for the key and return the result in the form of an entry
+		int bucket = Math.abs(key.hashCode()) % bucketArray.length;
 		HashEntry entry = findEntry(bucketArray[bucket], key);
+		// If entry is null, such key doesn't exist yet, create a HashEntry with desired key and value, insert it at bucket and increment totalKeys count
 		if (entry == null) {
 			entry = new HashEntry(key, value);
 			entry.setLink(bucketArray[bucket]);
 			bucketArray[bucket] = entry;
 			totalKeys++;
+		// In the event the key is already at the bucket, update it's value
 		} else {
 			entry.setValue(value);
 		}
+	}
+	
+	private void doubleArray(int pastSize) {
+		// Initialize an array twice the size 
+		HashEntry[] doubledArray = new HashEntry[pastSize * 2];
+		for (int i = 0; i < bucketArray.length; i++) {
+			if (bucketArray[i] != null) {
+			// Transfer all linked keys from bucketArray into  an arrayBuffer
+			System.out.println("\ncopyLinksFrom " + i + " BucketToArray");		
+			HashEntry[] arrayBuffer = copyLinksFromBucketToArray(i);
+			// Rehash all the values in bucketArray element i into arrayBuffer
+			doubledArray = reHashArray(arrayBuffer, doubledArray);
+			}
+		}
+		bucketArray = doubledArray;
+		System.out.println("bucketArray is now " + bucketArray.length + " long");	
+	}	
+
+	private HashEntry[] reHashArray(HashEntry[] arrayBuffer, HashEntry[] doubledArray) {
+		// Receive an arrayBuffer with all the linked keys in a given bucket, keep moving through doubledArray re-maping entries to a new bucket in doubledArray
+		for (int i = 0; i < arrayBuffer.length; i++) {
+			HashEntry entry = arrayBuffer[i];			
+			int bucket = Math.abs(entry.getKey().hashCode()) % doubledArray.length;
+			// Look what's at the defined bucket on doubledArray, if it's empty, reset entry link to null as no linking is necessary at this point
+			if (doubledArray[bucket] == null) {
+				entry.setLink(null);
+			}
+			// When a collisions exists, take a temporary entry from the doubledArray bucket and re-map entry to link to to temp entry
+			else {
+				HashEntry temp = doubledArray[bucket];
+				entry.setLink(temp);
+			}
+			// Regardless, update the bucket with entry found at arrayBuffer[i]
+			doubledArray[bucket] = entry;
+		}
+		return doubledArray;
 	}
 
 /**
@@ -45,8 +89,8 @@ public class SimpleStringMapE3 {
  * @return The value associated with key, or null if no such value exists
  */
 	public String get(String key) {
-		int bucket = Math.abs(key.hashCode()) % N_BUCKETS;
-		HashEntry entry = findEntry(bucketArray[bucket], key);
+		int bucket = Math.abs(key.hashCode()) % bucketArray.length; //<---------- maybe needs a -1
+		HashEntry entry = findEntry(bucketArray[bucket], key); 
 		if (entry == null) {
 			return null;
 		} else {
@@ -60,7 +104,7 @@ public class SimpleStringMapE3 {
  * @return The value associated with key, or null if no such value exists
  */
 	public void delete(String key) {
-		int bucket = Math.abs(key.hashCode()) % N_BUCKETS;
+		int bucket = Math.abs(key.hashCode()) % bucketArray.length; //<---------- maybe needs a -1
 		// Get first HashEntry element at hashed bucket and find out if it has linked entries <----------------- check what happens if asked to delete a key that doesn't exist
 		HashEntry entry = bucketArray[bucket];
 		HashEntry entryLink = entry.getLink();
@@ -72,15 +116,16 @@ public class SimpleStringMapE3 {
 		// When first element contains an entry with links, copy all the entries to an array except the one with the key to delete and return all the entries to the bucket
 		else {
 			System.out.println("\n\nminus request to delete >> " + key + " << at bucket " + bucket + " which first contains " + entry.getKey() + " with link to " + entryLink.getKey());
-			HashEntry[] arrayOfLinks = copyLinksFromBucketToArray(bucket, entry, entryLink);
+			HashEntry[] arrayOfLinks = copyLinksFromBucketToArray(bucket);
 			System.out.println("copyLinksFromBucketToArray returned");
 			returnLinksToBucket(arrayOfLinks, bucket, key);
 		}
 		totalKeys--;
 	}
 	
-	private HashEntry[] copyLinksFromBucketToArray(int bucket, HashEntry entry, HashEntry entryLink) {
-		System.out.println("copyLinksFromBucketToArray with " + totalKeys + " totalKeys");
+	private HashEntry[] copyLinksFromBucketToArray(int bucket) {
+		 HashEntry entry = bucketArray[bucket];
+		System.out.println("copyLinksFromBucketToArray with " + totalKeys + " totalKeys, first occurrence in " + bucket + " is " + entry);
 		// Initialize and array with more elements than necessary as there is no quick way to know exactly how many linked entries were inside the bucket
 		HashEntry[] bufferArray = new HashEntry[totalKeys]; 
 		int bufferBucketsFilled = 0;
