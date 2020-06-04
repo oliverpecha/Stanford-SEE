@@ -1,6 +1,10 @@
 /*
- * File: TestSimpleStringMap.java
- * ------------------------------
+ * File: SimpleStringMapOwnE5.java
+ * Name: Oliver Pecha
+ * Section Leader: Online Learning
+ * -----------------
+ * Book / Chapter 13 / Programming Exercise 5
+ * -----------------
  * This program tests the SimpleStringMap class.
  */
 
@@ -19,17 +23,18 @@ import acm.program.*;
  * The first assigns the value to the map under the specified key;
  * The second looks up the key and displays its value.
  */
-public class TestSimpleStringMapE3E4 extends ConsoleProgram {
+public class TestSimpleStringMapE5 extends ConsoleProgram {
 
 	public void run() {
-		SimpleStringMapE3E4 symbolTable = new SimpleStringMapE3E4();
+		SimpleStringMapE5 symbolTable = new SimpleStringMapE5();
 		while (true) {
 			String line = readLine("-> ");
 			if (line.length() == 0) break;
 			int minus = line.indexOf("-");
 			if (minus > 0) {
 				String key = line.substring(0, minus).trim();
-				symbolTable.delete(key);
+				if (symbolTable.delete(key)) println(key + " has been removed");
+				else println(key + " not entered yet");
 			}
 			else {
 				int equals = line.indexOf("=");
@@ -39,7 +44,7 @@ public class TestSimpleStringMapE3E4 extends ConsoleProgram {
 				} else {
 					String key = line.substring(0, equals).trim();
 					String value = line.substring(equals + 1).trim();
-					symbolTable.put(key, value);
+					if (!symbolTable.put(key, value)) println("No space for " + key);
 				}
 			}
 		}
