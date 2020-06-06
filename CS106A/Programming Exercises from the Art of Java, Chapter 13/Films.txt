@@ -7,11 +7,11 @@ Schindler's List
 Pulp Fiction
 The Good, the Bad and the Ugly
 The Lord of the Rings: The Return of the King
-Fight Club
+A Fight Club
 The Lord of the Rings: The Fellowship of the Ring
 Star Wars: Episode V - The Empire Strikes Back
 Forrest Gump
-Inception
+An Inception
 One Flew Over the Cuckoo's Nest
 The Lord of the Rings: The Two Towers
 Goodfellas
@@ -33,7 +33,7 @@ Spirited Away
 Casablanca
 Raiders of the Lost Ark
 Psycho
-City Lights
+A City Lights
 Rear Window
 The Intouchables
 Modern Times
@@ -60,7 +60,7 @@ Paths of Glory
 Django Unchained
 The Dark Knight Rises
 WALL·E
-American Beauty
+An American Beauty
 Grave of the Fireflies
 Aliens
 Citizen Kane
@@ -118,7 +118,7 @@ Mad Max: Fury Road
 Jagten
 Chinatown
 The Great Escape
-Die Hard
+A Die Hard
 Good Will Hunting
 Heat
 On the Waterfront
@@ -177,7 +177,7 @@ The 400 Blows
 Stand by Me
 12 Years a Slave
 The Princess Bride
-Annie Hall
+An Annie Hall
 Persona
 The Grand Budapest Hotel
 Amores Perros
