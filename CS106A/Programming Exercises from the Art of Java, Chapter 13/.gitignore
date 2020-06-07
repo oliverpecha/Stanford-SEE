@@ -29,3 +29,6 @@
 /PigLatinTesting.class
 /EqualHashCodeTesting.class
 /FilmsSorter.class
+/SparseMatrix.class
+/SparseMatrix$Index.class
+/SparseMatrixTesting.class
