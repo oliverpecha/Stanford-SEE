@@ -1,5 +1,5 @@
 /*
- * File: PascaleTriangle.java
+ * File: PascaleTriangleRecursive.java
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
@@ -13,7 +13,7 @@ import java.awt.Color;
 
 import acm.graphics.*;
 
-public class PascaleTriangle extends GraphicsProgram {
+public class PascaleTriangleRecursive extends GraphicsProgram {
 
 	public void init() {
 		setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
