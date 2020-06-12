@@ -27,7 +27,7 @@ public class HanoiTowerRecursion extends ConsoleProgram {
 			return; 
 		} 
 		towerOfHanoi(n-1, from_rod, aux_rod, to_rod); 
-		printTowers(n);
+        System.out.println("Move disk " + n + " from rod " +  from_rod + " to rod " + to_rod); 
 		moveDisk(from_rod, to_rod);
 		towerOfHanoi(n-1, aux_rod, to_rod, from_rod); 
 	} 
