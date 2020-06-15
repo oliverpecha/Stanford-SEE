@@ -15,7 +15,7 @@ public abstract class HousePointsView extends GCompound {
 	public HousePointsView(double width, double height) {
 		background = new GRect(width, height);
 		background.setFilled(true);
-		background.setColor(Color.WHITE);
+		background.setColor(Color.LIGHT_GRAY);
 	}
 
 /** Each subclass must define a method to create the graph */
@@ -39,6 +39,14 @@ public abstract class HousePointsView extends GCompound {
 		 Color.PINK, Color.CYAN, Color.MAGENTA, Color.ORANGE
 	};
 
+	public double getBackGroundHeight() {
+		return background.getHeight();
+	}
+	
+	public double getBackGroundWidth() {
+		return background.getWidth();
+	}
+	
 /* Private instance variables */
 	private GRect background;
 }

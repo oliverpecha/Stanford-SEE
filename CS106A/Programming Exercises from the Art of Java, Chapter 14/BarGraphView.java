@@ -22,9 +22,9 @@ public class BarGraphView extends HousePointsView {
 		if (max == 0) return;
 		double sep = (getWidth() - n * BAR_WIDTH) / (n + 1);
 		for (int i = 0; i < n; i++) {
-			double height = data[i] / max * getHeight();
-			double x = i * (BAR_WIDTH + sep);
-			double y = getHeight() - height;
+			double height = data[i] / max * this.getBackGroundHeight();
+			double x = sep + i * (BAR_WIDTH + sep);
+			double y = this.getBackGroundHeight() - height;
 			GRect bar = new GRect(x, y, BAR_WIDTH, height);
 			bar.setFilled(true);
 			bar.setFillColor(getColorForIndex(i));
