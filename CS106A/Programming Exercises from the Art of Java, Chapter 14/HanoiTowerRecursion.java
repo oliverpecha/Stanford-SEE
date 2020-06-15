@@ -1,5 +1,5 @@
 /*
- * File: FibonacciRecursion.java
+ * File: HanoiTowerRecursion.java
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
