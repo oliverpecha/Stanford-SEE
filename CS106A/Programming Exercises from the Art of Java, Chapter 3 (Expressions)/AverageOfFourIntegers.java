@@ -1,5 +1,5 @@
 /*
- * File: KilogramsToPoundsAndOunces.java
+ * File: AverageOfFourIntegers.java
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
