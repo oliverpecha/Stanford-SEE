@@ -1,5 +1,5 @@
 /*
- * File: OlympicRings.java
+ * File: Rainbow.java
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
