@@ -1,4 +1,3 @@
-
 /*
  * File: HeadLine.java
  * Name: Oliver Pecha

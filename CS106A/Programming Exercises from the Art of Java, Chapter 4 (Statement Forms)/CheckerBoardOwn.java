@@ -1,5 +1,5 @@
 /*
- * File: FindLargest.java
+ * File: CheckerBoardOwn.java
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * Book / Chapter 4 / Programming Exercise 14
