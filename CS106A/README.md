@@ -1,4 +1,4 @@
-![Open Source Society University (OSSU)](https://see.stanford.edu/Content/Images/Courses/CS106A.jpg)
+![CS106A](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/CS106A_timeline.jpg)
 
 <h3 align="center">Programming Methodology, CS106A</h3>
 <p align="center">
@@ -67,519 +67,244 @@ time as the quarter progresses.
 
 
 Eric Roberts > books > The Art and Science of Java
+
 **Chapter 2, Programming by Example**
 Exercise | File | Effort
 :-- | :--: | :--:
-1 | [HelloProgram.java](https://www.coursera.org/specializations/python) | 8 hours
-2 | [Calculus.java](https://www.coursera.org/specializations/python) | 16 hours
-3 | [Add3Integers.java](https://www.coursera.org/specializations/python) | 3 hours
+1 | [HelloProgram.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/HelloProgram.java) | didn't track
+2 | [Calculus.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/Calculus.java) | didn't track
+3 | [Add3Integers.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/Add3Integers.java) | didn't track
+4 | [DrawHouse.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/DrawHouse.java) | didn't track
+5 | [RobotFace.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/RobotFace.java) | didn't track
+6 | [Target.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/Target.java) | didn't track
+7 | [OlympicRing.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/OlympicRing.class) | didn't track
+8 | [OlympicRings.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/OlympicRings.class) | didn't track
+9 | [Rainbow.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/Rainbow.java) | didn't track
 
-
-Courses | Effort | Prerequisites
+**Chapter 3, Expressions**
+Exercise | File | Effort
 :-- | :--: | :--:
-[Python for Everyone](https://www.coursera.org/specializations/python) ([alt](https://www.py4e.com/)) | 58 hours | none
-[Fundamentals of Computing](https://www.coursera.org/specializations/computer-fundamentals) | 138 hours | high school mathematics
+1 | [FeetAndInchesToCentimeters.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/FeetAndInchesToCentimeters.java) | didn't track
+2 | [Interest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/Interest.java) | didn't track
+3 | [Interest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/Interest.java) | didn't track
+4 | [AreaCircle.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/AreaCircle.java) | didn't track
+5 | [FahrenheitToCelcius.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/FahrenheitToCelcius.java) | didn't track
+6 | [ThePhantomToolboothBook.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/ThePhantomToolboothBook.java) | didn't track
+7 | [KilogramsToPoundsAndOunces.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/KilogramsToPoundsAndOunces.java) | didn't track
+8 | [AverageOfFourIntegers.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/AverageOfFourIntegers.java) | didn't track
+9 | [StIves.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/StIves.java) | didn't track
+10 | [TicTacToeBoard.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/TicTacToeBoard.java) | didn't track
+11 | [BuildHouse.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/BuildHouse.java) | didn't track
 
 
-
-**Courses must**:
-- Be open for enrollment
-- Run regularly (ideally in self-paced format, otherwise running multiple times per year)
-- Be of generally high quality in teaching materials and pedagogical principles
-- Match the curricular standards of the [CS 2013](CURRICULAR_GUIDELINES.md): Curriculum Guidelines for Undergraduate Degree Programs in Computer Science 
-
-When no course meets the above criteria, the coursework is supplemented with a book.
-When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
-they belong in [extras/courses](extras/courses.md) or [extras/readings](extras/readings.md).
-
-**Organization**. The curriculum is designed as follows:
-- *Intro CS*: for students to try out CS and see if it's right for them
-- *Core CS*: corresponds roughly to the first three years of a computer science curriculum, taking classes that all majors would be required to take
-- *Advanced CS*: corresponds roughly to the final year of a computer science curriculum, taking electives according to the student's interests
-- *Final Project*: a project for students to validate, consolidate, and display their knowledge, to be evaluated by their peers worldwide
-
-**Duration**. It is possible to finish Core CS within about 2 years if you plan carefully and devote roughly 18-22 hours/week to your studies.
-Courses in Core CS should be taken linearly if possible, but since a perfectly linear progression is rarely possible,
-each class's prerequisites are specified so that you can design a logical but non-linear progression
-based on the class schedules and your own life plans.
-
-**Cost**. All or nearly all course material is available for free. However, some courses may charge money for assignments/tests/projects to be graded.
-Note that Coursera offers [financial aid](https://learner.coursera.help/hc/en-us/articles/209819033-Apply-for-Financial-Aid).
-
-Decide how much or how little to spend based on your own time and budget;
-just remember that you can't purchase success!
-
-**Process**. Students can work through the curriculum alone or in groups, in order or out of order.
-- For grouping up, please use the [cohorts repository](https://github.com/ossu/cohorts) to find or create a cohort suited to you.
-- We recommend doing all courses in Core CS, only skipping a course when you are certain that you've already learned the material previously.
-- For simplicity, we recommend working through courses (especially Core CS) in order from top to bottom, as they have already been [topologically sorted](https://en.wikipedia.org/wiki/Topological_sorting) by their prerequisites.
-- Courses in Advanced CS are electives. Choose one subject (e.g. Advanced programming) you want to become an expert in and take all the courses under that heading. You can also create your own custom subject, but we recommend getting validation from the community on the subject you choose.
-
-**Content policy**. If you plan on showing off some of your coursework publicly, you must share only files that you are allowed to.
-*Do NOT disrespect the code of conduct* that you signed in the beginning of each course!
-
-**[How to contribute](CONTRIBUTING.md)**
-
-**[Getting help](HELP.md)** (Details about our FAQ and chatroom)
-
-# Community
-
-- We have a chat room! This should be your first stop to talk with other OSSU students. Why don't you introduce yourself right now? [Join the chat in Gitter](https://gitter.im/open-source-society/computer-science) [![Join the chat at https://gitter.im/open-source-society/computer-science](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/open-source-society/computer-science?utm_campaign=pr-badge&utm_content=badge&utm_medium=badge&utm_source=badge)
-- You can also interact through [GitHub issues](https://github.com/ossu/computer-science/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](CONTRIBUTING.md).
-- Add **Open Source Society University** to your [Linkedin](https://www.linkedin.com/school/11272443/) profile!
-- Note: There is an unmaintained and deprecated firebase app that you might find when searching OSSU. You can safely ignore it. Read more in the [FAQ](./FAQ.md#why-is-the-firebase-ossu-app-different-or-broken).
-
-# Curriculum
-
-**Curriculum version**: `8.0.0` (see [CHANGELOG](CHANGELOG.md))
-
-- [Prerequisites](#prerequisites)
-- [Intro CS](#intro-cs)
-  - [Introduction to Programming](#introduction-to-programming)
-  - [Introduction to Computer Science](#introduction-to-computer-science)
-  - [Introduction to CS Tools](#introduction-to-cs-tools)
-- [Core CS](#core-cs)
-  - [Core programming](#core-programming)
-  - [Core math](#core-math)
-  - [Core systems](#core-systems)
-  - [Core theory](#core-theory)
-  - [Core applications](#core-applications)
-  - [Core security](#core-security)
-- [Advanced CS](#advanced-cs)
-  - [Advanced programming](#advanced-programming)
-  - [Advanced systems](#advanced-systems)
-  - [Advanced theory](#advanced-theory)
-  - [Advanced applications](#advanced-applications)
-- [Final project](#final-project)
-
----
-
-## Prerequisites
-
-- [Core CS](#core-cs) assumes the student has already taken [high school math](https://www.khanacademy.org/math/high-school-math), including algebra, geometry, and pre-calculus.
-- [Advanced CS](#advanced-cs) assumes the student has already taken the entirety of Core CS
-and is knowledgeable enough now to decide which electives to take.
-- Note that [Advanced systems](#advanced-systems) assumes the student has taken a basic physics course (e.g. AP Physics in high school).
-
-## Intro CS
-
-### Introduction to Programming
-
-If you've never written a for-loop, or don't know what a string is in programming, start here. Choose one of the two course series below. Either one will give you an introduction to programming that assumes no prior knowledge. You can audit either for free, _in order to do so, click through to the individual courses in the specializations_.
-
-Trying to decide between them?
-
-_Python for Everyone_ will introduce you to a popular language and will quickly move to practical programming tasks - using web APIs and databases. This will give you a taste of what many professional developers do.
-
-_Fundamentals of Computing_ will also start by introducing you to Python. It then moves on to give an introduction to academic Computer Science topics, like sorting and recursion. This will give you a taste of what the following courses will be like. (Students who complete _Fundamentals of Computing_ can skip Intro to Computer Science and begin Introduction to CS Tools.)
-
-**Topics covered**:
-`simple programs`
-`simple data structures`
-
-Courses | Effort | Prerequisites
+**Chapter 4, Statement Forms**
+Exercise | File | Effort
 :-- | :--: | :--:
-[Python for Everyone](https://www.coursera.org/specializations/python) ([alt](https://www.py4e.com/)) | 58 hours | none
-[Fundamentals of Computing](https://www.coursera.org/specializations/computer-fundamentals) | 138 hours | high school mathematics
-
-### Introduction to Computer Science
-
-This course will introduce you to the world of computer science. Students who have been introduced to programming, either from the courses above or through study elsewhere, should take this course for a flavor of the material to come. If you finish the course wanting more, Computer Science is likely for you!
-
-**Topics covered**:
-`computation`
-`imperative programming`
-`basic data structures and algorithms`
-`and more`
-
-Courses | Duration | Effort | Prerequisites
-:-- | :--: | :--: | :--:
-[Introduction to Computer Science and Programming using Python](https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-10) ([alt](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/)) | 9 weeks | 15 hours/week | [high school algebra](https://www.khanacademy.org/math/algebra-home)
-
-### Introduction to CS Tools
-Understanding theory is important, but you will also be expected to create programs. There are a number of tools that are widely used to make that process easier. Learn them now to ease your future work writing programs.
-
-**Topics covered**:
-`terminals and shell scripting`
-`vim`
-`command line environments`
-`version control`
-`and more`
-
-Courses | Duration | Effort | Prerequisites
-:-- | :--: | :--: | :--:
-[The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) | 2 weeks | 12 hours/week | -
-
-
-## Core CS
-
-All coursework under Core CS is **required**, unless otherwise indicated.
-
-### Core programming
-**Topics covered**:
-`functional programming`
-`design for testing`
-`program requirements`
-`common design patterns`
-`unit testing`
-`object-oriented design`
-`Java`
-`static typing`
-`dynamic typing`
-`ML-family languages (via Standard ML)`
-`Lisp-family languages (via Racket)`
-`Ruby`
-`and more`
-
-The How to Code courses are based on the textbook [How to Design Programs](https://htdp.org/2003-09-26/). The First Edition is available for free online and includes problem sets and solutions. Students are encouraged to do these assignments.
-
-Courses | Duration | Effort | Prerequisites
-:-- | :--: | :--: | :--:
-[How to Code - Simple Data](https://www.edx.org/course/how-code-simple-data-ubcx-htc1x) | 7 weeks | 8-10 hours/week | none
-[How to Code - Complex Data](https://www.edx.org/course/how-code-complex-data-ubcx-htc2x) | 6 weeks | 8-10 hours/week | How to Code: Simple Data
-[Programming Languages, Part A](https://www.coursera.org/learn/programming-languages) | 5 weeks | 4-8 hours/week | How to Code ([Hear instructor](https://www.coursera.org/lecture/programming-languages/recommended-background-k1yuh))
-[Programming Languages, Part B](https://www.coursera.org/learn/programming-languages-part-b) | 3 weeks | 4-8 hours/week | Programming Languages, Part A
-[Programming Languages, Part C](https://www.coursera.org/learn/programming-languages-part-c) | 3 weeks | 4-8 hours/week | Programming Languages, Part B
-
-### Math Electives
-**Students must choose one of the following topics**: calculus, linear algebra, logic, or probability.
-
-#### Calculus
-Courses | Duration | Effort | Prerequisites
-:-- | :--: | :--: | :--:
-[Calculus 1A: Differentiation](https://www.edx.org/course/calculus-1a-differentiation) | 13 weeks | 6-10 hours/week | [pre-calculus](https://www.futurelearn.com/courses/precalculus)
-[Calculus 1B: Integration](https://www.edx.org/course/calculus-1b-integration) | 13 weeks | 5-10 hours/week | Calculus 1A
-[Calculus 1C: Coordinate Systems & Infinite Series](https://www.edx.org/course/calculus-1c-coordinate-systems-infinite-series) | 6 weeks | 5-10 hours/week | Calculus 1B
-
-#### Linear Algebra
-Courses | Duration | Effort | Prerequisites
-:-- | :--: | :--: | :--:
-[Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) | - | - | [pre-calculus](https://www.futurelearn.com/courses/precalculus)
-[Linear Algebra](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/) | 14 weeks | 12 hours/week | Essence of Linear Algebra
-
-#### Logic
-Courses | Duration | Effort | Prerequisites
-:-- | :--: | :--: | :--:
-[Introduction to Logic](https://www.coursera.org/learn/logic-introduction) | 10 weeks | 4-8 hours/week | [set theory](https://www.youtube.com/playlist?list=PL5KkMZvBpo5AH_5GpxMiryJT6Dkj32H6N)
-
-#### Probability
-Courses | Duration | Effort | Prerequisites
-:-- | :--: | :--: | :--:
-[Introduction to Probability - The Science of Uncertainty](https://www.edx.org/course/introduction-probability-science-mitx-6-041x-2) | 18 weeks | 12 hours/week | [Multivariable Calculus](https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/index.htm)
-
-### Core Math
-In addition to their math elective, students must complete the following course on discrete mathematics.
-
-**Topics covered**:
-`discrete mathematics`
-`mathematical proofs`
-`basic statistics`
-`O-notation`
-`discrete probability`
-`and more`
-
-Courses | Duration | Effort | Notes | Prerequisites
-:-- | :--: | :--: | :--: | :--:
-[Mathematics for Computer Science](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/index.htm) | 13 weeks | 5 hours/week | An alternate version with solutions to the problem sets is [here](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2005/assignments/). Students struggling can consider the [Discrete Mathematics Specialization](https://www.coursera.org/specializations/discrete-mathematics) first. It is more interactive but less comprehensive, and costs money to unlock full interactivity. | Calculus 1C
-
-### Core systems
-
-**Topics covered**:
-`procedural programming`
-`manual memory management`
-`boolean algebra`
-`gate logic`
-`memory`
-`computer architecture`
-`assembly`
-`machine language`
-`virtual machines`
-`high-level languages`
-`compilers`
-`operating systems`
-`network protocols`
-`and more`
-
-Courses | Duration | Effort | Additional Text / Assignments| Prerequisites
-:-- | :--: | :--: | :--: | :--:
-[Introduction to Computer Science - CS50](https://www.edx.org/course/introduction-computer-science-harvardx-cs50x#!) ([alt](https://cs50.harvard.edu/)) | 12 weeks | 10-20 hours/week | After the sections on C, skip to the next course. [Why?](FAQ.md#why-do-you-recommend-skipping-the-second-half-of-cs50) | introductory programming
-[Build a Modern Computer from First Principles: From Nand to Tetris](https://www.coursera.org/learn/build-a-computer) ([alt](http://www.nand2tetris.org/)) | 6 weeks | 7-13 hours/week | - | C-like programming language
-[Build a Modern Computer from First Principles: Nand to Tetris Part II ](https://www.coursera.org/learn/nand2tetris2) | 6 weeks | 12-18 hours/week | - | one of [these programming languages](https://user-images.githubusercontent.com/2046800/35426340-f6ce6358-026a-11e8-8bbb-4e95ac36b1d7.png), From Nand to Tetris Part I
-[Introduction to Computer Networking](https://www.youtube.com/playlist?list=PLEAYkSg4uSQ2dr0XO_Nwa5OcdEcaaELSG)| 8 weeks | 4–12 hours/week | [Assignment 1](https://github.com/PrincetonUniversity/COS461-Public/tree/master/assignments/assignment1)<br>[Assignment 2](https://www.scs.stanford.edu/10au-cs144/lab/reliable/reliable.html)<br>[Assignment 3](https://nptel.ac.in/content/storage2/courses/106105080/pdf/M2L7.pdf)<br>[Assignment 4](http://www-net.cs.umass.edu/wireshark-labs/Wireshark_TCP_v7.0.pdf) | algebra, probability, basic CS
-[Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2018/) | 10-12 weeks | 6 hours/week | - | algorithms
-
-### Core theory
-
-**Topics covered**:
-`divide and conquer`
-`sorting and searching`
-`randomized algorithms`
-`graph search`
-`shortest paths`
-`data structures`
-`greedy algorithms`
-`minimum spanning trees`
-`dynamic programming`
-`NP-completeness`
-`and more`
-
-Courses | Duration | Effort | Prerequisites
-:-- | :--: | :--: | :--:
-[Divide and Conquer, Sorting and Searching, and Randomized Algorithms](https://www.coursera.org/learn/algorithms-divide-conquer) | 4 weeks | 4-8 hours/week | any programming language, Mathematics for Computer Science
-[Graph Search, Shortest Paths, and Data Structures](https://www.coursera.org/learn/algorithms-graphs-data-structures) | 4 weeks | 4-8 hours/week | Divide and Conquer, Sorting and Searching, and Randomized Algorithms
-[Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming](https://www.coursera.org/learn/algorithms-greedy) | 4 weeks | 4-8 hours/week | Graph Search, Shortest Paths, and Data Structures
-[Shortest Paths Revisited, NP-Complete Problems and What To Do About Them](https://www.coursera.org/learn/algorithms-npcomplete) | 4 weeks | 4-8 hours/week | Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming
-
-### Core Security
-**Topics covered**
-`Confidentiality, Integrity, Availability`
-`Secure Design`
-`Defensive Programming`
-`Threats and Attacks`
-`Network Security`
-`Cryptography`
-`and more`
-
-Note: **_These courses are provisionally recommended_**. There is an open [Request For Comment](https://github.com/ossu/computer-science/issues/639) on security course selection. Contributors are encouraged to compare the various courses in the RFC and offer feedback.
-
-Courses | Duration | Effort | Prerequisites
-:-- | :--: | :--: | :--:
-[Information Security: Context and Introduction](https://www.coursera.org/learn/information-security-data) | 5 weeks | 3 hours/week | -
-[Principles of Secure Coding](https://www.coursera.org/learn/secure-coding-principles)| 4 weeks | 4 hours/week | -
-[Identifying Security Vulnerabilities](https://www.coursera.org/learn/identifying-security-vulnerabilities) | 4 weeks | 4 hours/week | -
-
-Choose **one** of the following:
-Courses | Duration | Effort | Prerequisites
-:-- | :--: | :--: | :--:
-[Identifying Security Vulnerabilities in C/C++Programming](https://www.coursera.org/learn/identifying-security-vulnerabilities-c-programming) | 4 weeks | 5 hours/week | -
-[Exploiting and Securing Vulnerabilities in Java Applications](https://www.coursera.org/learn/exploiting-securing-vulnerabilities-java-applications) | 4 weeks | 5 hours/week | -
-
-### Core applications
-
-**Topics covered**:
-`Agile methodology`
-`REST`
-`software specifications`
-`refactoring`
-`relational databases`
-`transaction processing`
-`data modeling`
-`neural networks`
-`supervised learning`
-`unsupervised learning`
-`OpenGL`
-`raytracing`
-`and more`
-
-Courses | Duration | Effort | Prerequisites
-:-- | :--: | :--: | :--:
-[Relational Database Systems](https://www.coursera.org/learn/relational-database)| 6 weeks | 3 hours/week | -
-[Machine Learning](https://www.coursera.org/learn/machine-learning)| 11 weeks | 4-6 hours/week | linear algebra
-[Computer Graphics](https://www.edx.org/course/computer-graphics-uc-san-diegox-cse167x)| 6 weeks | 12 hours/week | C++ or Java, linear algebra
-[Software Engineering: Introduction](https://www.edx.org/course/software-engineering-introduction-ubcx-softeng1x) | 6 weeks | 8-10 hours/week | Core Programming, and a [sizable project](FAQ.md#why-require-experience-with-a-sizable-project-before-the-Software-Engineering-courses)
-[Software Development Capstone Project](https://www.edx.org/course/software-development-capstone-project-ubcx-softengprjx) | 6-7 weeks | 8-10 hours/week | Software Engineering: Introduction
-
-## Advanced CS
-
-After completing **every required course** in Core CS, students should choose a subset of courses from Advanced CS based on interest.
-Not every course from a subcategory needs to be taken.
-But students should take *every* course that is relevant to the field they intend to go into.
-
-The Advanced CS study should then end with one of the Specializations under [Advanced applications](#advanced-applications).
-A Specialization's Capstone, if taken, may act as the [Final project](#final-project), if permitted by the Honor Code of the course.
-If not, or if a student chooses not to take the Capstone, then a separate Final project will need to be done to complete this curriculum.
-
-### Advanced programming
-
-**Topics covered**:
-`debugging theory and practice`
-`goal-oriented programming`
-`GPU programming`
-`CUDA`
-`parallel computing`
-`object-oriented analysis and design`
-`UML`
-`large-scale software architecture and design`
-`and more`
-
-Courses | Duration | Effort | Prerequisites
-:-- | :--: | :--: | :--:
-[Introduction to Parallel Programming](https://classroom.udacity.com/courses/cs344) ([alt](https://www.youtube.com/playlist?list=PLGvfHSgImk4aweyWlhBXNF6XISY3um82_)) ([HW](https://colab.research.google.com/github/depctg/udacity-cs344-colab))| 12 weeks | - | C, algorithms
-[Compilers](https://www.edx.org/course/compilers) ([alt](https://www.youtube.com/playlist?list=PLDcmCgguL9rxPoVn2ykUFc8TOpLyDU5gx))| 9 weeks | 6-8 hours/week | none
-[Introduction to Haskell](https://www.seas.upenn.edu/~cis194/fall16/)| 14 weeks | - | -
-[Learn Prolog Now!](http://lpn.swi-prolog.org/lpnpage.php?pageid=top)| 12 weeks | - | -
-[Software Debugging](https://www.udacity.com/course/software-debugging--cs259)| 8 weeks | 6 hours/week | Python, object-oriented programming
-[Software Testing](https://www.udacity.com/course/software-testing--cs258) | 4 weeks | 6 hours/week | Python, programming experience
-[LAFF - On Programming for Correctness](https://www.edx.org/course/laff-on-programming-for-correctness) | 7 weeks | 6 hours/week | linear algebra
-[Software Architecture & Design](https://www.udacity.com/course/software-architecture-design--ud821)| 8 weeks | 6 hours/week | software engineering in Java
-
-### Advanced systems
-
-**Topics covered**:
-`digital signaling`
-`combinational logic`
-`CMOS technologies`
-`sequential logic`
-`finite state machines`
-`processor instruction sets`
-`caches`
-`pipelining`
-`virtualization`
-`parallel processing`
-`virtual memory`
-`synchronization primitives`
-`system call interface`
-`and more`
-
-Courses | Duration | Effort | Prerequisites
-:-- | :--: | :--: | :--:
-[Electricity and Magnetism, Part 1](https://www.edx.org/course/electricity-magnetism-part-1-ricex-phys102-1x-0)<sup>1</sup> | 7 weeks | 8-10 hours/week | [calculus](https://www.khanacademy.org/math/calculus-1), [basic mechanics](https://www.khanacademy.org/science/physics)
-[Electricity and Magnetism, Part 2](https://www.edx.org/course/electricity-magnetism-part-2-ricex-phys102-2x-0) | 7 weeks | 8-10 hours/week | Electricity and Magnetism, Part 1
-[Computation Structures 1: Digital Circuits](https://www.edx.org/course/computation-structures-part-1-digital-mitx-6-004-1x-0) | 10 weeks | 6 hours/week | electricity, magnetism
-[Computation Structures 2: Computer Architecture](https://www.edx.org/course/computation-structures-2-computer-mitx-6-004-2x) | 10 weeks | 6 hours/week | Computation Structures 1
-[Computation Structures 3: Computer Organization](https://www.edx.org/course/computation-structures-3-computer-mitx-6-004-3x-0) | 10 weeks | 6 hours/week | Computation Structures 2
-
-**<sup>1</sup> Note**:
-These courses assume knowledge of basic physics.
-([Why?](FAQ.md#why-is-the-curriculum-missing-some-pre-requisites))
-If you are struggling, you can find a physics MOOC or utilize the materials from Khan Academy:
-[Khan Academy - Physics](https://www.khanacademy.org/science/physics)
-
-### Advanced theory
-
-**Topics covered**:
-`formal languages`
-`Turing machines`
-`computability`
-`event-driven concurrency`
-`automata`
-`distributed shared memory`
-`consensus algorithms`
-`state machine replication`
-`computational geometry theory`
-`propositional logic`
-`relational logic`
-`Herbrand logic`
-`concept lattices`
-`game trees`
-`and more`
-
-Courses | Duration | Effort | Prerequisites
-:-- | :--: | :--: | :--:
-[Theory of Computation](http://aduni.org/courses/theory/index.php?view=cw) ([Lectures](https://www.youtube.com/playlist?list=PLTke5lHMAdSNmi57H0DOTzClHPK6UwSTN)) | 8 weeks | 10 hours/week | discrete mathematics, logic, algorithms
-[Computational Geometry](https://www.edx.org/course/computational-geometry-tsinghuax-70240183x) | 16 weeks | 8 hours/week | algorithms, C++
-[Introduction to Formal Concept Analysis](https://www.coursera.org/learn/formal-concept-analysis) | 6 weeks | 4-6 hours/week | logic, probability
-[Game Theory](https://www.coursera.org/learn/game-theory-1) | 8 weeks | 3 hours/week | mathematical thinking, probability, calculus
-
-### Advanced applications
-
-These Coursera Specializations all end with a Capstone project.
-Depending on the course, you may be able to utilize the Capstone as your Final Project for this Computer Science curriculum.
-Note that doing a Specialization with the Capstone at the end always costs money.
-So if you don't wish to spend money or use the Capstone as your Final, it may be possible to take the courses in the Specialization for free by manually searching for them, but not all allow this.
-
-Courses | Duration | Effort | Prerequisites
-:-- | :--: | :--: | :--:
-[Modern Robotics (Specialization)](https://www.coursera.org/specializations/modernrobotics) | 26 weeks | 2-5 hours/week | freshman-level physics, linear algebra, calculus, [linear ordinary differential equations](https://www.khanacademy.org/math/differential-equations)
-[Data Mining (Specialization)](https://www.coursera.org/specializations/data-mining) | 30 weeks | 2-5 hours/week | machine learning
-[Big Data (Specialization)](https://www.coursera.org/specializations/big-data) | 30 weeks | 3-5 hours/week | none
-[Internet of Things (Specialization)](https://www.coursera.org/specializations/internet-of-things) | 30 weeks | 1-5 hours/week | strong programming
-[Cloud Computing (Specialization)](https://www.coursera.org/specializations/cloud-computing) | 30 weeks | 2-6 hours/week | C++ programming
-[Full Stack Web Development (Specialization)](https://www.coursera.org/specializations/full-stack) | 27 weeks | 2-6 hours/week | programming, databases
-[Data Science (Specialization)](https://www.coursera.org/specializations/jhu-data-science) | 43 weeks | 1-6 hours/week | none
-[Functional Programming in Scala (Specialization)](https://www.coursera.org/specializations/scala) | 29 weeks | 4-5 hours/week | One year programming experience
-[Game Design and Development (Specialization)](https://www.coursera.org/specializations/game-development) | 6 months | 5 hours/week | programming, interactive design
-
-## Final project
-
-OSS University is **project-focused**.
-You are encouraged to do the assignments and exams for each course, but what really matters is whether you can *use* your knowledge to solve a real-world problem.
-
-After you've gotten through all of Core CS and the parts of Advanced CS relevant to you, you should think about a problem that you can solve using the knowledge you've acquired.
-Not only does real project work look great on a resume, but the project will also *validate* and *consolidate* your knowledge.
-You can create something entirely new, or you can find an existing project that needs help via websites like
-[CodeTriage](https://www.codetriage.com/)
-or
-[First Timers Only](http://www.firsttimersonly.com/).
-
-Another option is using the Capstone project from taking one of the Specializations in [Advanced applications](#advanced-applications);
-whether or not this makes sense depends on the course, the project, and whether or not the course's Honor Code permits you to display your work publicly.
-In some cases, it may not be permitted;
-do **not** violate your course's Honor Code!
-
-Put the OSSU-CS badge in the README of your repository!
-[![Open Source Society University - Computer Science](https://img.shields.io/badge/OSSU-computer--science-blue.svg)](https://github.com/ossu/computer-science)
-
-- Markdown: `[![Open Source Society University - Computer Science](https://img.shields.io/badge/OSSU-computer--science-blue.svg)](https://github.com/ossu/computer-science)`
-- HTML: `<a href="https://github.com/ossu/computer-science"><img alt="Open Source Society University - Computer Science" src="https://img.shields.io/badge/OSSU-computer--science-blue.svg"></a>`
-
-### Evaluation
-
-Upon completing your final project, submit your project's information to [PROJECTS](PROJECTS.md)
-via a pull request and use our [community](#community) channels to announce it to your fellow students.
-
-Your peers and mentors from OSSU will then informally evaluate your project.
-You will not be "graded" in the traditional sense — everyone has their own measurements for what they consider a success.
-The purpose of the evaluation is to act as your first announcement to the world that you are a computer scientist
-and to get experience listening to feedback — both positive and negative — and taking it in stride.
-
-The final project evaluation has a second purpose: to evaluate whether OSSU,
-through its community and curriculum, is successful in its mission to guide independent learners in obtaining a world-class computer science education.
-
-### Cooperative work
-
-You can create this project alone or with other students!
-**We love cooperative work**!
-Use our [channels](#community) to communicate with other fellows to combine and create new projects!
-
-### Which programming languages should I use?
-
-My friend, here is the best part of liberty!
-You can use **any** language that you want to complete the final project.
-
-The important thing is to **internalize** the core concepts and to be able to use them with whatever tool (programming language) that you wish.
-
-## Congratulations
-
-After completing the requirements of the curriculum above, you will have completed the equivalent of a full bachelor's degree in Computer Science. Congratulations!
-
-What is next for you? The possibilities are boundless and overlapping:
-
-- Look for a job as a developer!
-- Check out the [readings](extras/readings.md) for classic books you can read that will sharpen your skills and expand your knowledge.
-- Join a local developer meetup (e.g. via [meetup.com](https://www.meetup.com/)).
-- Pay attention to emerging technologies in the world of software development:
-  + Explore the **actor model** through [Elixir](http://elixir-lang.org/), a new functional programming language for the web based on the battle-tested Erlang Virtual Machine!
-  + Explore **borrowing and lifetimes** through [Rust](https://www.rust-lang.org/), a systems language which achieves memory- and thread-safety without a garbage collector!
-  + Explore **dependent type systems** through [Idris](https://www.idris-lang.org/), a new Haskell-inspired language with unprecedented support for type-driven development.
-
-![keep learning](http://i.imgur.com/REQK0VU.jpg)
-
-# Code of conduct
-[OSSU's code of conduct](https://github.com/ossu/code-of-conduct).
-
-## How to show your progress
-
-1. Create an account in [Trello](https://trello.com/).
-1. Copy [this](https://trello.com/b/IScNSzsI/ossu-compsci) board to your personal account.
-See how to copy a board [here](https://help.trello.com/article/802-copying-cards-lists-or-boards).
-
-Now that you have a copy of our official board, you just need to pass the cards to the `Doing` column or `Done` column as you progress in your study.
-
-We also have **labels** to help you have more control through the process.
-The meaning of each of these labels is:
-
-- `Main Curriculum`: cards with that label represent courses that are listed in our curriculum.
-- `Extra Resources`: cards with that label represent courses that were added by the student.
-- `Doing`: cards with that label represent courses the student is current doing.
-- `Done`: cards with that label represent courses finished by the student.
-Those cards should also have the link for at least one project/article built with the knowledge acquired in such course.
-- `Section`: cards with that label represent the section that we have in our curriculum.
-Those cards with the `Section` label are only to help the organization of the Done column.
-You should put the *Course's cards* below its respective *Section's card*.
-
-The intention of this board is to provide our students a way to track their progress, and also the ability to show their progress through a public page for friends, family, employers, etc.
-You can change the status of your board to be *public* or *private*.
+1 | [BottlesOfBeerSong.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/BottlesOfBeerSong.java) | didn't track
+2 | [ThisOldManSong.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/ThisOldManSong.java) | didn't track
+3 | [AddNIntegers.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/AddNIntegers.java) | didn't track
+4 | [DivisibleIntegers.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/DivisibleIntegers.java) | didn't track
+5 | [AverageList.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/AverageList.java) | didn't track
+6 | [ReverseDigits.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/ReverseDigits.java) | didn't track
+7 | [DigitalRoot.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/DigitalRoot.java) | didn't track
+8 | [Countdown.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/Countdown.java) | didn't track
+9 | [FibonacciSequence.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/FibonacciSequence.java) | didn't track
+10 | [FibonacciSequence.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/FibonacciSequence.java) | didn't track
+11 | [Pyramid.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/Pyramid.java) | didn't track
+12 | [FindLargest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/FindLargest.java) | didn't track
+13 | [FindTwoLargest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/FindTwoLargest.java) | didn't track
+14 | [CheckerBoardOwn.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/CheckerBoardOwn.java) | didn't track
+15 | [AnimatedSquare.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/AnimatedSquare.java) | didn't track
+16 | [HeadLine.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/HeadLine.java) | didn't track
+Bonus 12 | [Calendar.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/Calendar.java) | didn't track
+
+**Chapter 5, Methods**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [Quadratic.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/Quadratic.java) | didn't track
+2 | [FibonacciSequence.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/FibonacciSequence.java) | didn't track
+3 | [RaiseIntToPower.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/RaiseIntToPower.java) | didn't track
+4 | [CountDigits.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/CountDigits.java) | didn't track
+5 | [Target.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/Target.java) | didn't track
+6 | [DrawStoplight.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/DrawStoplight.java) | didn't track
+7 | [AskYesNoQuestion.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/AskYesNoQuestion.java) | didn't track
+8 | [DrawTrain.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/DrawTrain.java) | didn't track
+9 | [DrawHouse.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/DrawHouse.java) | didn't track
+10 | [DrawHouseOfUsher.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/DrawHouseOfUsher.java) | didn't track
+11 | [PrimeNumber.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/PrimeNumber.java) | didn't track
+12 | [PerfectNumber.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/PerfectNumber.java) | didn't track
+13 | [MazeRunningRobot.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/MazeRunningRobot.java) | didn't track
+Bonus 1 | [GoldenRatio.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/GoldenRatio.java) | didn't track
+Bonus 5 | [RaiseIntToPowerNegatives.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/RaiseIntToPowerNegatives.java) | didn't track
+Bonus 7 | [IsPerfectSquare.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/IsPerfectSquare.java) | didn't track
+Bonus 9 | [Combinations.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/Combinations.java) | didn't track
+
+**Chapter 6, Objects and Classes**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [RandomCard.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/RandomCard.java) | didn't track
+2 | [ConsecutiveHeads.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/ConsecutiveHeads.java) | didn't track
+3 | [Darts.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/Darts.java) | didn't track
+4 | [RadioactiveDecay.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/RadioactiveDecay.java) | didn't track
+5 | [SlotMachine.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/SlotMachine.java) | didn't track
+6 | [MathQuiz.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/MathQuiz.java) | didn't track
+7 | [MathQuiz.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/MathQuiz.java) | didn't track
+8 | [Card.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/Card.java) | didn't track
+9 | [LibraryRecordTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/LibraryRecordTest.java) | didn't track
+10 | [RationalTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/RationalTest.java) | didn't track
+Bonus 1 | [MathQuiz.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/MathQuiz.java) | didn't track
+Bonus 8 | [Employee.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/Employee.java) | didn't track
+
+**Chapter 7, Objects and Memory**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [HexToDecimalConverter.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%207%20(Objects%20and%20Memory)/HexToDecimalConverter.java) | didn't track
+2 | [AverageList.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%207%20(Objects%20and%20Memory)/AverageList.java) | didn't track
+3 | [MathQuiz.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%207%20(Objects%20and%20Memory)/MathQuiz.java) | didn't track
+4 | [GCTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%207%20(Objects%20and%20Memory)/GCTest.java) | didn't track
+
+**Chapter 8, Strings and Characters**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [isEnglishConsonant.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/isEnglishConsonant.java) | didn't track
+2 | [RandomWord.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/RandomWord.java) | didn't track
+3 | [Capitalize.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/Capitalize.java) | didn't track
+4 | [DateString.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/DateString.java) | didn't track
+5 | [WordGame.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/WordGame.java) | didn't track
+6 | [IsPalindrome.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/IsPalindrome.java) | didn't track
+7 | [SentencePalindrome.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/SentencePalindrome.java) | didn't track
+8 | [PluralWords.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/PluralWords.java) | didn't track
+9 | [PresentParticiple.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/PresentParticiple.java) | didn't track
+10 | [OrdinalNumbers.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/OrdinalNumbers.java) | didn't track
+11 | [CaeserCipher.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/CaeserCipher.java) | didn't track
+12 | [MyReadInt.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/MyReadInt.java) | didn't track
+13 | [AddCommas.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/AddCommas.java) | didn't track
+14 | [NumberToWords.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/NumberToWords.java) | didn't track
+15 | [LongestWord.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/LongestWord.java) | didn't track
+16 | [Acronym.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/Acronym.java) | didn't track
+17 | [PigLatin.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/PigLatin.java) | didn't track
+18 | [PigLatin.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/PigLatin.java) | didn't track
+19 | [Obenglobish.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/Obenglobish.java) | didn't track
+20 | [DNA.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/DNA.java) | didn't track
+21 | [OwnStringTokeneizerTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/OwnStringTokeneizerTest.java) | didn't track
+Bonus 6 | [MyIndexOf.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/MyIndexOf.java) | didn't track
+
+
+**Chapter 9, Object-Oriented Graphics**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [FavoritePicture.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/FavoritePicture.java) | didn't track
+2 | [BlackSquareAnimator.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/BlackSquareAnimator.java) | didn't track
+3 | [RandomColorLabel.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/RandomColorLabel.java) | didn't track
+4 | [GPolygonsTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/GPolygonsTest.java) | didn't track
+5 | [Pumpkin.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/Pumpkin.java) | didn't track
+6 | [PumpkinPie.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/PumpkinPie.java) | didn't track
+7 | [DrawHeartOutline.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/DrawHeartOutline.java) | didn't track
+8 | [DrawHeartFilled.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/DrawHeartFilled.java) | didn't track
+9 | [Calendar.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/Calendar.java) | didn't track
+10 | [PascaleTriangle.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/PascaleTriangle.java) | didn't track
+11 | [PatchworkQuilt.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/PatchworkQuilt.java) | didn't track
+12 | [PacMan.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/PacMan.java) | didn't track
+13 | [TrainTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/TrainTest.java) | didn't track
+14 | [SlotMachine.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/SlotMachine.java) | didn't track
+15 | [GLens.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/GLens.java) | didn't track
+16 | [LensImaging.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/LensImaging.java) | didn't track
+Bonus 1 | [Pyramid.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/Pyramid.java) | didn't track
+Bonus 4 | [PeaceSymbol.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/PeaceSymbol.java) | didn't track
+Bonus 5 | [Initials.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/Initials.java) | didn't track
+Bonus 7 | [DrawHouse.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/DrawHouse.java) | didn't track
+Bonus 8 | [DrawHouseOfUsher.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/DrawHouseOfUsher.java) | didn't track
+Bonus 9 | [DrawMemorial.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/DrawMemorial.java) | didn't track
+Bonus 11 | [RandomColorLabel.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/RandomColorLabel.java) | didn't track
+Bonus 12 | [DrawRectangle.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/DrawRectangle.java) | didn't track
+Bonus 13 | [SignalTowerTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/SignalTowerTest.java) | didn't track
+Bonus 14 | [SimpleDraw.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/SimpleDraw.java) | didn't track
+Bonus 15 | [BouncingBall.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/BouncingBall.java) | didn't track
+
+
+**Chapter 10, Event-Driven Programs**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [RandomColorLabel.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/RandomColorLabel.java) | didn't track
+2 | [MouseTracker.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/MouseTracker.java) | didn't track
+3 | [DrawFace.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/DrawFace.java) | didn't track
+4 | [DrawRectangle.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/DrawRectangle.java) | didn't track
+5 | [SimpleDraw.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/SimpleDraw.java) | didn't track
+6 | [DrawStarMap_ColorChooser.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/DrawStarMap_ColorChooser.java) | didn't track
+7 | [DrawStarMap_ColorChooser.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/DrawStarMap_ColorChooser.java) | didn't track
+8 | [BouncingBall.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/BouncingBall.java) | didn't track
+9 | [BouncingBall.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/BouncingBall.java) | didn't track
+10 | [Breakout.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/Breakout.java) | didn't track
+11 | [LenghtConverter.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/LenghtConverter.java) | didn't track
+12 | [Calculator.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/Calculator.java) | didn't track
+
+**Chapter 11, Arrays and ArrayLists**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [GymnasticsJudge.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/GymnasticsJudge.java) | didn't track
+2 | [GymnasticsJudge.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/GymnasticsJudge.java) | didn't track
+3 | [GymnasticsJudge.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/GymnasticsJudge.java) | didn't track
+4 | [isMagicSquare.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/isMagicSquare.java) | didn't track
+5 | [SudokuChecker.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/SudokuChecker.java) | didn't track
+6 | [Eratosthenes.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/Eratosthenes.java) | didn't track
+7 | [LineGraph.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/LineGraph.java) | didn't track
+8 | [MorseCode.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/MorseCode.java) | didn't track
+9 | [MorseCodeVisual.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/MorseCodeVisual.java) | didn't track
+10 | [Nim.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/Nim.java) | didn't track
+11 | [BitwiseOperatorDemo.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/BitwiseOperatorDemo.java) | didn't track
+12 | [FlipAndRotateTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/FlipAndRotateTest.java) | didn't track
+13 | [FlipAndRotateTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/FlipAndRotateTest.java) | didn't track
+14 | [ClipImageTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/ClipImageTest.java) | didn't track
+15 | [MakeNegativeColorTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/MakeNegativeColorTest.java) | didn't track
+Bonus 6 | [Histogram.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/Histogram.java) | didn't track
+Bonus 7 | [ProbabilityBoard.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/ProbabilityBoard.java) | didn't track
+Bonus 9 | [TicTacToe.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/TicTacToe.java) | didn't track
+Bonus 10 | [Checkers.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/Checkers.java) | didn't track
+Bonus 11 | [Checkers.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/Checkers.java) | didn't track
+
+**Chapter 12, Searching and Sorting**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [GuessTheNumber.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/GuessTheNumber.java) | didn't track
+2 | [IsSortedTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/IsSortedTest.java) | didn't track
+3 | [IsSortedTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/IsSortedTest.java) | didn't track
+4 | [SelectionSortString.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/SelectionSortString.java) | didn't track
+5 | [Median.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/Median.java) | didn't track
+6 | [Mode.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/Mode.java) | didn't track
+7 | [Shuffle.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/Shuffle.java) | didn't track
+8 | [DutchNationalFlag.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/DutchNationalFlag.java) | didn't track
+9 | [InsertionSort.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/InsertionSort.java) | didn't track
+10 | [RadixSort.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/RadixSort.java) | didn't track
+11 | [WordCount.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/WordCount.java) | didn't track
+12 | [Untabifyer.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/Untabifyer.java) | didn't track
+13 | [Greek.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/Greek.java) | didn't track
+14 | [CrossWordGrid.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/CrossWordGrid.java) | didn't track
+
+**Chapter 13, Collection Classes**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [GuessTheNumber.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/TestSimpleStringMapE1.java) | didn't track
+2 | [SimpleStringMapOwnE2.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/SimpleStringMapOwnE2.java) | didn't track
+3 | [SimpleStringMapOwnE3E4.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/SimpleStringMapOwnE3E4.java) | didn't track
+4 | [SimpleStringMapOwnE3E4.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/SimpleStringMapOwnE3E4.java) | didn't track
+5 | [SimpleStringMapOwnE5.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/SimpleStringMapOwnE5.java) | didn't track
+6 | [LexiconTesting.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/LexiconTesting.java) | didn't track
+7 | [PigLatinTesting.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/PigLatinTesting.java) | didn't track
+8 | [EqualHashCodeTesting.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/EqualHashCodeTesting.java) | didn't track
+9 | [FilmsSorter.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/FilmsSorter.java) | didn't track
+10 | [SparseMatrixTesting.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/SparseMatrixTesting.java) | didn't track
+
+**Chapter 14, Looking Ahead**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [FibonacciRecursion.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2014/FibonacciRecursion.java) | didn't track
+2 | [Cannonball.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2014/Cannonball.java) | didn't track
+3 | [PascaleTriangleRecursive.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2014/PascaleTriangleRecursive.java) | didn't track
+4 | [IsPalindromeRecursive.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2014/IsPalindromeRecursive.java) | didn't track
+5 | [HanoiTowerRecursion.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2014/HanoiTowerRecursion.java) | didn't track
+6 | [DrawMap.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2014/DrawMap.java) | didn't track
+7 | [TestAnimatedSquare.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2014/TestAnimatedSquare.java) | didn't track
+8 | [HousePoints.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2014/HousePoints.java) | didn't track
 
 # Team
 
