@@ -3,7 +3,7 @@
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
- * Book / Chapter 9 / Programming Exercise Bonus 13
+ * Book / Chapter 9 / Programming Exercise Bonus 13 
  * -----------------
  * This class supplies a test program for the SignalTower class.
  * The SignalTowerTest class creates a list of SignalTower objects
