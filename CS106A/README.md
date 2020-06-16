@@ -49,8 +49,8 @@ Exercise | File | Effort
 4 | [DrawHouse.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/DrawHouse.java) | didn't track
 5 | [RobotFace.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/RobotFace.java) | didn't track
 6 | [Target.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/Target.java) | didn't track
-7 | [OlympicRing.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/OlympicRing.class) | didn't track
-8 | [OlympicRings.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/OlympicRings.class) | didn't track
+7 | [OlympicRings.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/OlympicRings.java) | didn't track
+8 | [OlympicRings.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/OlympicRings.java) | didn't track
 9 | [Rainbow.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/Rainbow.java) | didn't track
 
 **Chapter 3, Expressions**
@@ -191,7 +191,7 @@ Bonus 11 | [RandomColorLabel.java](https://github.com/oliverpecha/Stanford-SEE/b
 Bonus 12 | [DrawRectangle.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/DrawRectangle.java) | didn't track
 Bonus 13 | [SignalTowerTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/SignalTowerTest.java) | didn't track
 Bonus 14 | [SimpleDraw.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/SimpleDraw.java) | didn't track
-Bonus 15 | [BouncingBall.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/BouncingBall.java) | didn't track
+Bonus 15 | [BouncingILoveJava.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/BouncingILoveJava.java) | didn't track
 
 
 **Chapter 10, Event-Driven Programs**
@@ -255,11 +255,11 @@ Exercise | File | Effort
 **Chapter 13, Collection Classes**
 Exercise | File | Effort
 :-- | :--: | :--:
-1 | [GuessTheNumber.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/TestSimpleStringMapE1.java) | didn't track
-2 | [SimpleStringMapOwnE2.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/SimpleStringMapOwnE2.java) | didn't track
-3 | [SimpleStringMapOwnE3E4.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/SimpleStringMapOwnE3E4.java) | didn't track
-4 | [SimpleStringMapOwnE3E4.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/SimpleStringMapOwnE3E4.java) | didn't track
-5 | [SimpleStringMapOwnE5.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/SimpleStringMapOwnE5.java) | didn't track
+1 | [TestSimpleStringMapE1.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/TestSimpleStringMapE1.java) | didn't track
+2 | [TestSimpleStringMapE2.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/TestSimpleStringMapE2.java) | didn't track
+3 | [TestSimpleStringMapE3E4.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/TestSimpleStringMapE3E4.java) | didn't track
+4 | [TestSimpleStringMapE3E4.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/TestSimpleStringMapE3E4.java) | didn't track
+5 | [TestSimpleStringMapE5.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/TestSimpleStringMapE5.java) | didn't track
 6 | [LexiconTesting.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/LexiconTesting.java) | didn't track
 7 | [PigLatinTesting.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/PigLatinTesting.java) | didn't track
 8 | [EqualHashCodeTesting.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/EqualHashCodeTesting.java) | didn't track
