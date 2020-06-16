@@ -38,12 +38,22 @@ public class DragObjects extends GraphicsProgram {
 	public void mouseDragged(MouseEvent e) {
 		if (gobj != null) {
 			gobj.move(e.getX() - last.getX(), e.getY() - last.getY());
+			gobj.setColor(Color.GRAY);
+
 			last = new GPoint(e.getPoint());
 		}
 	}
 
+	public void mouseReleased(MouseEvent e) {
+		System.out.println("MouseReleased");
+
+		if (gobj != null) gobj.setColor(Color.BLUE);
+	}
+	
 /* Called on mouse click to move this object to the front */
 	public void mouseClicked(MouseEvent e) {
+		System.out.println("mouseClicked");
+
 		if (gobj != null) gobj.sendToFront();
 	}
 

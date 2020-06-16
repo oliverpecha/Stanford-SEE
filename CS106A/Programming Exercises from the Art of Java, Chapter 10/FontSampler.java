@@ -32,6 +32,7 @@ public class FontSampler extends GraphicsProgram {
 			GLabel label = new GLabel(TEST_STRING);
 			label.setFont(lastLabel.getFont());
 			label.setFont(fontField.getText());
+			System.out.println(fontField.getText());
 			addGLabel(label);
 			lastLabel = label;
 		}

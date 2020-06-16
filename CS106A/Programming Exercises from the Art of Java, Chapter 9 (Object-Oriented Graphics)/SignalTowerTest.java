@@ -3,7 +3,11 @@
  * Name: Oliver Pecha
  * Section Leader: Online Learning
  * -----------------
+<<<<<<< HEAD
  * Book / Chapter 9 / Programming Exercise Bonus 13 
+=======
+ * Book / Chapter 9 / Programming Exercise Bonus 13
+>>>>>>> branch 'master' of git@github.com:oliverpecha/Stanford-SEE.git
  * -----------------
  * This class supplies a test program for the SignalTower class.
  * The SignalTowerTest class creates a list of SignalTower objects

@@ -1,0 +1,284 @@
+![CS106A](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/CS106A_timeline.jpg)
+
+<h3 align="center">Programming Methodology, CS106A</h3>
+<p align="center">
+  Sahami, Mehran
+</p>
+
+# Contents
+- [Course Description](#course-description)
+- [Units and programming assignments](#units-and-programming-assignments)
+- [Texts and handouts](#texts-and-handouts)
+- [Completed Programming exercises](#completed-programming-exercises)
+
+
+# Course Description
+
+This course is the largest of the introductory programming courses and is one of the largest courses at Stanford. Topics focus on the introduction to the engineering of computer applications emphasizing modern software engineering principles: object-oriented design, decomposition, encapsulation, abstraction, and testing.
+Programming Methodology teaches the widely-used Java programming language along with good software engineering principles. Emphasis is on good programming style and the built-in facilities of the Java language. The course is explicitly designed to appeal to humanists and social scientists as well as hard-core techies. In fact, most Programming Methodology graduates end up majoring outside of the School of Engineering.
+
+**Prerequisites:** The course requires no previous background in programming, *but does require considerable dedication and hard work*.
+
+
+# Instructor
+
+**Sahami, Mehran**
+I joined the Computer Science Department at Stanford University as Associate Professor (Teaching), Associate Chair for Undergraduate Education, and Director of Educational Affairs. From 2001 to 2006, I also taught in the CS department at Stanford as a Lecturer. From 2002-2007, I was a Senior Research Scientist at Google, where I continue to maintain a consulting appointment in the research group. My research interests include computer science education, machine learning, and information retrieval on the Web. Please see my publications web page for more information.
+
+Previously, I worked for several years as a Senior Engineering Manager at Epiphany. Prior to working at Epiphany, I completed my PhD in the Computer Science Department at Stanford. I was also an undergrad at Stanford and I loved it so much that I didn't want to leave.
+
+
+# Units and programming assignments
+If you are an undergraduate, you are required to take CS 106A for 5 units of credit. If you are a graduate student, you may enroll in CS 106A for 3 units if it is necessary for you to reduce your units for administrative reasons. Taking the course for reduced units does not imply any change in the course requirements. As you can see from the syllabus, there will be seven assignments (Assignment 1 – Assignment 7). The assignments will become slightly more difficult and require more time as the quarter progresses. 
+
+
+# Texts and handouts
+There are two required texts for this class, both of which are available from the Stanford Bookstore. The first is a course reader entitled Karel the Robot Learns Java—a 35-page tutorial that introduces the major concepts in programming in the context of an extremely simple robot world. The second is the textbook The Art and Science of Java by Eric Roberts. In addition to these texts, we will also distribute additional material in the form of class handouts. After class, any extra copies of the handouts will be placed in the handout bins in the entryway to the Gates B-wing. The handouts are also available in PDF® format on the CS 106 web site. If you miss a handout in class, you can print your own copy from the web. 
+
+
+# Completed Programming exercises
+
+**The Art and Science of Java, Eric Roberts**
+
+**Chapter 2, Programming by Example**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [HelloProgram.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/HelloProgram.java) | didn't track
+2 | [Calculus.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/Calculus.java) | didn't track
+3 | [Add3Integers.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/Add3Integers.java) | didn't track
+4 | [DrawHouse.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/DrawHouse.java) | didn't track
+5 | [RobotFace.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/RobotFace.java) | didn't track
+6 | [Target.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/Target.java) | didn't track
+7 | [OlympicRing.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/OlympicRing.class) | didn't track
+8 | [OlympicRings.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/OlympicRings.class) | didn't track
+9 | [Rainbow.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/Rainbow.java) | didn't track
+
+**Chapter 3, Expressions**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [FeetAndInchesToCentimeters.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/FeetAndInchesToCentimeters.java) | didn't track
+2 | [Interest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/Interest.java) | didn't track
+3 | [Interest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/Interest.java) | didn't track
+4 | [AreaCircle.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/AreaCircle.java) | didn't track
+5 | [FahrenheitToCelcius.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/FahrenheitToCelcius.java) | didn't track
+6 | [ThePhantomToolboothBook.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/ThePhantomToolboothBook.java) | didn't track
+7 | [KilogramsToPoundsAndOunces.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/KilogramsToPoundsAndOunces.java) | didn't track
+8 | [AverageOfFourIntegers.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/AverageOfFourIntegers.java) | didn't track
+9 | [StIves.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/StIves.java) | didn't track
+10 | [TicTacToeBoard.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/TicTacToeBoard.java) | didn't track
+11 | [BuildHouse.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/BuildHouse.java) | didn't track
+
+
+**Chapter 4, Statement Forms**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [BottlesOfBeerSong.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/BottlesOfBeerSong.java) | didn't track
+2 | [ThisOldManSong.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/ThisOldManSong.java) | didn't track
+3 | [AddNIntegers.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/AddNIntegers.java) | didn't track
+4 | [DivisibleIntegers.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/DivisibleIntegers.java) | didn't track
+5 | [AverageList.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/AverageList.java) | didn't track
+6 | [ReverseDigits.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/ReverseDigits.java) | didn't track
+7 | [DigitalRoot.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/DigitalRoot.java) | didn't track
+8 | [Countdown.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/Countdown.java) | didn't track
+9 | [FibonacciSequence.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/FibonacciSequence.java) | didn't track
+10 | [FibonacciSequence.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/FibonacciSequence.java) | didn't track
+11 | [Pyramid.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/Pyramid.java) | didn't track
+12 | [FindLargest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/FindLargest.java) | didn't track
+13 | [FindTwoLargest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/FindTwoLargest.java) | didn't track
+14 | [CheckerBoardOwn.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/CheckerBoardOwn.java) | didn't track
+15 | [AnimatedSquare.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/AnimatedSquare.java) | didn't track
+16 | [HeadLine.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/HeadLine.java) | didn't track
+Bonus 12 | [Calendar.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/Calendar.java) | didn't track
+
+**Chapter 5, Methods**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [Quadratic.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/Quadratic.java) | didn't track
+2 | [FibonacciSequence.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/FibonacciSequence.java) | didn't track
+3 | [RaiseIntToPower.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/RaiseIntToPower.java) | didn't track
+4 | [CountDigits.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/CountDigits.java) | didn't track
+5 | [Target.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/Target.java) | didn't track
+6 | [DrawStoplight.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/DrawStoplight.java) | didn't track
+7 | [AskYesNoQuestion.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/AskYesNoQuestion.java) | didn't track
+8 | [DrawTrain.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/DrawTrain.java) | didn't track
+9 | [DrawHouse.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/DrawHouse.java) | didn't track
+10 | [DrawHouseOfUsher.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/DrawHouseOfUsher.java) | didn't track
+11 | [PrimeNumber.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/PrimeNumber.java) | didn't track
+12 | [PerfectNumber.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/PerfectNumber.java) | didn't track
+13 | [MazeRunningRobot.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/MazeRunningRobot.java) | didn't track
+Bonus 1 | [GoldenRatio.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/GoldenRatio.java) | didn't track
+Bonus 5 | [RaiseIntToPowerNegatives.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/RaiseIntToPowerNegatives.java) | didn't track
+Bonus 7 | [IsPerfectSquare.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/IsPerfectSquare.java) | didn't track
+Bonus 9 | [Combinations.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/Combinations.java) | didn't track
+
+**Chapter 6, Objects and Classes**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [RandomCard.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/RandomCard.java) | didn't track
+2 | [ConsecutiveHeads.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/ConsecutiveHeads.java) | didn't track
+3 | [Darts.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/Darts.java) | didn't track
+4 | [RadioactiveDecay.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/RadioactiveDecay.java) | didn't track
+5 | [SlotMachine.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/SlotMachine.java) | didn't track
+6 | [MathQuiz.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/MathQuiz.java) | didn't track
+7 | [MathQuiz.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/MathQuiz.java) | didn't track
+8 | [Card.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/Card.java) | didn't track
+9 | [LibraryRecordTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/LibraryRecordTest.java) | didn't track
+10 | [RationalTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/RationalTest.java) | didn't track
+Bonus 1 | [MathQuiz.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/MathQuiz.java) | didn't track
+Bonus 8 | [Employee.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/Employee.java) | didn't track
+
+**Chapter 7, Objects and Memory**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [HexToDecimalConverter.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%207%20(Objects%20and%20Memory)/HexToDecimalConverter.java) | didn't track
+2 | [AverageList.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%207%20(Objects%20and%20Memory)/AverageList.java) | didn't track
+3 | [MathQuiz.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%207%20(Objects%20and%20Memory)/MathQuiz.java) | didn't track
+4 | [GCTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%207%20(Objects%20and%20Memory)/GCTest.java) | didn't track
+
+**Chapter 8, Strings and Characters**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [isEnglishConsonant.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/isEnglishConsonant.java) | didn't track
+2 | [RandomWord.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/RandomWord.java) | didn't track
+3 | [Capitalize.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/Capitalize.java) | didn't track
+4 | [DateString.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/DateString.java) | didn't track
+5 | [WordGame.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/WordGame.java) | didn't track
+6 | [IsPalindrome.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/IsPalindrome.java) | didn't track
+7 | [SentencePalindrome.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/SentencePalindrome.java) | didn't track
+8 | [PluralWords.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/PluralWords.java) | didn't track
+9 | [PresentParticiple.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/PresentParticiple.java) | didn't track
+10 | [OrdinalNumbers.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/OrdinalNumbers.java) | didn't track
+11 | [CaeserCipher.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/CaeserCipher.java) | didn't track
+12 | [MyReadInt.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/MyReadInt.java) | didn't track
+13 | [AddCommas.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/AddCommas.java) | didn't track
+14 | [NumberToWords.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/NumberToWords.java) | didn't track
+15 | [LongestWord.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/LongestWord.java) | didn't track
+16 | [Acronym.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/Acronym.java) | didn't track
+17 | [PigLatin.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/PigLatin.java) | didn't track
+18 | [PigLatin.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/PigLatin.java) | didn't track
+19 | [Obenglobish.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/Obenglobish.java) | didn't track
+20 | [DNA.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/DNA.java) | didn't track
+21 | [OwnStringTokeneizerTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/OwnStringTokeneizerTest.java) | didn't track
+Bonus 6 | [MyIndexOf.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/MyIndexOf.java) | didn't track
+
+
+**Chapter 9, Object-Oriented Graphics**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [FavoritePicture.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/FavoritePicture.java) | didn't track
+2 | [BlackSquareAnimator.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/BlackSquareAnimator.java) | didn't track
+3 | [RandomColorLabel.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/RandomColorLabel.java) | didn't track
+4 | [GPolygonsTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/GPolygonsTest.java) | didn't track
+5 | [Pumpkin.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/Pumpkin.java) | didn't track
+6 | [PumpkinPie.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/PumpkinPie.java) | didn't track
+7 | [DrawHeartOutline.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/DrawHeartOutline.java) | didn't track
+8 | [DrawHeartFilled.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/DrawHeartFilled.java) | didn't track
+9 | [Calendar.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/Calendar.java) | didn't track
+10 | [PascaleTriangle.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/PascaleTriangle.java) | didn't track
+11 | [PatchworkQuilt.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/PatchworkQuilt.java) | didn't track
+12 | [PacMan.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/PacMan.java) | didn't track
+13 | [TrainTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/TrainTest.java) | didn't track
+14 | [SlotMachine.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/SlotMachine.java) | didn't track
+15 | [GLens.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/GLens.java) | didn't track
+16 | [LensImaging.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/LensImaging.java) | didn't track
+Bonus 1 | [Pyramid.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/Pyramid.java) | didn't track
+Bonus 4 | [PeaceSymbol.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/PeaceSymbol.java) | didn't track
+Bonus 5 | [Initials.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/Initials.java) | didn't track
+Bonus 7 | [DrawHouse.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/DrawHouse.java) | didn't track
+Bonus 8 | [DrawHouseOfUsher.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/DrawHouseOfUsher.java) | didn't track
+Bonus 9 | [DrawMemorial.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/DrawMemorial.java) | didn't track
+Bonus 11 | [RandomColorLabel.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/RandomColorLabel.java) | didn't track
+Bonus 12 | [DrawRectangle.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/DrawRectangle.java) | didn't track
+Bonus 13 | [SignalTowerTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/SignalTowerTest.java) | didn't track
+Bonus 14 | [SimpleDraw.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/SimpleDraw.java) | didn't track
+Bonus 15 | [BouncingBall.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/BouncingBall.java) | didn't track
+
+
+**Chapter 10, Event-Driven Programs**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [RandomColorLabel.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/RandomColorLabel.java) | didn't track
+2 | [MouseTracker.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/MouseTracker.java) | didn't track
+3 | [DrawFace.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/DrawFace.java) | didn't track
+4 | [DrawRectangle.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/DrawRectangle.java) | didn't track
+5 | [SimpleDraw.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/SimpleDraw.java) | didn't track
+6 | [DrawStarMap_ColorChooser.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/DrawStarMap_ColorChooser.java) | didn't track
+7 | [DrawStarMap_ColorChooser.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/DrawStarMap_ColorChooser.java) | didn't track
+8 | [BouncingBall.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/BouncingBall.java) | didn't track
+9 | [BouncingBall.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/BouncingBall.java) | didn't track
+10 | [Breakout.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/Breakout.java) | didn't track
+11 | [LenghtConverter.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/LenghtConverter.java) | didn't track
+12 | [Calculator.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/Calculator.java) | didn't track
+
+**Chapter 11, Arrays and ArrayLists**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [GymnasticsJudge.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/GymnasticsJudge.java) | didn't track
+2 | [GymnasticsJudge.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/GymnasticsJudge.java) | didn't track
+3 | [GymnasticsJudge.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/GymnasticsJudge.java) | didn't track
+4 | [isMagicSquare.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/isMagicSquare.java) | didn't track
+5 | [SudokuChecker.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/SudokuChecker.java) | didn't track
+6 | [Eratosthenes.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/Eratosthenes.java) | didn't track
+7 | [LineGraph.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/LineGraph.java) | didn't track
+8 | [MorseCode.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/MorseCode.java) | didn't track
+9 | [MorseCodeVisual.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/MorseCodeVisual.java) | didn't track
+10 | [Nim.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/Nim.java) | didn't track
+11 | [BitwiseOperatorDemo.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/BitwiseOperatorDemo.java) | didn't track
+12 | [FlipAndRotateTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/FlipAndRotateTest.java) | didn't track
+13 | [FlipAndRotateTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/FlipAndRotateTest.java) | didn't track
+14 | [ClipImageTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/ClipImageTest.java) | didn't track
+15 | [MakeNegativeColorTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/MakeNegativeColorTest.java) | didn't track
+Bonus 6 | [Histogram.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/Histogram.java) | didn't track
+Bonus 7 | [ProbabilityBoard.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/ProbabilityBoard.java) | didn't track
+Bonus 9 | [TicTacToe.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/TicTacToe.java) | didn't track
+Bonus 10 | [Checkers.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/Checkers.java) | didn't track
+Bonus 11 | [Checkers.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/Checkers.java) | didn't track
+
+**Chapter 12, Searching and Sorting**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [GuessTheNumber.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/GuessTheNumber.java) | didn't track
+2 | [IsSortedTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/IsSortedTest.java) | didn't track
+3 | [IsSortedTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/IsSortedTest.java) | didn't track
+4 | [SelectionSortString.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/SelectionSortString.java) | didn't track
+5 | [Median.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/Median.java) | didn't track
+6 | [Mode.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/Mode.java) | didn't track
+7 | [Shuffle.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/Shuffle.java) | didn't track
+8 | [DutchNationalFlag.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/DutchNationalFlag.java) | didn't track
+9 | [InsertionSort.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/InsertionSort.java) | didn't track
+10 | [RadixSort.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/RadixSort.java) | didn't track
+11 | [WordCount.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/WordCount.java) | didn't track
+12 | [Untabifyer.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/Untabifyer.java) | didn't track
+13 | [Greek.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/Greek.java) | didn't track
+14 | [CrossWordGrid.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/CrossWordGrid.java) | didn't track
+
+**Chapter 13, Collection Classes**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [GuessTheNumber.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/TestSimpleStringMapE1.java) | didn't track
+2 | [SimpleStringMapOwnE2.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/SimpleStringMapOwnE2.java) | didn't track
+3 | [SimpleStringMapOwnE3E4.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/SimpleStringMapOwnE3E4.java) | didn't track
+4 | [SimpleStringMapOwnE3E4.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/SimpleStringMapOwnE3E4.java) | didn't track
+5 | [SimpleStringMapOwnE5.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/SimpleStringMapOwnE5.java) | didn't track
+6 | [LexiconTesting.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/LexiconTesting.java) | didn't track
+7 | [PigLatinTesting.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/PigLatinTesting.java) | didn't track
+8 | [EqualHashCodeTesting.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/EqualHashCodeTesting.java) | didn't track
+9 | [FilmsSorter.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/FilmsSorter.java) | didn't track
+10 | [SparseMatrixTesting.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/SparseMatrixTesting.java) | didn't track
+
+**Chapter 14, Looking Ahead**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [FibonacciRecursion.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2014/FibonacciRecursion.java) | didn't track
+2 | [Cannonball.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2014/Cannonball.java) | didn't track
+3 | [PascaleTriangleRecursive.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2014/PascaleTriangleRecursive.java) | didn't track
+4 | [IsPalindromeRecursive.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2014/IsPalindromeRecursive.java) | didn't track
+5 | [HanoiTowerRecursion.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2014/HanoiTowerRecursion.java) | didn't track
+6 | [DrawMap.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2014/DrawMap.java) | didn't track
+7 | [TestAnimatedSquare.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2014/TestAnimatedSquare.java) | didn't track
+8 | [HousePoints.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2014/HousePoints.java) | didn't track
+
+# Links
+
+* **[Stanford CS106A, Java](https://see.stanford.edu/Course/CS106A)**: Java version of CS106A offered by Stanford Center for Professional Development.
+* **[Stanford CS106A, Python](https://online.stanford.edu/courses/cs106a-programming-methodology)**: Phyton version of CS106A offered by Stanford Online.
