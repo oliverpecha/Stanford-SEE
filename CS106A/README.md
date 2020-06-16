@@ -1,8 +1,8 @@
-![Open Source Society University (OSSU)](http://i.imgur.com/kYYCXtC.png)
+![Open Source Society University (OSSU)](https://see.stanford.edu/Content/Images/Courses/CS106A.jpg)
 
-<h3 align="center">Open Source Society University</h3>
+<h3 align="center">Programming Methodology, CS106A</h3>
 <p align="center">
-  Path to a free self-taught education in Computer Science!
+  Sahami, Mehran
 </p>
 <p align="center">
   <a href="https://github.com/sindresorhus/awesome">
@@ -16,23 +16,71 @@
 # Contents
 
 - [Summary](#summary)
+- [Course Description](#course-description)
 - [Community](#community)
 - [Curriculum](#curriculum)
 - [Code of conduct](#code-of-conduct)
 - [Team](#team)
 
-# Summary
+# Course Description
 
-The OSSU curriculum is a **complete education in computer science** using online materials.
-It's not merely for career training or professional development.
-It's for those who want a proper, *well-rounded* grounding in concepts fundamental to all computing disciplines,
-and for those who have the discipline, will, and (most importantly!) good habits to obtain this education largely on their own,
-but with support from a worldwide community of fellow learners.
+This course is the largest of the introductory programming courses and is one of the largest courses at Stanford. Topics focus on the introduction to the engineering of computer applications emphasizing modern software engineering principles: object-oriented design, decomposition, encapsulation, abstraction, and testing.
+Programming Methodology teaches the widely-used Java programming language along with good software engineering principles. Emphasis is on good programming style and the built-in facilities of the Java language. The course is explicitly designed to appeal to humanists and social scientists as well as hard-core techies. In fact, most Programming Methodology graduates end up majoring outside of the School of Engineering.
 
-It is designed according to the degree requirements of undergraduate computer science majors, minus general education (non-CS) requirements,
-as it is assumed most of the people following this curriculum are already educated outside the field of CS.
-The courses themselves are among the very best in the world, often coming from Harvard, Princeton, MIT, etc.,
-but specifically chosen to meet the following criteria.
+**Prerequisites:** The course requires no previous background in programming, *but does require considerable dedication and hard work*.
+
+
+# Instructor
+
+**Sahami, Mehran**
+I joined the Computer Science Department at Stanford University as Associate Professor (Teaching), Associate Chair for Undergraduate Education, and Director of Educational Affairs. From 2001 to 2006, I also taught in the CS department at Stanford as a Lecturer. From 2002-2007, I was a Senior Research Scientist at Google, where I continue to maintain a consulting appointment in the research group. My research interests include computer science education, machine learning, and information retrieval on the Web. Please see my publications web page for more information.
+
+Previously, I worked for several years as a Senior Engineering Manager at Epiphany. Prior to working at Epiphany, I completed my PhD in the Computer Science Department at Stanford. I was also an undergrad at Stanford and I loved it so much that I didn't want to leave.
+
+Outside of work, I enjoy spending time with family, playing the guitar, going on outdoor excursions, and sleeping (which seems to be getting rarer and rarer these days).
+
+
+# Units
+If you are an undergraduate, you are required to take CS 106A for 5 units of credit. If you
+are a graduate student, you may enroll in CS 106A for 3 units if it is necessary for you to
+reduce your units for administrative reasons. Taking the course for reduced units does
+not imply any change in the course requirements. 
+
+# Texts and handouts
+There are two required texts for this class, both of which are available from the Stanford
+Bookstore. The first is a course reader entitled Karel the Robot Learns Java—a 35-page
+tutorial that introduces the major concepts in programming in the context of an extremely
+simple robot world. The second is the textbook The Art and Science of Java by Eric
+Roberts. In addition to these texts, we will also distribute additional material in the form
+of class handouts. After class, any extra copies of the handouts will be placed in the
+handout bins in the entryway to the Gates B-wing. The handouts are also available in
+PDF® format on the CS 106 web site. If you miss a handout in class, you can print your
+own copy from the web. 
+
+# Programming assignments
+As you can see from the syllabus, there will be seven assignments (Assignment 1 –
+Assignment 7). The assignments will become slightly more difficult and require more
+time as the quarter progresses. 
+
+
+# Programming exercises
+
+
+Eric Roberts > books > The Art and Science of Java
+**Chapter 2, Programming by Example**
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [HelloProgram.java](https://www.coursera.org/specializations/python) | 8 hours
+2 | [Calculus.java](https://www.coursera.org/specializations/python) | 16 hours
+3 | [Add3Integers.java](https://www.coursera.org/specializations/python) | 3 hours
+
+
+Courses | Effort | Prerequisites
+:-- | :--: | :--:
+[Python for Everyone](https://www.coursera.org/specializations/python) ([alt](https://www.py4e.com/)) | 58 hours | none
+[Fundamentals of Computing](https://www.coursera.org/specializations/computer-fundamentals) | 138 hours | high school mathematics
+
+
 
 **Courses must**:
 - Be open for enrollment
