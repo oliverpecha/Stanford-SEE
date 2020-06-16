@@ -4,23 +4,13 @@
 <p align="center">
   Sahami, Mehran
 </p>
-<p align="center">
-  <a href="https://github.com/sindresorhus/awesome">
-    <img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg">
-  </a>
-  <a href="https://github.com/ossu/computer-science">
-	<img alt="Open Source Society University - Computer Science" src="https://img.shields.io/badge/OSSU-computer--science-blue.svg">
-  </a>
-</p>
 
 # Contents
-
-- [Summary](#summary)
 - [Course Description](#course-description)
-- [Community](#community)
-- [Curriculum](#curriculum)
-- [Code of conduct](#code-of-conduct)
-- [Team](#team)
+- [Units and programming assignments](#units-and-programming-assignments)
+- [Texts and handouts](#texts-and-handouts)
+- [Completed Programming exercises](#completed-programming-exercises)
+
 
 # Course Description
 
@@ -37,36 +27,18 @@ I joined the Computer Science Department at Stanford University as Associate Pro
 
 Previously, I worked for several years as a Senior Engineering Manager at Epiphany. Prior to working at Epiphany, I completed my PhD in the Computer Science Department at Stanford. I was also an undergrad at Stanford and I loved it so much that I didn't want to leave.
 
-Outside of work, I enjoy spending time with family, playing the guitar, going on outdoor excursions, and sleeping (which seems to be getting rarer and rarer these days).
 
+# Units and programming assignments
+If you are an undergraduate, you are required to take CS 106A for 5 units of credit. If you are a graduate student, you may enroll in CS 106A for 3 units if it is necessary for you to reduce your units for administrative reasons. Taking the course for reduced units does not imply any change in the course requirements. As you can see from the syllabus, there will be seven assignments (Assignment 1 – Assignment 7). The assignments will become slightly more difficult and require more time as the quarter progresses. 
 
-# Units
-If you are an undergraduate, you are required to take CS 106A for 5 units of credit. If you
-are a graduate student, you may enroll in CS 106A for 3 units if it is necessary for you to
-reduce your units for administrative reasons. Taking the course for reduced units does
-not imply any change in the course requirements. 
 
 # Texts and handouts
-There are two required texts for this class, both of which are available from the Stanford
-Bookstore. The first is a course reader entitled Karel the Robot Learns Java—a 35-page
-tutorial that introduces the major concepts in programming in the context of an extremely
-simple robot world. The second is the textbook The Art and Science of Java by Eric
-Roberts. In addition to these texts, we will also distribute additional material in the form
-of class handouts. After class, any extra copies of the handouts will be placed in the
-handout bins in the entryway to the Gates B-wing. The handouts are also available in
-PDF® format on the CS 106 web site. If you miss a handout in class, you can print your
-own copy from the web. 
-
-# Programming assignments
-As you can see from the syllabus, there will be seven assignments (Assignment 1 –
-Assignment 7). The assignments will become slightly more difficult and require more
-time as the quarter progresses. 
+There are two required texts for this class, both of which are available from the Stanford Bookstore. The first is a course reader entitled Karel the Robot Learns Java—a 35-page tutorial that introduces the major concepts in programming in the context of an extremely simple robot world. The second is the textbook The Art and Science of Java by Eric Roberts. In addition to these texts, we will also distribute additional material in the form of class handouts. After class, any extra copies of the handouts will be placed in the handout bins in the entryway to the Gates B-wing. The handouts are also available in PDF® format on the CS 106 web site. If you miss a handout in class, you can print your own copy from the web. 
 
 
-# Programming exercises
+# Completed Programming exercises
 
-
-Eric Roberts > books > The Art and Science of Java
+**The Art and Science of Java, Eric Roberts**
 
 **Chapter 2, Programming by Example**
 Exercise | File | Effort
@@ -306,9 +278,7 @@ Exercise | File | Effort
 7 | [TestAnimatedSquare.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2014/TestAnimatedSquare.java) | didn't track
 8 | [HousePoints.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2014/HousePoints.java) | didn't track
 
-# Team
+# Links
 
-* **[Eric Douglas](https://github.com/ericdouglas)**: founder of OSSU
-* **[hanjiexi](https://github.com/hanjiexi)**: lead technical maintainer
-* **[waciumawanjohi](https://github.com/waciumawanjohi)**: lead academic maintainer
-* **[Contributors](https://github.com/ossu/computer-science/graphs/contributors)**
+* **[Stanford CS106A, Java](https://see.stanford.edu/Course/CS106A)**: Java version of CS106A offered by Stanford Center for Professional Development.
+* **[Stanford CS106A, Python](https://online.stanford.edu/courses/cs106a-programming-methodology)**: Phyton version of CS106A offered by Stanford Online.
