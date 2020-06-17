@@ -38,20 +38,32 @@ There are two required texts for this class, both of which are available from th
 
 # Completed Programming exercises
 
+**Section Assignments**
+
+**Section Handout #3**
+
+[Parameters, Random Numbers, and Simple Graphics](https://see.stanford.edu/materials/icspmcs106a/20-section-handout-3.pdf)
+Exercise | File | Effort
+:-- | :--: | :--:
+3 | [RandomCircles.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/SectionAssignment2/RandomCircles.java) | 0.5 hours
+4 | [DrawLines.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/SectionAssignment2/DrawLines.java) | 0.5 hours
+||~1 hour total programming effort
+
 **The Art and Science of Java, Eric Roberts**
+
 
 **Chapter 2, Programming by Example**
 Exercise | File | Effort
 :-- | :--: | :--:
-1 | [HelloProgram.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/HelloProgram.java) | didn't track
-2 | [Calculus.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/Calculus.java) | didn't track
-3 | [Add3Integers.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/Add3Integers.java) | didn't track
-4 | [DrawHouse.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/DrawHouse.java) | didn't track
-5 | [RobotFace.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/RobotFace.java) | didn't track
-6 | [Target.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/Target.java) | didn't track
-7 | [OlympicRings.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/OlympicRings.java) | didn't track
-8 | [OlympicRings.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/OlympicRings.java) | didn't track
-9 | [Rainbow.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%202/Rainbow.java) | didn't track
+1 | [HelloProgram.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/BookExercisesChapter02%20(Programming%20by%20Example)/HelloProgram.java) | didn't track
+2 | [Calculus.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/BookExercisesChapter02%20(Programming%20by%20Example)/Calculus.java) | didn't track
+3 | [Add3Integers.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/BookExercisesChapter02%20(Programming%20by%20Example)/Add3Integers.java) | didn't track
+4 | [DrawHouse.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/BookExercisesChapter02%20(Programming%20by%20Example)/DrawHouse.java) | didn't track
+5 | [RobotFace.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/BookExercisesChapter02%20(Programming%20by%20Example)/RobotFace.java) | didn't track
+6 | [Target.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/BookExercisesChapter02%20(Programming%20by%20Example)/Target.java) | didn't track
+7 | [OlympicRings.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/BookExercisesChapter02%20(Programming%20by%20Example)/OlympicRings.java) | didn't track
+8 | [OlympicRings.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/BookExercisesChapter02%20(Programming%20by%20Example)/OlympicRings.java) | didn't track
+9 | [Rainbow.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/BookExercisesChapter02%20(Programming%20by%20Example)/Rainbow.java) | didn't track
 
 **Chapter 3, Expressions**
 Exercise | File | Effort
