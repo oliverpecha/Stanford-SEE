@@ -67,7 +67,7 @@ Exercise | File | Effort
 9 | [StIves.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/StIves.java) | didn't track
 10 | [TicTacToeBoard.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/TicTacToeBoard.java) | didn't track
 11 | [BuildHouse.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%203%20(Expressions)/BuildHouse.java) | didn't track
-~14 hours total programming effort
+||~14 hours total programming effort
 
 **Chapter 4, Statement Forms**
 Exercise | File | Effort
@@ -89,7 +89,7 @@ Exercise | File | Effort
 15 | [AnimatedSquare.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/AnimatedSquare.java) | didn't track
 16 | [HeadLine.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/HeadLine.java) | didn't track
 Bonus 12 | [Calendar.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%204%20(Statement%20Forms)/Calendar.java) | didn't track
-~50 hours total programming effort
+||~50 hours total programming effort
 
 **Chapter 5, Methods**
 Exercise | File | Effort
@@ -111,7 +111,7 @@ Bonus 1 | [GoldenRatio.java](https://github.com/oliverpecha/Stanford-SEE/blob/ma
 Bonus 5 | [RaiseIntToPowerNegatives.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/RaiseIntToPowerNegatives.java) | didn't track
 Bonus 7 | [IsPerfectSquare.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/IsPerfectSquare.java) | didn't track
 Bonus 9 | [Combinations.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%205%20(Methods)/Combinations.java) | didn't track
-~26 hours total programming effort
+||~26 hours total programming effort
 
 **Chapter 6, Objects and Classes**
 Exercise | File | Effort
@@ -128,7 +128,7 @@ Exercise | File | Effort
 10 | [RationalTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/RationalTest.java) | didn't track
 Bonus 1 | [MathQuiz.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/MathQuiz.java) | didn't track
 Bonus 8 | [Employee.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%206%20(Objects%20and%20Classes)/Employee.java) | didn't track
-~17 hours total programming effort
+||~17 hours total programming effort
 
 **Chapter 7, Objects and Memory**
 Exercise | File | Effort
@@ -137,7 +137,7 @@ Exercise | File | Effort
 2 | [AverageList.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%207%20(Objects%20and%20Memory)/AverageList.java) | didn't track
 3 | [MathQuiz.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%207%20(Objects%20and%20Memory)/MathQuiz.java) | didn't track
 4 | [GCTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%207%20(Objects%20and%20Memory)/GCTest.java) | didn't track
-~5 hours total programming effort
+||~5 hours total programming effort
 
 **Chapter 8, Strings and Characters**
 Exercise | File | Effort
@@ -164,7 +164,7 @@ Exercise | File | Effort
 20 | [DNA.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/DNA.java) | 4.5 hours
 21 | [OwnStringTokeneizerTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/OwnStringTokeneizerTest.java) | 8.5 hours
 Bonus 6 | [MyIndexOf.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%208%20(Strings%20and%20Characters)/MyIndexOf.java) | 1 hour
-~67 hours total programming effort
+||~67 hours total programming effort
 
 **Chapter 9, Object-Oriented Graphics**
 Exercise | File | Effort
@@ -196,7 +196,7 @@ Bonus 12 | [DrawRectangle.java](https://github.com/oliverpecha/Stanford-SEE/blob
 Bonus 13 | [SignalTowerTest.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/SignalTowerTest.java) | 6 hours
 Bonus 14 | [SimpleDraw.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/SimpleDraw.java) | 1 hour
 Bonus 15 | [BouncingILoveJava.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%209%20(Object-Oriented%20Graphics)/BouncingILoveJava.java) | 3 hours
-~57 hours total programming effort
+||~57 hours total programming effort
 
 **Chapter 10, Event-Driven Programs**
 Exercise | File | Effort
@@ -213,7 +213,7 @@ Exercise | File | Effort
 10 | [Breakout.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/Breakout.java) | 9 hours
 11 | [LenghtConverter.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/LenghtConverter.java) | 5 hours
 12 | [Calculator.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2010/Calculator.java) | 8 hours
-~54 hours total programming effort
+||~54 hours total programming effort
 
 **Chapter 11, Arrays and ArrayLists**
 Exercise | File | Effort
@@ -238,7 +238,7 @@ Bonus 7 | [ProbabilityBoard.java](https://github.com/oliverpecha/Stanford-SEE/bl
 Bonus 9 | [TicTacToe.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/TicTacToe.java) | 4 hours
 Bonus 10 | [Checkers.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/Checkers.java) | 0.5 hours
 Bonus 11 | [Checkers.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2011/Checkers.java) | 0.5 hours
-~65 hours total programming effort
+||~65 hours total programming effort
 
 **Chapter 12, Searching and Sorting**
 Exercise | File | Effort
@@ -257,7 +257,7 @@ Exercise | File | Effort
 12 | [Untabifyer.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/Untabifyer.java) | 5 hours
 13 | [Greek.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/Greek.java) | 1 hour
 14 | [CrossWordGrid.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2012/CrossWordGrid.java) | 6 hours track
-~39 hours total programming effort
+||~39 hours total programming effort
 
 **Chapter 13, Collection Classes**
 Exercise | File | Effort
@@ -272,7 +272,7 @@ Exercise | File | Effort
 8 | [EqualHashCodeTesting.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/EqualHashCodeTesting.java) | 1 hour
 9 | [FilmsSorter.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/FilmsSorter.java) | 4 hours
 10 | [SparseMatrixTesting.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2013/SparseMatrixTesting.java) | 1.5 hours
-~55 hours total programming effort
+||~55 hours total programming effort
 
 **Chapter 14, Looking Ahead**
 Exercise | File | Effort
@@ -285,7 +285,7 @@ Exercise | File | Effort
 6 | [DrawMap.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2014/DrawMap.java) | 13.5 hours
 7 | [TestAnimatedSquare.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2014/TestAnimatedSquare.java) | 4 hours
 8 | [HousePoints.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Programming%20Exercises%20from%20the%20Art%20of%20Java%2C%20Chapter%2014/HousePoints.java) | 4.5 hours
-~40.5 hours total programming effort
+||~40.5 hours total programming effort
 
 # Links
 
