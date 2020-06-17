@@ -49,6 +49,26 @@ Exercise | File | Effort
 4 | [DrawLines.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/SectionAssignment3/DrawLines.java) | 0.5 hours
 ||~1 hour total programming effort
 
+**Section Handout #4**
+
+[String Processing](https://see.stanford.edu/materials/icspmcs106a/24-section-handout-4.pdf)
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [AddCommas.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/SectionAssignment4/AddCommas.java) | extract from book
+2 | [DrawLines.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/SectionAssignment3/DrawLines.java) | extract from book
+||0 hours total programming effort
+
+**Section Handout #4**
+
+[String Processing](https://see.stanford.edu/materials/icspmcs106a/24-section-handout-4.pdf)
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [WordCount.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/SectionAssignment5/WordCount.java) | book + 0.5 hours
+2 | [Histograms.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/SectionAssignment5/Histograms.java) | 1.5 hours
+3 | [DrawLines.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/SectionAssignment5/DrawLines.java) | hours
+||~0 hours total programming effort
+
+
 **The Art and Science of Java, Eric Roberts**
 
 
