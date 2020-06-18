@@ -41,7 +41,6 @@ There are two required texts for this class, both of which are available from th
 **Section Assignments**
 
 **Section Handout #3**
-
 [Parameters, Random Numbers, and Simple Graphics](https://see.stanford.edu/materials/icspmcs106a/20-section-handout-3.pdf)
 Exercise | File | Effort
 :-- | :--: | :--:
@@ -50,7 +49,6 @@ Exercise | File | Effort
 ||~1 hour total programming effort
 
 **Section Handout #4**
-
 [String Processing](https://see.stanford.edu/materials/icspmcs106a/24-section-handout-4.pdf)
 Exercise | File | Effort
 :-- | :--: | :--:
@@ -58,15 +56,30 @@ Exercise | File | Effort
 2 | [DrawLines.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/SectionAssignment3/DrawLines.java) | extract from book
 ||0 hours total programming effort
 
-**Section Handout #4**
-
-[String Processing](https://see.stanford.edu/materials/icspmcs106a/24-section-handout-4.pdf)
+**Section Handout #5**
+[Files, Arrays, and ArrayLists](https://see.stanford.edu/materials/icspmcs106a/30-section-handout-5.pdf)
 Exercise | File | Effort
 :-- | :--: | :--:
 1 | [WordCount.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/SectionAssignment5/WordCount.java) | book + 0.5 hours
 2 | [Histograms.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/SectionAssignment5/Histograms.java) | 1.5 hours
-3 | [DrawLines.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/SectionAssignment5/DrawLines.java) | hours
-||~0 hours total programming effort
+3 | [UniqueNames.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/SectionAssignment5/UniqueNames.java) | 1 hour
+||~3 hours total programming effort
+
+**Section Handout #6**
+[MoreArrays and HashMaps](https://see.stanford.edu/materials/icspmcs106a/34-section-handout-6.pdf)
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [ImageProcessing.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/SectionAssignment6/ImageProcessing.java) | extract from book
+2 | [NameCounts.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/SectionAssignment6/NameCounts.java) | 0.5 hours
+||~0.5 hours total programming effort
+
+**Section Handout #7**
+[MoreArrays and HashMaps](https://see.stanford.edu/materials/icspmcs106a/34-section-handout-6.pdf)
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [ImageProcessing.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/SectionAssignment6/ImageProcessing.java) | extract from book
+2 | [NameCounts.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/SectionAssignment6/NameCounts.java) | 0.5 hours
+||~0.5 hours total programming effort
 
 
 **The Art and Science of Java, Eric Roberts**
