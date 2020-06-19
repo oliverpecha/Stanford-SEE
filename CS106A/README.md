@@ -80,6 +80,13 @@ Exercise | File | Effort
 1 | [BoxDiagram.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/SectionAssignment7/BoxDiagram.java) | 3 hours
 ||~3 hours total programming effort
 
+**Section Handout #8**
+[Using Interactors](https://see.stanford.edu/materials/icspmcs106a/38-section-handout-7.pdf)
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [FlightPlanner.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/SectionAssignment8/FlightPlanner.java) | 3 hours
+||~3 hours total programming effort
+
 
 **The Art and Science of Java, Eric Roberts**
 
