@@ -74,12 +74,11 @@ Exercise | File | Effort
 ||~0.5 hours total programming effort
 
 **Section Handout #7**
-[MoreArrays and HashMaps](https://see.stanford.edu/materials/icspmcs106a/34-section-handout-6.pdf)
+[Using Interactors](https://see.stanford.edu/materials/icspmcs106a/38-section-handout-7.pdf)
 Exercise | File | Effort
 :-- | :--: | :--:
-1 | [ImageProcessing.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/SectionAssignment6/ImageProcessing.java) | extract from book
-2 | [NameCounts.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/SectionAssignment6/NameCounts.java) | 0.5 hours
-||~0.5 hours total programming effort
+1 | [BoxDiagram.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/SectionAssignment7/BoxDiagram.java) | 3 hours
+||~3 hours total programming effort
 
 
 **The Art and Science of Java, Eric Roberts**
