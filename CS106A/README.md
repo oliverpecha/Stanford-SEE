@@ -87,6 +87,13 @@ Exercise | File | Effort
 1 | [FlightPlanner.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/SectionAssignment8/FlightPlanner.java) | 3 hours
 ||~3 hours total programming effort
 
+**Section Handout #9**
+[Objects and Data structures](https://see.stanford.edu/materials/icspmcs106a/45-section-handout-9.pdf)
+Exercise | File | Effort
+:-- | :--: | :--:
+1 | [ExpandableArrayTest.java](https://github.com/oliverpecha/Stanford-SEE/tree/master/CS106A/SectionAssignment9/ExpandableArrayTest.java) | 1 hour
+||~1 hour total programming effort
+
 
 **The Art and Science of Java, Eric Roberts**
 
