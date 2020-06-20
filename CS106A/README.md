@@ -38,6 +38,27 @@ There are two required texts for this class, both of which are available from th
 
 # Completed Programming exercises
 
+
+
+
+**Assignments**
+
+to replace #2
+**Assignment #2**
+[Breakout!](https://see.stanford.edu/materials/icspmcs106a/19-assignment-3-breakout.pdf)
+Exercise | File | Effort
+:-- | :--: | :--:
+3 | [BreakOut.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Assignment3/BreakOut.java) | from book
+||~0 hours total programming effort
+
+**Assignment #3**
+[Breakout!](https://see.stanford.edu/materials/icspmcs106a/19-assignment-3-breakout.pdf)
+Exercise | File | Effort
+:-- | :--: | :--:
+3 | [BreakOut.java](https://github.com/oliverpecha/Stanford-SEE/blob/master/CS106A/Assignment3/BreakOut.java) | from book
+||~0 hours total programming effort
+
+
 **Section Assignments**
 
 **Section Handout #3**
