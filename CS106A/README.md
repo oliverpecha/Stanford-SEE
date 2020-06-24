@@ -44,7 +44,7 @@ There are two required texts for this class, both of which are available from th
 **Assignments**
 
 to replace #2
-**Assignment #2**
+**	 #2**
 [Breakout!](https://see.stanford.edu/materials/icspmcs106a/19-assignment-3-breakout.pdf)
 Exercise | File | Effort
 :-- | :--: | :--:
