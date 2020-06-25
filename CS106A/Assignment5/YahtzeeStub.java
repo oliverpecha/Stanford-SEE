@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class YahtzeeStub implements YahtzeeConstants {
 
@@ -45,19 +46,55 @@ public class YahtzeeStub implements YahtzeeConstants {
 	}
 	
 	private int categoryThreeOfAKind(int [] dices) {
-		return 33;
+		int repeating = findRepeating(dices, 3, 0);
+		return repeating * 3;
 	}
 	
 	private int categoryFourOfAKind(int [] dices) {
-		return 44;
+		int repeating = findRepeating(dices, 4, 0);
+		return repeating * 4;
+	}
+	
+	private int findRepeating(int [] dices, int goal, int exception) {
+		for (int i = 0; i < dices.length; i++) {
+			if (dices[i] != exception) {
+				int count = 1;
+				int repeating = dices[i];
+				for (int u = 0; u < dices.length; u++) {
+					if (u != i && dices[u] == repeating) count++; 
+					if (count == goal) return repeating;	
+				}	
+			}
+		}
+		return 0;
+	
 	}
 	
 	private int categoryFullHouse(int [] dices) {
-		return 25;
+		int repeatingFirst = findRepeating(dices, 3, 0);
+		int repeatingSecond = 0;
+		if (repeatingFirst > 0) {
+			repeatingSecond = findRepeating(dices, 2, repeatingFirst);
+		}
+		if (repeatingSecond > 0) return 25;
+		else return 0;
 	}
 	
 	private int categorySmallStraight(int [] dices) {
+		Arrays.sort(dices);
+		int min = dices[0];
+		int target = 4;
+		if (hasNextValue(dices, min + 1)) target--;
+	
+			
 		return 30;
+	}
+	
+	private boolean hasNextValue(int [] dices, int target) {
+		for (int i = 0; i < dices.length; i++) {
+			if (dices[i] == target) return true;
+		}
+		return false;
 	}
 
 	private int categoryLargeStraight(int [] dices) {

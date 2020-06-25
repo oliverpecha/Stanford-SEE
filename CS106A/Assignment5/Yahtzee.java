@@ -46,6 +46,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 		computeScores();
 		computeBonus();
 		computeTotal();
+		displayResults();
 	}
 
 	private void computeScores() {
@@ -72,21 +73,42 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 	private void computeTotal() {
 		for (int p = 1; p <= nPlayers; p++) {
 			int total = model.getScore(p - 1, UPPER_SCORE) + model.getScore(p - 1, LOWER_SCORE) + model.getScore(p - 1, UPPER_BONUS);
+			model.setScore(p - 1, TOTAL, total);
 		}
 	}
+	
+	private void displayResults() {
+		for (int p = 1; p <= nPlayers; p++) {
+			display.updateScorecard(LOWER_SCORE, p - 1, model.getScore(p - 1, LOWER_SCORE));
+			display.updateScorecard(UPPER_SCORE, p - 1, model.getScore(p - 1, UPPER_SCORE));
+			display.updateScorecard(TOTAL, p - 1, model.getScore(p - 1, TOTAL));
+		}
+	}
+	
 		
 	private void enterCategory(int[] dices, int player) {
 		YahtzeeMagicStub test = new  YahtzeeMagicStub();
 		YahtzeeStub stub = new  YahtzeeStub();
-		int category = display.waitForPlayerToSelectCategory();
-		int value = 0;
-		if (test.checkCategory(dices, category)) {
-			System.out.println("good"); 
-			value = stub.pointsForCategory(dices, category);
+		while (true) {
+			int category = display.waitForPlayerToSelectCategory();
+			/*if (model.getScore(player - 1, category) < 0) {
+				int value = 0;
+				if (test.checkCategory(dices, category)) value = stub.pointsForCategory(dices, category);
+				model.setScore(player - 1, category, value);
+				display.updateScorecard(category, player, model.getScore(player - 1, category));
+				break;
+			}*/
+			if (model.getScore(player - 1, category) < 0) {
+				int value = stub.pointsForCategory(dices, category);
+				model.setScore(player - 1, category, value);
+				display.updateScorecard(category, player, model.getScore(player - 1, category));
+				break;
+			}
+			else {
+				IODialog dialog = getDialog();
+				dialog.println("You already choose this category before, choose a new one.");
+			}
 		}
-		else System.out.println("bad");
-		model.setScore(player - 1, category, model.getScore(player - 1, category) + value);
-		display.updateScorecard(category, player, model.getScore(player - 1, category));
 	}
 
 	private int[] rollDices(int player) {
