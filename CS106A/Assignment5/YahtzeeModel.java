@@ -2,7 +2,7 @@
 public class YahtzeeModel implements YahtzeeConstants {
 	
 	public YahtzeeModel(int nPlayers) {
-		scoreBoard = new int[nPlayers][N_CATEGORIES];
+		scoreBoard = new int[nPlayers + 1][N_CATEGORIES + 1];
 		setToNegatives();
 	}
 	

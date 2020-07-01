@@ -22,27 +22,37 @@ public class YahtzeeStub implements YahtzeeConstants {
 	}
 	
 	private int categoryOnes(int [] dices) {
-		return 1;
+		return categoryAll(dices, 1);
 	}
 	
 	private int categoryTwos(int [] dices) {
-		return 2;
+		return categoryAll(dices, 2);
 	}
 	
 	private int categoryThrees(int [] dices) {
-		return 3;
+		return categoryAll(dices, 3);
 	}
 	
 	private int categoryFours(int [] dices) {
-		return 4;
+		return categoryAll(dices, 4);
 	}
 	
 	private int categoryFives(int [] dices) {
-		return 5;
+		return categoryAll(dices, 5);
 	}
 	
 	private int categorySixes(int [] dices) {
-		return 6;
+		return categoryAll(dices, 6);
+	}
+	
+	private int categoryAll(int [] dices, int value) {
+		int result = 0;
+		for (int i = 0; i < dices.length; i++) {
+			if ( dices[i] == value) {
+				result += dices[i];
+			}	
+		}
+		return result;
 	}
 	
 	private int categoryThreeOfAKind(int [] dices) {
@@ -81,13 +91,32 @@ public class YahtzeeStub implements YahtzeeConstants {
 	}
 	
 	private int categorySmallStraight(int [] dices) {
-		Arrays.sort(dices);
-		int min = dices[0];
-		int target = 4;
-		if (hasNextValue(dices, min + 1)) target--;
+		int consecutive = 4;
+		return straighValues(dices, consecutive);
+	}
 	
-			
-		return 30;
+	private int categoryLargeStraight(int [] dices) {
+		int consecutive = 5;
+		return straighValues(dices, consecutive);
+	}
+	
+	private int straighValues(int [] dices, int consecutive) {
+		Arrays.sort(dices);
+		int testValue = dices[0] + 1;
+		int remaining = consecutive - 1;
+		int lowestAccepted =  6 - consecutive + 1 + 1 + 1;
+		if (testValue < lowestAccepted) {  
+			for (int i = 0; i < dices.length; i++) {
+				if (hasNextValue(dices, testValue)) {
+					remaining--;
+					if (remaining == 0 && consecutive == 5) return 40;
+					if (remaining == 0 && consecutive == 4) return 30;
+					testValue++;
+				}
+				else break;
+			}	
+		}
+		return 0;
 	}
 	
 	private boolean hasNextValue(int [] dices, int target) {
@@ -96,17 +125,21 @@ public class YahtzeeStub implements YahtzeeConstants {
 		}
 		return false;
 	}
-
-	private int categoryLargeStraight(int [] dices) {
-		return 40;
-	}
 	
 	private int categoryYahtzee(int [] dices) {
+		int reference = dices[0];
+		for (int i = 1; i < dices.length; i++) {
+			if (dices[i] != reference) return 0;
+		}
 		return 50;
 	}
 
 	private int categoryChance(int [] dices) {
-		return 99;
+		int result = 0;
+		for (int i = 0; i < dices.length; i++) {
+			result += dices[i];
+		}
+		return result;
 	}
 
 }
