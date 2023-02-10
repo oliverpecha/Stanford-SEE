@@ -17,18 +17,18 @@ const int SENTINEL = -1;
 int students= 0;
 double input = 0;
 double sum = 0;
-double average = 0;
 
 int main() {
 
     cout << "This program calculates the average of student scores. Enter " << SENTINEL << " to signal the end of the list." << endl;
 
     while (input != SENTINEL) {
+
         input = getInteger("? ");
+
         if (input != SENTINEL) {
-        sum += input;
-        students++;
-cout << "# of students: " << students << endl;
+            sum += input;
+            students++;
         }
     }
     cout << "The average of scores is " << sum/students << endl;
