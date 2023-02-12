@@ -1,9 +1,8 @@
 /*
  * File: main.cpp
  * --------------
- * Write a program that reads in a temperature in degrees Celsius and displays the corresponding temperature
- * in degrees Fahrenheit. The conversion formula is
- * F = (9/5)C + 32
+ * If you did not do so the first time around, rewrite the Celsius-to-Fahrenheit program from exercise 1
+ * in Chapter 1 so that it uses a function to perform the conversion.
  */
 
 #include "console.h"
