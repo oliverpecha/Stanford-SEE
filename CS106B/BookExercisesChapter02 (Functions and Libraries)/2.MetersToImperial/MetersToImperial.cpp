@@ -1,9 +1,9 @@
 /*
  * File: MetersToImperial.cpp
  * --------------
- * Write a program that converts a distance in meters to the corresponding English distance in feet and inches.
- * The conversion factors you need are
- * 1 inch = 0.0254 meters 1 foot = 12 inches
+ * Reimplement the distance-conversion program from exercise 2 in Chapter 1 so that it uses a function.
+ * In this case, the function must produce both the number of feet and the number of inches, which means that you need to use
+ * call by reference to return these values.
  */
 
 #include "console.h"
