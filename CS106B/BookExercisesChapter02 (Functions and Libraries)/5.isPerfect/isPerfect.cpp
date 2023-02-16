@@ -16,7 +16,6 @@
 
 #include "console.h"
 #include "simpio.h"
-#include <cmath>
 using namespace std;
 
 bool isPerfect(int n);
