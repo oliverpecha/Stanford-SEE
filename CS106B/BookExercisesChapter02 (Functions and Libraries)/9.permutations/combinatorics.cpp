@@ -9,7 +9,6 @@ int fact (int n) {
     for (int i = 1; i <= n; i++) {
         result *= i;
     }
-    cout << "### result " << result << endl;
     return result;
 }
 
