@@ -1,7 +1,13 @@
 /*
- * File: main.cpp
+ * File: CheckerBoard.cpp
  * --------------
- * Blank C++ project configured to use Stanford cslib and Qt
+ * One of the principles that defines Taoist philosophy is that dichotomies do not have sharp boundaries,
+ * and that there is mixing even between categories that most people see as opposites.
+ * This idea is captured in the Yin-Yang symbol, in which each region contains a bit of the other color:
+ *
+ * Write a graphics program to draw this symbol at the center of an empty graphics window.
+ * The challenge here is to decompose the drawing in such a way that you can create it using only the methods
+ * in Table 2-2, which do not include facilities for drawing and filling arcs and semicircles.
  */
 
 #include "console.h"
@@ -13,13 +19,8 @@ using namespace std;
 
 int main() {
    GWindow gw(500, 500);
-   cout << "This program draws a diamond, rectangle, and oval." << endl;
    double width = gw.getWidth();
    double height = gw.getHeight();
-   gw.drawLine(0, height / 2, width / 2, 0);
-   gw.drawLine(width / 2, 0, width, height / 2);
-   gw.drawLine(width, height / 2, width / 2, height);
-   gw.drawLine(width / 2, height, 0, height / 2);
 
    //base black oval
    gw.setColor("BLACK");
@@ -52,9 +53,3 @@ int main() {
 
    return 0;
 }
-
-/*
- *
- gw.setColor("BLUE");
- gw.fillRect(width / 4, height / 4, width / 2, height / 2);
- */
