@@ -1,7 +1,24 @@
 /*
  * File: scrable.cpp
  * --------------
- * Blank C++ project configured to use Stanford cslib and Qt
+ * In most word games, each letter in a word is scored according to its point value, which is inversely
+ * proportional to its frequency in English words. In ScrabbleTM, the points are allocated as follows:
+ *
+ * Points Letters
+ * 1 A,E,I,L,N,O,R,S,T,U
+ * 2 D,G
+ * 3 B,C,M,P
+ * 4 F,H,V,W,Y
+ * 5K
+ * 8 J,X
+ * 10 Q, Z
+ *
+ * For example, the word "FARM" is worth 9 points in Scrabble: 4 for the F, 1 each for the A and the R,
+ * and 3 for the M. Write a program that reads in words and prints out their score in Scrabble, not counting any
+ * of the other bonuses that occur in the game. You should ignore any characters other than uppercase letters in
+ * computing the score. In particular, lowercase letters are assumed to represent blank tiles, which can stand for
+ * any letter but have a score of 0.
+ *
  */
 
 #include "console.h"
