@@ -36,31 +36,6 @@ int main() {
     return 0;
 }
 
-/*
- * Function: PigLatin
- * Usage: translation = PigLatin(word);
- * ------------------------------------
- * This function translates a word from English to Pig Latin using
- * the rules specified in Chapter 3.  The translated word is
- * returned as the value of the function.
-
-string PigLatin(string word) {
-    int vp = findFirstVowel(word);
-    if (vp == -1) {
-        return word;
-    } else if (vp == 0) {
-        return word + "way";
-    } else {
-        string head = word.substr(0, vp);
-        string tail = word.substr(vp);
-        return tail + head + "ay";
-    }
-}
- */
-
-
-
-
 
 
 /*
@@ -148,6 +123,12 @@ bool isVowel (char ch) {
         }
 }
 
+/*
+ * Function: capitalize
+ * Usage: if (= FindFirstVowel(word))isVowel(ch)) . . .
+ * --------------------------------
+ * Returns a capitalized word where the initital letter is uppercase with the rest being lowercases, independent of the input recieved.
+ */
 
 string capitalize(string str) {
     int index = 0;
