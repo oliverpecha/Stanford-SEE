@@ -68,7 +68,6 @@ int main() {
 string letterSubstitutionCipher(string str, string key){
     for (int i = 0; i < str.length(); i++) {
         if (isalpha(str[i])) {
-            //str[i] = encoder((str[i]), transShift(str[i], key));
             str[i] = transShift(str[i], key);
 
         }
@@ -79,30 +78,6 @@ string letterSubstitutionCipher(string str, string key){
 // Takes a given key to transform a given character into the target letter and finds the positions to shift
 int transShift(char alpha, string key){
 
-    //int tempChar = key[alpha - 65];
-    //cout << "___ alpha: " << alpha << " key [] " << key[alpha - 65] << " pre shift: " << alpha - tempChar << endl;
-
-    //return alpha - tempChar;
-
     return key[alpha - 65];
 }
 
-
-char encoder (char letter, int shift) {
-   // cout << "########ENCODER letter: " << letter << " shift: " << shift << endl;
-
-    if (letter >= A && letter <= Z) {
-        if (letter + shift < A) letter += shift + A_SIZE;
-        else if (letter + shift > Z ) letter += shift - A_SIZE;
-        else letter += shift;
-        return letter;
-    }
-    else if (letter >= a && letter <= z) {
-        if (letter + shift < a) letter += shift + A_SIZE;
-        else if (letter + shift > z ) letter += shift - A_SIZE;
-        else letter += shift;
-        return letter;
-    }
-    else return letter;
-
-}
