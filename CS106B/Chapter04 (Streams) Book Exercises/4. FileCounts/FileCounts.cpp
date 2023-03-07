@@ -15,7 +15,7 @@
 #include "simpio.h"
 #include <fstream>
 #include <string>
-#include<sstream>
+#include <sstream>
 
 using namespace std;
 
