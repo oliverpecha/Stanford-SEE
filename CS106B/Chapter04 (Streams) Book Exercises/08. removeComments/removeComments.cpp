@@ -26,7 +26,6 @@
 using namespace std;
 
 void removeComments(istream & is, ostream & os);
-void copyCharStreamF2F(ifstream & ifile, ofstream & ofile);
 void copyStringStreamF2F(ifstream & ifile, ofstream & ofile);
 string removeCommentsStr(string str, bool & commentary);
 
@@ -34,11 +33,8 @@ string removeCommentsStr(string str, bool & commentary);
 
 int main () {
     ifstream ifile("Pregunta_Loca.txt");
-    ofstream oAfile("7a.txt");
-    ofstream oBfile("9.txt");
-    copyStringStreamF2F(ifile, oBfile);
-    //copyCharStreamF2F(ifile, oAfile);
-
+    ofstream ofile("Pregunta_Loca_edited.txt");
+    copyStringStreamF2F(ifile, ofile);
     return 0;
 }
 
@@ -79,7 +75,6 @@ string removeCommentsStr(string str, bool & commentary) {
         cout << "   -ignored" << endl;
         return "";
     }
-    // be carfeul not exceeding lenght
     else if (str[pos+1] == '/'){
         if (pos == 0) {
             cout << "   scratch all!" << endl;
@@ -92,7 +87,6 @@ string removeCommentsStr(string str, bool & commentary) {
     }
     else if (str[pos+1] == '*'){
         cout << "   /* found" << endl;
-        // be carfeul not exceeding lenght
         int posNew = str.find('/', pos+1);
         if (posNew != -1 && str[posNew-1] == '*') {
             cout << "   */ found too. No more ignoring" << endl;
@@ -121,20 +115,3 @@ string removeCommentsStr(string str, bool & commentary) {
     return str;
 }
 
-
-void copyCharStreamF2F(ifstream & ifile, ofstream & ofile) {
-    if (!ifile.is_open()) cout << "ifile to be reopened"; ifile.open("Troilus.txt");
-    if (!ofile.is_open()) cout << "Unable to open ofile";
-    if (ofile.is_open() && ifile.is_open()) {
-        ofile << "7a This is a line.\n";
-        ofile << "This is another line.\n";
-        int ch;
-        while ((ch = ifile.get()) != EOF) {
-
-            ofile.put(ch);
-        }
-        ifile.close();
-        ofile.close();
-    }
-    else cout << "Unable to open files";
-}
