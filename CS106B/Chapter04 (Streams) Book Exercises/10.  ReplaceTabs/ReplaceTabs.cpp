@@ -1,22 +1,17 @@
 /*
  * File: BanishLetters.cpp
  * --------------
- * In James Thurber’s children’s story The Wonderful O, the island of Ooroo is invaded by pirates
- * who set out to banish the letter O from the alphabet. Such censorship would be much easier with
- * modern technology. Write a program that asks the user for an input file, an output file, and a
- * string of letters to be eliminated. The program should then copy the input file to the output file,
- * deleting any of the letters that appear in the string of censored letters, no matter whether
- * they appear in uppercase or lowercase form.
+ * Some files use tab characters to align data into columns. Doing so, however, can cause problems
+ * for applications that are unable to work directly with tabs. For these applications, it is
+ * useful to have access to a program that replaces tabs in an input file with the number of spaces
+ * required to reach the next tab stop. In programming, tab stops are usually set at every eight columns.
  *
- * As an example, suppose that you have a file containing the first few lines of Thurber’s novel, as follows:
+ * For example, suppose that the input file contains a line of the form
+ * where the   symbol represents the space taken up by a tab, which differs depending on its position
+ * in the line. If the tab stops are set every eight spaces, the first tab character must be replaced by
+ * five spaces and the second tab character by three.
  *
- * If you run your program with the input
- *              image
- * it should write the following file:
- *              image
- * If you try to get greedy and banish all the vowels by entering aeiou in response to the prompt,
- * the contents of the output file would be
- *              image
+ * Write a program that copies an input file to an output file, replacing all tab characters by the appropriate number of spaces.
  */
 
 #include "console.h"
@@ -34,7 +29,6 @@ string charFill(int pos, bool test);
 const int   TAB_WIDTH = 9;
 const char  TAB_CAR = ' ';
 const bool  TAB_TEST = false;
-
 
 int main () {
     copyNReplaceTabs();
