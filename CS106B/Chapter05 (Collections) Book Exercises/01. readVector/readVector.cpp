@@ -49,7 +49,6 @@ int main() {
             input = getLine("Enter C to continue or Q to quit");
             if (input == "C") {
                 readVector(is, roots);
-                readVector(is, sequence);
             }
         }
     }
