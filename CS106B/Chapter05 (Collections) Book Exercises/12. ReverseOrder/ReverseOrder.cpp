@@ -20,6 +20,6 @@ int main() {
         if (value != 0) ledger.push(value);
     }
     cout << "Those integers in reverse order are: " << endl;
-    while (!ledger.isEmpty()) cout << " " << ledger.pop() << endl;
+    while (!ledger.isEmpty()) cout << " " <<    ledger.pop() << endl;
     return 0;
 }
