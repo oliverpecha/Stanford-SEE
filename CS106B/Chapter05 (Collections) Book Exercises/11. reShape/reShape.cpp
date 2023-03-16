@@ -77,11 +77,8 @@ Vector<int> saveGrid(Grid<int> & grid) {
 
 void reshape(Grid<int> & grid, int nRows, int nCols){
     Vector<int> contents = saveGrid(grid);
-    //cout << "saved grid" << endl;
-    //cout << contents << endl;
     grid.resize(nRows, nCols);
     fillGrid(grid, contents);
-    //Grid<int> tempGrid(nRows, nCols);
 }
 
 void fillGrid(Grid<int> & grid, Vector<int> & values){
@@ -107,7 +104,6 @@ void printGrid(Grid<int> & grid) {
     for (int col = 0; col < grid.numCols(); col++){
         cout << "| ";
         for (int row = 0; row < grid.numRows(); row++){
-
             cout << setw(2) << grid.get(row,col) << " | ";
         }
         cout << "\n\n" << endl;
