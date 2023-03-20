@@ -33,83 +33,77 @@ bool isBracket(char letter);
 bool isCloseBracket(char letter);
 bool isOpenBracket(char letter);
 bool curlyEnds(string candidate);
-bool qualifies(string candidate);
-
-Vector<string> onlyQualifying(string candidate);
+bool vecStrQualifing(string candidate);
+bool match(char current, char next);
 
 void sliceByCurly(Vector<string> & candidates);
 void splitBySemiColon(Vector<string> & candidates);
 
 void fillStraight(Stack<char> & headBrackets, string candidate);
-void fillReverse(Stack<char> & tailBrackets, string candidate);
+void fillStackOfCandidates(Stack<char> & tailBrackets, string candidate);
 
 void printVecCandidates(Vector<string> & candidates, int ticker);
 void removeEmpty(Vector<string> & candidates);
 
 
-
-/*
-{ ( [2] + 3); x = (1 + (2
-} ) )
-
-/////////
-
-{
-}
-
-(
-)
-[
-]
-(1 + (2))
-
-
-
-////////////
-
-(()();[]) OK
-{();()}) OK
-(((;)))
-{();} {;}
-H (()();[])
-T )][;)()((
-
-H (((;)))
-T )));(((
-
-////////////
-
-<{>([]); <> [];()([]);<}> <> {(());}
-
-
-*/
-
 int main() {
-    //string candidate = "{ s = 2 * (a[2] + 3); r = (4 * 3) + (a [2] + 1);}{ x = (1 + (2)); }";
-    string candidate = "{ a = 1 * (a[1] + 1); b = (2 * 2) + (b [2] + 2); } { c = (3 + (3)); } { d = 4 * (d[4] + 4); }";
-
+    string candidate = "{ a = (1 * (a[1] + 1)); b = (2 * 2) + (b [2] + 2); } { c = (3 + (3)); } { d = 4 * (d[4] + 4); }";
     cout << candidate << endl;
-/*    Vector<string> fuckery {"one", "two"};
-    cout << "fuckery: " << fuckery << ", it's lenght: " << fuckery.size() << endl;
-    fuckery.remove(0);
-    cout << "fuckery: " << fuckery << ", it's lenght: " << fuckery.size() << endl;
-*/
     if (bracketCheck(candidate))  cout << "Is properly formatted" << endl;
     else cout << "Is NOT properly formatted" << endl;
     return 0;
 }
 
-bool bracketCheck(string & input) {
-    //Vector<string> candidates = onlyQualifying(input);
-    Vector<string> candidates {input};
-    sliceByCurly(candidates);
-    splitBySemiColon(candidates);
 
+bool vecStrQualifing(string candidate){
+    Stack<char> bracketStream;
+    Stack<char> bracketBuffer;
+    fillStackOfCandidates(bracketStream, candidate);
+    char current;
+    char next;
+    // while brackets to be compared is streaming
+    while (!bracketStream.isEmpty()) {
+        current = bracketStream.pop();
+        // protection in case can't peek at stack due to emptiness
+        if (!bracketStream.isEmpty()) {
+            next = bracketStream.peek();
+            // current open bracket to next matches becuase it is an equivalent closing one.
+            // thus, current and next will be poped
+            if (isOpenBracket(current) && match(current, next)) {
+                bracketStream.pop();
+            }
+            // current doesn't match the next peeked item, still is an open bracket, thus it could be that will match other bracket in subsequent positions
+            // thus it will be pushed into a bufer stack to be evaluated once closing braclets that didn't match directly are found
+            else if (isOpenBracket(current)) {
+               bracketBuffer.push(current);
+            }
+            //current is a closing bracket that was not poped at a first compare pass and buffer is filled with other brackets to evaluate against
+            else if (!bracketBuffer.isEmpty() && match(bracketBuffer.peek(), current)) {
+                bracketBuffer.pop();
+            }
+            //if doesn't match at first pass or is sucessfully compared against the buffer candidate must not comply
+            else return false;
+        }
+        // Last streamed candidate can only be evaluated against previous brackets that didn't match and were added to the buffer for later evaluation
+        else if (!bracketBuffer.isEmpty() && match(bracketBuffer.peek(), current)) {
+            bracketBuffer.pop();
+        }
+        // If didn't hit any of previous cases string must not comply
+        else return false;
+    }
+    // at this point, if there are still items in the buffer, candidate bracket and string can't match/compy
+    if (!bracketBuffer.isEmpty()) return false;
+    // once cycle reaches here, means canidate string actually complies
     return true;
 }
 
+void fillStackOfCandidates(Stack<char> & tailBrackets, string candidate) {
+    for (int var = candidate.length() - 1; var > 0; var--) {
+        if (isBracket(candidate[var])) tailBrackets.push(candidate[var]);
+    }
+}
+
 void sliceByCurly(Vector<string> & candidates){
-    int ticker = 0;
     int start = candidates[0].find('{');
     while (start >= 0) {
         int end = candidates[0].find('}');
@@ -118,89 +112,27 @@ void sliceByCurly(Vector<string> & candidates){
             candidates.add(candidates[0].substr(start + 1, end-start - 1));
             candidates[0].erase(start, end-start + 1);
             if (candidates[0].length() == 0) candidates.remove(0);
-            //printVecCandidates(candidates, ticker);
-            ticker++;
         }
         start = candidates[0].find('{');
     }
     removeEmpty(candidates);
-    printVecCandidates(candidates, ticker);
 }
-
-
 
 void splitBySemiColon(Vector<string> & candidates) {
     int start = 0;
     int end = 0;
-
     for (int vec = 0; vec < candidates.size(); ++vec) {
-        //while (start >= 0) {
-            end = candidates[vec].find(';', start);
-            cout << "from vec: " << vec << ", end: " << end << endl;
-            while (end >= 0) {
-                string temp = candidates[vec].substr(start, end + 1); // <-- could be removed
-                if (temp.length() > 1) {
-
-                    candidates.insert(vec, temp);
-                    cout << "will be removed from vec: " << vec + 1 << candidates[vec] << endl;
-                    candidates[vec + 1].erase(0, end + 1);
-                }
-                end = candidates[vec].find(';', end);
-                //start = end;
-
-                /*
-                string temp = candidates[vec].substr(0, end + 1);
-                if (temp.length() > 1) {
-                    candidates.insert(0, temp);
-                    candidates[1].erase(0, end + 1);
-                    if (!qualifies(candidates[vec])) candidates.remove(vec); // <---- check
-                    else {
-                        cout << "will be removed from 0: " << candidates[0] << endl;
-                        candidates.remove(0);
-                        if (candidates[vec].length() == 0) candidates.remove(0);
-                        cout << "whats in 0: " << candidates[vec] << ", it's lenght: " << candidates[0].size() << endl;
-                    }
-                }
-                cout << "2 all candidates: " << candidates << ", it's lenght: " << candidates.size() << endl;
-                end = candidates[vec].find(';'); */
+        end = candidates[vec].find(';', start);
+        while (end >= 0) {
+            string temp = candidates[vec].substr(start, end + 1);
+            if (temp.length() > 1) {
+                candidates.insert(vec, temp);
+                candidates[vec + 1].erase(0, end + 1);
             }
-        //}
+            end = candidates[vec].find(';', end + 1);
+        }
     }
-    printVecCandidates(candidates, 99);
-
-}
-
-
-bool qualifies(string candidate){
-    Stack<char> straightBrackets;
-    Stack<char> reversedBrackets;
-    fillStraight(straightBrackets, candidate);
-    fillReverse(reversedBrackets, candidate);
-    cout << "\nfake qualification = " << candidate << endl;
-    //cout << "print straightBrackets = " << straightBrackets << endl;
-    //cout << "print reversedBrackets = " << reversedBrackets << endl;
-    return true; // < -------------------------------------------------------- fix
-}
-
-Vector<string> onlyQualifying(string candidate){
-    Vector<string> result;
-    string buffer;
-    for (int var = 0; var < candidate.length(); var++) {
-        if (isBracket(candidate[var]) || candidate[var] == ';') buffer += candidate[var];
-    }
-    result.add(buffer);
-    return result;
-}
-void fillStraight(Stack<char> & headBrackets, string candidate) {
-    for (int var = 0; var < candidate.length(); var++) {
-        if (isBracket(candidate[var]) || candidate[var] == ';') headBrackets.push(candidate[var]);
-    }
-}
-
-void fillReverse(Stack<char> & tailBrackets, string candidate) {
-    for (int var = candidate.length() - 1; var > 0; var--) {
-        if (isBracket(candidate[var]) || candidate[var] == ';') tailBrackets.push(candidate[var]);
-    }
+    removeEmpty(candidates);
 }
 
 
@@ -215,6 +147,22 @@ bool curlyEnds(string candidate) {
     return false;
 }
 
+bool bracketCheck(string & input) {
+    Vector<string> candidates {input};
+    sliceByCurly(candidates);
+    splitBySemiColon(candidates);
+    for (int i = 0; i < candidates.size(); i++) {
+        if (!vecStrQualifing(candidates[i])) return false;
+    }
+    return true;
+}
+
+
+bool match(char current, char next){
+    if (current == '(' && next == ')') return true;
+    if (current == '[' && next == ']') return true;
+    else return false;
+}
 
 bool isBracket(char letter) {
     switch (letter) {
@@ -246,12 +194,6 @@ bool isCloseBracket(char letter) {
     }
 }
 
-void printVecCandidates(Vector<string> & candidates, int ticker) {
-    cout << "\n";
-    for (int var = 0; var < candidates.size(); ++var) {
-        cout << ticker << ". <<" << candidates[var] << ">> it's lenght: " << candidates[var].size() << endl;
-    }
-}
 
 void removeEmpty(Vector<string> & candidates){
     for (int var = 0; var < candidates.size(); ++var) {
@@ -261,5 +203,12 @@ void removeEmpty(Vector<string> & candidates){
         }
         if (ticker == candidates[var].size()) candidates.remove(var);
 
+    }
+}
+
+void printVecCandidates(Vector<string> & candidates, int ticker) {
+    cout << "\n";
+    for (int var = 0; var < candidates.size(); ++var) {
+        cout << ticker << ". <<" << candidates[var] << ">> it's lenght: " << candidates[var].size() << endl;
     }
 }
