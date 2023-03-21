@@ -50,23 +50,27 @@
 #include <iostream>
 #include <iomanip>
 #include "queue.h"
+#include "vector.h"
 #include "random.h"
 #include "console.h"
 using namespace std;
 
 /* Constants */
 // default 0.05
-const double ARRIVAL_PROBABILITY = 0.05;
+const double ARRIVAL_PROBABILITY = 0.25;
 // default 5
 const int MIN_SERVICE_TIME = 5;
 const int MAX_SERVICE_TIME = 15;
 // default 2000
 const int SIMULATION_TIME = 2000;
-const int N_CASHIERS = 1;
+const int N_CASHIERS = 4;
 
 /* Function prototypes */
-void runSimulation (Vector<int> & nServed, Vector<int> & totalWait, Vector<int> & totalLength, int & cashiers);
-void printReport (Vector<int> & nServed, Vector<int> & totalWait, Vector<int> & totalLength, int & cashiers);
+void runSimulationNLines (Vector<int> & nServed, Vector<int> & totalWait, Vector<int> & totalLength, int & cashiers);
+void runSimulationSingleLine (Vector<int> & nServed, Vector<int> & totalWait, Vector<int> & totalLength, int & cashiers);
+void printReport (Vector<int> & nServed, Vector<int> & totalWait, Vector<int> & totalLength, bool singleline);
+void clearSimulation (Vector<int> & nServed, Vector<int> & totalWait, Vector<int> & totalLength);
+int shortestQueue(Vector < Queue<int> > & nQueue);
 int vecAverage(Vector<int> & vector);
 int vecSum(Vector<int> & vector);
 
@@ -76,10 +80,15 @@ int main() {
     Vector<int> nServed(cashiers);
     Vector<int> totalWait(cashiers);
     Vector<int> totalLength(cashiers);
-    runSimulation (nServed, totalWait, totalLength, cashiers);
-    printReport (nServed, totalWait, totalLength, cashiers);
+    runSimulationNLines (nServed, totalWait, totalLength, cashiers);
+    printReport(nServed, totalWait, totalLength, false);
+    clearSimulation(nServed, totalWait, totalLength);
+    cout << endl;
+    runSimulationSingleLine (nServed, totalWait, totalLength, cashiers);
+    printReport(nServed, totalWait, totalLength, true);
     return 0;
 }
+
 
 /*
  * Function: runSimulation
@@ -90,21 +99,30 @@ int main() {
  * and the sum of the queue length in each time step are
  * returned through the reference parameters.
 */
-int shortestQueue(Vector < Queue<int> > & nQueue){
-    int shortestQueue = 0;
-    if (nQueue.size() > 2) {
-        for (int i = 0; i < nQueue.size(); i++) {
-            if (nQueue[i].size() < shortestQueue) shortestQueue = i;
+
+void runSimulationSingleLine (Vector<int> & nServed, Vector<int> & totalWait, Vector<int> & totalLength, int & cashiers) {
+    Queue<int> Queue;
+    Vector <int> serviceTimeRemaining(cashiers);
+    for (int t = 0; t < SIMULATION_TIME; t++) {
+        if (randomChance (ARRIVAL_PROBABILITY)) {
+            Queue.enqueue(t);
+        }
+        for (int var = 0; var < serviceTimeRemaining.size(); ++var) {
+            if (serviceTimeRemaining[var] > 0) {
+                serviceTimeRemaining[var]--;
+            // if cashier is not servicing & (if) there is people waiting. Totalwait is calculated, new person serviced is counted and a service time is estimated
+            } else if (!Queue.isEmpty()) {
+                totalWait[var] += t - Queue.dequeue();
+                nServed[var]++;
+                serviceTimeRemaining[var] = randomInteger(MIN_SERVICE_TIME, MAX_SERVICE_TIME);
+            }
+            //current queue size is added. Will be average at printing
+            totalLength[var] += Queue.size();
         }
     }
-    //else shortest = 0;
-    //cout <<nQueue[0].size() << endl;
-
-    //cout <<shortest << endl;
-    return shortestQueue;
 }
-void runSimulation (Vector<int> & nServed, Vector<int> & totalWait, Vector<int> & totalLength, int & cashiers) {
 
+void runSimulationNLines (Vector<int> & nServed, Vector<int> & totalWait, Vector<int> & totalLength, int & cashiers) {
     Vector < Queue<int> > nQueue (cashiers);
     Vector <int> serviceTimeRemaining(cashiers);
     for (int t = 0; t < SIMULATION_TIME; t++) {
@@ -136,7 +154,7 @@ void runSimulation (Vector<int> & nServed, Vector<int> & totalWait, Vector<int> 
 */
 
 
-void printReport (Vector<int> & nServed, Vector<int> & totalWait, Vector<int> & totalLength, int & cashiers) {
+void printReport (Vector<int> & nServed, Vector<int> & totalWait, Vector<int> & totalLength, bool singleline) {
     cout << "Simulation results given the following constants:" << endl;
     cout << fixed << setprecision (2);
     cout << "  SIMULATION_TIME:     " << setw (4)
@@ -149,12 +167,34 @@ void printReport (Vector<int> & nServed, Vector<int> & totalWait, Vector<int> & 
          << MIN_SERVICE_TIME << endl;
     cout << "  MAX_SERVICE_TIME:    " << setw (4)
          << MAX_SERVICE_TIME << endl;
+    cout << "  LINES:               ";
+    if (singleline) cout << setw (4) << 1 << endl;
+    else cout << setw (4) << N_CASHIERS << endl;
     cout << endl;
     cout << "Customers served:      " << setw (4) << vecSum(nServed) << endl;
     cout << "Average waiting time:  " << setw (4)
          << double(vecAverage(totalWait)) / vecAverage(nServed) << endl;
     cout << "Average queue length:  "<< setw (4)
          << double(vecAverage(totalLength)) / SIMULATION_TIME << endl;
+}
+
+void clearSimulation (Vector<int> & nServed, Vector<int> & totalWait, Vector<int> & totalLength){
+    int cashiers = nServed.size();
+    Vector<int> basic(cashiers);
+    nServed = basic;
+    totalWait = basic;
+    totalLength = basic;
+}
+
+
+int shortestQueue(Vector < Queue<int> > & nQueue){
+    int shortestQueue = 0;
+    if (nQueue.size() > 2) {
+        for (int i = 0; i < nQueue.size(); i++) {
+            if (nQueue[i].size() < shortestQueue) shortestQueue = i;
+        }
+    }
+    return shortestQueue;
 }
 
 int vecAverage(Vector<int> & vector) {
