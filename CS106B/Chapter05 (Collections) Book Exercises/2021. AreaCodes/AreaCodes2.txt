@@ -82,7 +82,6 @@ Connecticut
 959 EDT Hartford, Bristol, Central Manchester
 Delaware 
 302 EDT Wilmington, Dover, Newark
-
 Florida 
 239 EDT Cape Coral, Bonita Springs, Fort Myers
 305 EDT Miami, Aventura, Carol City
