@@ -1,0 +1,472 @@
+Alabama 
+205 CDT Birmingham, Alabaster, Bessemer
+251 CDT Mobile, Prichard
+256 CDT Huntsville, Anniston, Decatur
+334 CDT Montgomery, Auburn, Dothan
+659 CDT Birmingham
+938 CDT Huntsville
+Alaska 
+907 (UTC-9) Anchorage, College, Fairbanks
+Alberta 
+368 MDT Calgary
+403 MDT Calgary
+587 MDT Calgary
+780 MDT Edmonton
+825 MDT Calgary
+American Samoa 
+684 (UTC-11) Pago Pago, Pago
+Arizona 
+480 (UTC-7) Mesa, Apache Junction, Chandler
+520 (UTC-7) Tucson, Casa Adobes, Casa Grande
+602 (UTC-7) Phoenix
+623 (UTC-7) Phoenix, Avondale, Glendale
+928 (UTC-7) Yuma, Bullhead City, Flagstaff
+Arkansas 
+479 CDT Fort Smith, Fayetteville, Rogers
+501 CDT Little Rock, Benton, Conway
+870 CDT Jonesboro, El Dorado, Paragould
+British Columbia 
+236 PDT Vancouver
+250 PDT Kelowna
+604 PDT Vancouver
+672 PDT Vancouver
+778 PDT Vancouver
+California 
+209 PDT Stockton, Atwater, Ceres
+213 PDT Los Angeles
+279 PDT Sacramento, Arden-arcade, Carmichael
+310 PDT Los Angeles, Beverly Hills, Carson
+323 PDT Los Angeles, Bell, Bell Gardens
+341 PDT Oakland
+350 PDT Stockton
+408 PDT San Jose, Campbell, Gilroy
+415 PDT San Francisco, Novato, San Anselmo
+424 PDT Los Angeles, Beverly Hills, Carson
+442 PDT Oceanside, Apple Valley, Barstow
+510 PDT Oakland, Alameda, Berkeley
+530 PDT Redding, Chico, Davis
+559 PDT Fresno, Clovis, Hanford
+562 PDT Long Beach, Bellflower, Cerritos
+619 PDT San Diego, Chula Vista, Coronado
+626 PDT Pasadena, Alhambra, Altadena
+628 PDT San Francisco, Novato, San Anselmo
+650 PDT San Mateo, Belmont, Burlingame
+657 PDT Anaheim, Brea, Buena Park
+661 PDT Bakersfield, Delano, Lancaster
+669 PDT San Jose, Campbell, Gilroy
+707 PDT Santa Rosa, Benicia, Eureka
+714 PDT Anaheim, Brea, Buena Park
+747 PDT Los Angeles, Agoura Hills, Burbank
+760 PDT Oceanside, Apple Valley, Barstow
+805 PDT Oxnard, Atascadero, Camarillo
+818 PDT Los Angeles, Agoura Hills, Burbank
+820 PDT Oxnard
+831 PDT Salinas, Hollister, Marina
+840 PDT San Bernardino
+858 PDT San Diego, Poway
+909 PDT San Bernardino, Chino, Chino Hills
+916 PDT Sacramento, Arden-arcade, Carmichael
+925 PDT Concord, Antioch, Bay Point
+949 PDT Irvine, Aliso Viejo, Costa Mesa
+951 PDT Riverside, Banning, Corona
+Colorado 
+303 MDT Denver, Arvada, Aurora
+719 MDT Colorado Springs, Pueblo, Security-widefield
+720 MDT Denver, Arvada, Aurora
+970 MDT Fort Collins, Grand Junction, Greeley
+983 MDT Denver
+Connecticut 
+203 EDT Bridgeport, Danbury, East Haven
+475 EDT Bridgeport, Danbury, East Haven
+860 EDT Hartford, Bristol, Central Manchester
+959 EDT Hartford, Bristol, Central Manchester
+Delaware 
+302 EDT Wilmington, Dover, Newark
+
+Florida 
+239 EDT Cape Coral, Bonita Springs, Fort Myers
+305 EDT Miami, Aventura, Carol City
+321 EDT Orlando, Altamonte Springs, Apopka
+352 EDT Gainesville, Oakland Park, Ocala
+386 EDT Palm Coast, Daytona Beach, De Land
+407 EDT Orlando, Altamonte Springs, Apopka
+448 EDT/CDT Tallahassee
+561 EDT West Palm Beach, Boca Del Mar, Boca Raton
+656 EDT Tampa
+689 EDT Orlando
+727 EDT St. Petersburg, Bayonet Point, Clearwater
+754 EDT Fort Lauderdale, Coconut Creek, Cooper City
+772 EDT Port St. Lucie, Fort Pierce, Palm City
+786 EDT Miami, Aventura, Carol City
+813 EDT Tampa, Brandon, Citrus Park
+850 EDT/CDT Tallahassee, Bellview, Brent
+863 EDT Lakeland, Winter Haven
+904 EDT Jacksonville, Jacksonville Beach, Lakeside
+941 EDT North Port, Bradenton, Port Charlotte
+954 EDT Fort Lauderdale, Coconut Creek, Cooper City
+Georgia 
+229 EDT Albany, Valdosta
+404 EDT Atlanta, Candler-mcafee, College Park
+470 EDT Atlanta
+478 EDT Macon, Warner Robins
+678 EDT Atlanta, Alpharetta, Candler-mcafee
+706 EDT Augusta, Athens, Columbus
+762 EDT Augusta, Athens, Columbus
+770 EDT Roswell, Alpharetta, Atlanta
+912 EDT Savannah, Hinesville, Statesboro
+943 EDT Atlanta
+Guam 
+671 (UTC+10) Dededo, Hagatna
+Hawaii 
+808 (UTC-10) Urban Honolulu, Hilo, Honolulu
+Idaho 
+208 MDT/PDT Boise City, Caldwell, Coeur D'alene
+986 MDT/PDT Boise City, Caldwell, Coeur D'alene
+Illinois 
+217 CDT Springfield, Champaign, Charleston
+224 CDT Elgin, Algonquin, Arlington Heights
+309 CDT Peoria, Bloomington, East Moline
+312 CDT Chicago
+331 CDT Aurora, Addison, Bartlett
+447 CDT Springfield
+464 CDT Cicero
+618 CDT Belleville, Alton, Carbondale
+630 CDT Aurora, Addison, Bartlett
+708 CDT Cicero, Bellwood, Berwyn
+773 CDT Chicago
+779 CDT Rockford, Belvidere, Crystal Lake
+815 CDT Rockford, Belvidere, Crystal Lake
+847 CDT Elgin, Algonquin, Arlington Heights
+872 CDT Chicago
+Indiana 
+219 EDT/CDT Hammond, East Chicago, Gary
+260 EDT Fort Wayne
+317 EDT Indianapolis, Carmel, Fishers
+463 EDT Indianapolis, Carmel, Fishers
+574 EDT/CDT South Bend, Elkhart, Goshen
+765 EDT Muncie, Anderson, Kokomo
+812 EDT/CDT Evansville, Bloomington, Clarksville
+930 EDT/CDT Evansville, Bloomington, Clarksville
+Iowa 
+319 CDT Cedar Rapids, Burlington, Cedar Falls
+515 CDT Des Moines, Ames, Ankeny
+563 CDT Davenport, Bettendorf, Clinton
+641 CDT Mason City, Marshalltown, Ottumwa
+712 CDT Sioux City, Council Bluffs
+Kansas 
+316 CDT Wichita
+620 CDT/MDT Hutchinson, Dodge City, Emporia
+785 CDT/MDT Topeka, Hays, Lawrence
+913 CDT Overland Park, Kansas City, Leavenworth
+Kentucky 
+270 EDT/CDT Bowling Green, Elizabethtown, Henderson
+364 EDT/CDT Bowling Green, Elizabethtown, Henderson
+502 EDT Louisville, Frankfort
+606 EDT/CDT Ashland
+859 EDT Lexington-Fayette, Covington, Florence
+Louisiana 
+225 CDT Baton Rouge
+318 CDT Shreveport, Alexandria, Bossier City
+337 CDT Lafayette, Lake Charles, New Iberia
+504 CDT New Orleans, Chalmette, Harvey
+985 CDT Houma, Laplace, Slidell
+Maine 
+207 EDT Portland, Auburn, Augusta
+Manitoba 
+204 CDT Winnipeg
+431 CDT Winnipeg
+584 CDT Winnipeg
+Maryland 
+240 EDT Germantown, Aspen Hill, Bethesda
+301 EDT Germantown, Aspen Hill, Bethesda
+410 EDT Baltimore, Annapolis, Arbutus
+443 EDT Baltimore, Annapolis, Arbutus
+667 EDT Baltimore, Annapolis, Arbutus
+Massachusetts 
+339 EDT Boston, Arlington, Braintree
+351 EDT Lowell, Beverly, Chelmsford
+413 EDT Springfield, Agawam, Chicopee
+508 EDT Worcester, Attleboro, Barnstable Town
+617 EDT Boston, Belmont, Brookline
+774 EDT Worcester, Attleboro, Barnstable Town
+781 EDT Boston, Arlington, Braintree
+857 EDT Boston, Belmont, Brookline
+978 EDT Lowell, Beverly, Chelmsford
+Michigan 
+231 EDT Muskegon, Norton Shores, Shelby
+248 EDT Troy, Bloomfield, Farmington Hills
+269 EDT Kalamazoo, Battle Creek, Portage
+313 EDT Detroit, Allen Park, Dearborn
+517 EDT Lansing, Adrian, Clinton
+586 EDT Warren, Clinton, Eastpointe
+616 EDT Grand Rapids, Forest Hills, Holland
+734 EDT Ann Arbor, Canton, Garden City
+810 EDT Flint, Burton, Port Huron
+906 EDT/CDT Marquette
+947 EDT Troy, Bloomfield, Farmington Hills
+989 EDT Saginaw, Bay City, Harrison
+Minnesota 
+218 CDT Duluth, Andover, Moorhead
+320 CDT St. Cloud
+507 CDT Rochester, Austin, Faribault
+612 CDT Minneapolis, Crystal, Golden Valley
+651 CDT St. Paul, Apple Valley, Cottage Grove
+763 CDT Brooklyn Park, Blaine, Brooklyn Center
+952 CDT Bloomington, Burnsville, Chanhassen
+Mississippi 
+228 CDT Gulfport, Biloxi, Pascagoula
+601 CDT Jackson, Clinton, Hattiesburg
+662 CDT Southaven, Clarksdale, Columbus
+769 CDT Jackson, Clinton, Hattiesburg
+Missouri 
+314 CDT St. Louis, Affton, Ferguson
+417 CDT Springfield, Joplin
+557 CDT St. Louis
+573 CDT Columbia, Cape Girardeau, Jefferson City
+636 CDT O'Fallon, Ballwin, Chesterfield
+660 CDT Sedalia
+816 CDT Kansas City, Belton, Blue Springs
+Montana 
+406 MDT Billings, Bozeman, Butte-silver Bow
+Nebraska 
+308 CDT/MDT Grand Island, Kearney, North Platte
+402 CDT Omaha, Bellevue, Columbus
+531 CDT Omaha, Bellevue, Columbus
+Nevada 
+702 PDT Las Vegas, Henderson, North Las Vegas
+725 PDT Las Vegas, Henderson, North Las Vegas
+775 PDT/MDT Reno, Carson City, Pahrump
+New Brunswick 
+506 ADT Moncton
+New Hampshire 
+603 EDT Manchester, Concord, Derry
+New Jersey 
+201 EDT Jersey City, Bayonne, Bergenfield
+551 EDT Jersey City, Bayonne, Bergenfield
+609 EDT Trenton, Atlantic City, Ewing
+640 EDT Trenton
+732 EDT Toms River, Brick, Carteret
+848 EDT Toms River, Brick, Carteret
+856 EDT Camden, Bridgeton, Cherry Hill
+862 EDT Newark, Belleville, Bloomfield
+908 EDT Elizabeth, Cranford, Hillside
+973 EDT Newark, Belleville, Bloomfield
+New Mexico 
+505 MDT Albuquerque, Farmington, Gallup
+575 MDT Las Cruces, Alamogordo, Carlsbad
+New York 
+212 EDT New York, Manhattan, New York City
+315 EDT Syracuse, Auburn, Rome
+332 EDT New York, Manhattan, New York City
+347 EDT New York, Bronx, Brooklyn
+363 EDT Hempstead
+516 EDT Hempstead, Baldwin, East Meadow
+518 EDT Albany, Rotterdam, Saratoga Springs
+585 EDT Rochester, Brighton, Irondequoit
+607 EDT Binghamton, Elmira, Ithaca
+631 EDT Brentwood, Bay Shore, Centereach
+646 EDT New York, Manhattan, New York City
+680 EDT Syracuse, Auburn, Rome
+716 EDT Buffalo, Cheektowaga, Jamestown
+718 EDT New York, Bronx, Brooklyn
+838 EDT Albany, Rotterdam, Saratoga Springs
+845 EDT New City, Kingston, Middletown
+914 EDT Yonkers, Harrison, Mount Vernon
+917 EDT New York, Bronx, Brooklyn
+929 EDT New York, Bronx, Brooklyn
+934 EDT Brentwood, Bay Shore, Centereach
+Newfoundland 
+709 ADT St. Johns
+North Carolina 
+252 EDT Greenville, Havelock, Kinston
+336 EDT Greensboro, Asheboro, Burlington
+472 EDT Fayetteville
+704 EDT Charlotte, Concord, Gastonia
+743 EDT Greensboro, Asheboro, Burlington
+828 EDT Asheville, Hickory
+910 EDT Fayetteville, Fort Bragg, Jacksonville
+919 EDT Raleigh, Apex, Cary
+980 EDT Charlotte, Concord, Gastonia
+984 EDT Raleigh, Apex, Cary
+North Dakota 
+701 CDT/MDT Fargo, Bismarck, Grand Forks
+Northern Mariana Islands 
+670 (UTC+10) Saipan
+Northwest Territories 
+867 CDT/MDT/PDT Whitehorse
+Nova Scotia 
+782 ADT Halifax
+902 ADT Halifax
+Nunavut 
+867 CDT/MDT/PDT Whitehorse
+Ohio 
+216 EDT Cleveland, Brook Park, Cleveland Heights
+220 EDT Newark, Athens, Chillicothe
+234 EDT Akron, Alliance, Austintown
+326 EDT Dayton
+330 EDT Akron, Alliance, Austintown
+380 EDT Columbus, Dublin, Gahanna
+419 EDT Toledo, Ashland, Bowling Green
+440 EDT Parma, Ashtabula, Eastlake
+513 EDT Cincinnati, Fairfield, Hamilton
+567 EDT Toledo, Ashland, Bowling Green
+614 EDT Columbus, Dublin, Gahanna
+740 EDT Newark, Athens, Chillicothe
+937 EDT Dayton, Beavercreek, Centerville
+Oklahoma 
+405 CDT Oklahoma City, Bethany, Del City
+539 CDT Tulsa, Bartlesville, Broken Arrow
+572 CDT Oklahoma City
+580 CDT Lawton, Altus, Ardmore
+918 CDT Tulsa, Bartlesville, Broken Arrow
+Ontario 
+226 EDT London
+249 EDT Sudbury
+289 EDT Hamilton
+343 EDT Ottawa
+365 EDT Hamilton
+416 EDT Toronto
+437 EDT Toronto
+519 EDT London
+548 EDT London
+613 EDT Ottawa
+647 EDT Toronto
+683 EDT Sudbury
+705 EDT Sudbury
+742 EDT Hamilton
+753 EDT Ottawa
+807 EDT/CDT Kenora
+905 EDT Hamilton
+Oregon 
+458 MDT/PDT Eugene, Albany, Bend
+503 PDT Portland, Aloha, Beaverton
+541 MDT/PDT Eugene, Albany, Bend
+971 PDT Portland, Aloha, Beaverton
+Pennsylvania 
+215 EDT Philadelphia, Levittown
+223 EDT Lancaster, Harrisburg, Lebanon
+267 EDT Philadelphia, Levittown
+272 EDT Scranton, Back Mountain, Hazleton
+412 EDT Pittsburgh, Bethel Park, Mccandless
+445 EDT Philadelphia, Levittown
+484 EDT Allentown, Bethlehem, Chester
+570 EDT Scranton, Back Mountain, Hazleton
+582 EDT Erie
+610 EDT Allentown, Bethlehem, Chester
+717 EDT Lancaster, Harrisburg, Lebanon
+724 EDT New Castle, Mccandless, Monroeville
+814 EDT Erie, Altoona, Johnstown
+835 EDT Allentown
+878 EDT Pittsburgh, Bethel Park, Mccandless
+Prince Edward Island 
+782 ADT Halifax
+902 ADT Halifax
+Puerto Rico 
+787 ADT San Juan
+939 ADT San Juan
+Quebec 
+263 EDT Montreal
+354 EDT Granby
+367 EDT Quebec
+418 EDT Quebec
+438 EDT Montreal
+450 EDT Granby
+468 EDT Sherbrooke
+514 EDT Montreal
+579 EDT Granby
+581 EDT Quebec
+819 EDT Sherbrooke
+873 EDT Sherbrooke
+Rhode Island 
+401 EDT Providence, Bristol, Cranston
+Saskatchewan 
+306 CDT Saskatoon
+474 CDT Saskatoon
+639 CDT Saskatoon
+South Carolina 
+803 EDT Columbia, Aiken, Rock Hill
+839 EDT Columbia
+843 EDT Charleston, Florence, Goose Creek
+854 EDT Charleston, Florence, Goose Creek
+864 EDT Greenville, Anderson, Greenwood
+South Dakota 
+605 CDT/MDT Sioux Falls, Aberdeen, Pierre
+Tennessee 
+423 EDT/CDT Chattanooga, Bristol, Cleveland
+615 CDT Nashville, Brentwood, Franklin
+629 CDT Nashville, Brentwood, Franklin
+731 CDT Jackson
+865 EDT Knoxville, Maryville, Oak Ridge
+901 CDT Memphis, Bartlett, Collierville
+931 EDT/CDT Clarksville, Columbia, Cookeville
+Texas 
+210 CDT San Antonio
+214 CDT Dallas, Allen, Arlington
+254 CDT Killeen, Copperas Cove, Fort Hood
+281 CDT Houston, Alvin, Atascocita
+325 CDT Abilene, San Angelo
+346 CDT Houston, Alvin, Atascocita
+361 CDT Corpus Christi, Kingsville, Victoria
+409 CDT Beaumont, Galveston, Port Arthur
+430 CDT Tyler
+432 CDT Midland, Big Spring, Odessa
+469 CDT Dallas, Allen, Carrollton
+512 CDT Austin, Cedar Park, Georgetown
+682 CDT Fort Worth, Arlington, Bedford
+713 CDT Houston, Alvin, Atascocita
+726 CDT San Antonio
+737 CDT Austin, Cedar Park, Georgetown
+806 CDT Lubbock, Amarillo, Plainview
+817 CDT Fort Worth, Arlington, Bedford
+830 CDT New Braunfels, Del Rio, Eagle Pass
+832 CDT Houston, Alvin, Atascocita
+903 CDT Tyler, Corsicana, Denison
+915 CDT/MDT El Paso, Socorro
+936 CDT Conroe, Huntsville, Lufkin
+940 CDT Denton, Lewisville, Wichita Falls
+945 CDT Dallas
+956 CDT Laredo, Brownsville, Edinburg
+972 CDT Dallas, Allen, Carrollton
+979 CDT College Station, Bryan, Lake Jackson
+Utah 
+385 MDT Salt Lake City, American Fork, Bountiful
+435 MDT St. George, Cedar City, Logan
+801 MDT Salt Lake City, American Fork, Bountiful
+Vermont 
+802 EDT Burlington, Montpelier
+Virgin Islands 
+340 ADT St. Croix, Charlotte Amalie
+Virginia 
+276 EDT Bristol, Richmond
+434 EDT Lynchburg, Charlottesville, Danville
+540 EDT Roanoke, Blacksburg, Cave Spring
+571 EDT Arlington, Alexandria, Annandale
+703 EDT Arlington, Alexandria, Annandale
+757 EDT Virginia Beach, Chesapeake, Hampton
+804 EDT Richmond, Hopewell, Mechanicsville
+826 EDT Roanoke
+948 EDT Virginia Beach
+Washington 
+206 PDT Seattle, Bainbridge Island, Burien
+253 PDT Tacoma, Auburn, East Hill-meridian
+360 PDT Vancouver, Bellingham, Bremerton
+425 PDT Bellevue, Bothell, Cascade-fairwood
+509 PDT Spokane, Kennewick, Opportunity
+564 PDT Vancouver, Bellingham, Bremerton
+Washington, DC 
+202 EDT Washington
+771 EDT Washington
+West Virginia 
+304 EDT Charleston, Huntington, Morgantown
+681 EDT Charleston, Huntington, Morgantown
+Wisconsin 
+262 CDT Kenosha, Brookfield, Caledonia
+414 CDT Milwaukee, Franklin, Greenfield
+534 CDT Eau Claire
+608 CDT Madison, Beloit, Fitchburg
+715 CDT Eau Claire, Stevens Point, Superior
+920 CDT Green Bay, Appleton, De Pere
+Wyoming 
+307 MDT Cheyenne, Casper, Gillette
+Yukon 
+867 CDT/MDT/PDT Whitehorse
