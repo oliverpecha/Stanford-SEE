@@ -20,7 +20,7 @@ int main() {
     Lexicon english ("EnglishWords.txt");
     Map<int, int> dataCount{};
     for (string stream : english){
-        if (isPalindrome(stream) && stream.size() > 2) {
+        if (isPalindrome(stream)) {
         cout << stream << endl;
         }
     }
