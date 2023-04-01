@@ -142,9 +142,6 @@ Cards::Suit string2Suit(char param);
     }
 
 
-
-
-
     int translateRank(std::string str){
         if (str.size() == 1) {
             switch (str[0]) {
