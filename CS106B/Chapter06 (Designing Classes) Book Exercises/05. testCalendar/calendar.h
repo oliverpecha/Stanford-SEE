@@ -18,6 +18,7 @@ enum Month {NONE, JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST, SEPT
 
 class Date {
 
+
     public:
     Date();
     Date(Month iMonth, int iDay, int iYear);
@@ -29,14 +30,47 @@ class Date {
         std::string toString();
         void toUpperCase(std::string& str);
 
+        void setDay(int iDay);
+        void setMonth(Month iMonth);
+        void setYear(int iYear);
 
-    private:
-        Month month;
-        int day;
-        int year;
+
+
+private:
+    Month month;
+    int day;
+    int year;
 
 };
 
+// The insertion operator <<.
+std::ostream & operator<<(std::ostream & os, Date date);
+
+// The relational operators ==, !=, <, <=, >, and >=
+bool operator==(Date d1, Date d2);
+bool operator!=(Date d1, Date d2);
+bool operator<(Date d1, Date d2);
+bool operator<=(Date d1, Date d2);
+bool operator>(Date d1, Date d2);
+bool operator>=(Date d1, Date d2);
+
+// The expression date + n, which returns the date n days after date
+Date operator+(Date  d1, int n);
+// The expression date - n, which returns the date n days before date
+Date operator-(Date d1, int n);
+
+// The expression d1 - d2, which returns how many days separate d1 and d2
+int operator-(Date d1, Date d2);
+
+// The shorthand assignment operators += and -= with an integer on the right
+Date operator+=(Date & d1, int n);
+Date operator-=(Date & d1, int n);
+
+// he ++ and -- operators in both their prefix and suffix form.
+Date  operator++(Date d1, int);
+void operator++(Date & d1);
+Date  operator--(Date d1, int);
+void operator--(Date & d1);
 
 /*
  * Function: daysInMonth
@@ -44,6 +78,8 @@ class Date {
  * Returns the number that a given month has.
  */
  int daysInMonth (Month month, int year);
+ int daysInMonth (int month, int year);
+
 
  /*
   * Function: isLeapYear
