@@ -166,12 +166,17 @@ int operator-(Date d1, Date d2){
         d2 = d1;
         d1 = temp;
     }
-    // d1 must be < d2
-   while (d1 != d2) {
-        d1 += 1;
-        counter++;
+    counter += daysInMonth(d1.getMonth(), d1.getYear()) - d1.getDay();
+    while (d1.getYear() < d2.getYear() ||
+          (d1.getYear() == d2.getYear() && d1.getMonth() < d2.getMonth()) ){
+            if (d1.getMonth() + 1 > 12) {
+                          d1.setMonth(JANUARY);
+                          d1.setYear(d1.getYear() + 1);
+            }
+            else d1.setMonth(monthSetter(d1.getMonth() + 1));
+            counter += daysInMonth(d1.getMonth(), d1.getYear());
     }
-
+    counter -= daysInMonth(d1.getMonth(), d1.getYear()) - d2.getDay();
     return counter;
 }
 

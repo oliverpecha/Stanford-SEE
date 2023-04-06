@@ -1,7 +1,7 @@
 /*
  * File: testCalendar.cpp
  * --------------
- * Using the direction.h interface as an example, design and implement a calendar.h interface that
+ * 05. Using the direction.h interface as an example, design and implement a calendar.h interface that
  * exports the Month type from Chapter 1, along with the functions daysInMonth and isLeapYear,
  * which also appear in that chapter. Your interface should also export a monthToString function
  * that returns the constant name for a value of type Month. Test your implementation by writing
@@ -30,6 +30,26 @@
  * two-digit date, mmm is the three-letter English abbreviation for the month, and yyyy is
  * the four-digit year. Thus, calling toString(moonLanding) should return the string "20-Jul-1969".
  *
+ * 06. Extend the calendar.h interface still further by adding overloaded versions of the following operators:
+ * • The insertion operator <<.
+ * • The relational operators ==, !=, <, <=, >, and >=
+ * • The expression date + n, which returns the date n days after date
+ * • The expression date - n, which returns the date n days before date
+ * • The expression d1 - d2, which returns how many days separate d1 and d2
+ * • The shorthand assignment operators += and -= with an integer on the right
+ * • The ++ and -- operators in both their prefix and suffix form.
+ *
+ * Suppose, for example, that you have made the following definitions:
+ *           Date electionDay(6, NOVEMBER, 2012);
+ *           Date inaugurationDay(21, JANUARY, 2013);
+ *
+ * Given these values of the variables,electionDay<inaugurationDayis true because electionDay
+ * comes before inaugurationDay. Evaluating inaugurationDay - electionDay returns 76, which is the number
+ * of days between the two events. The definitions of these operators, moreover, allow you to write a for loop like
+ *
+ *      for (Date d = electionDay; d <= inaugurationDay; d++)
+ *
+ * that cycles through each of these days, including both endpoints.
  */
 
 #include "calendar.h"
@@ -71,7 +91,7 @@ int main() {
     cout << "**** constructors and ++ and -- operators suffix and prefix form" << endl;
     cout << "empty " << empty << endl;
     cout << endl;
-    Date usa(FEBRUARY, 28, 1987);
+    Date usa(FEBRUARY, 27, 1987);
     cout << "usa   " << usa << endl;
     usa++;
     cout << "usa++  " << usa << endl;
@@ -133,7 +153,6 @@ int main() {
     cout << endl;
     cout << endl;
 
-/*
     cout << "**** expression date + n, which returns the date n days after date" << endl;
     cout << "eu         " << eu << endl;
     cout << "eu + 5     " << eu + 5 << endl;
@@ -163,7 +182,6 @@ int main() {
     cout << endl;
     cout << endl;
 
-*/
     cout << "**** The expression d1 - d2, which returns how many days separate d1 and d2" << endl;
     cout << "eu               " << eu << endl;
     cout << "usa              " << usa << endl;
@@ -171,13 +189,21 @@ int main() {
     cout << "eu - usa         " << eu - usa << endl;
     cout << "usa - eu         " << usa - eu << endl;
     cout << "empty - emptyTwo " << empty - emptyTwo << endl;
-    //cout << "empty - eu       " << empty - eu << endl;
+    cout << "empty - eu       " << empty - eu << endl;
 
     cout << endl;
     cout << "**** for loop: (Date d = eu; d <= usa; ++d)" << endl;
     count = 0;
     for (Date d = eu; d <= usa; ++d) {
         if (d == usa) cout << count << " " << d << endl;
+        count++;
+
+    }
+    cout << endl;
+    cout << "**** for loop: (Date d = empty; d <= eu; ++d)" << endl;
+    count = 0;
+    for (Date d = empty; d <= eu; ++d) {
+        if (d == eu) cout << count << " " << d << endl;
         count++;
 
     }
