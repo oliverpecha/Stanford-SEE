@@ -181,7 +181,7 @@ int operator-(Date d1, Date d2){
 }
 
 // The shorthand assignment operators += and -= with an integer on the right
-Date operator+=(Date & d1, int n){
+Date operator+=(Rational &d1, int n){
     d1 = d1 + n;
     return d1;
 }
