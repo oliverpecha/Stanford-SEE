@@ -34,6 +34,7 @@
 #include "map.h"
 #include <string>
 #include <iomanip>
+
 using namespace std;
 
 bool calculatorFindsResult(string str);
@@ -41,8 +42,7 @@ bool isOperator(string token);
 void decimalJoin();
 double calculateOperator(double d1, double d2, char opera);
 void peek2operate();
-void validateVariable(string token);
-
+void validateVariable();
 
 
 TokenScanner buffer;
@@ -53,6 +53,7 @@ double displayResult;
 int maxPrecision;
 
 const string INPUT_ERROR = "Input can't be processed, review order and content";
+bool printtempResults = false;
 
 
 
@@ -76,14 +77,14 @@ bool calculatorFindsResult(string str) {
     while (buffer.hasMoreTokens()) {
         token = buffer.nextToken();
         if (isalpha(token[0]))
-            validateVariable(token);
+            validateVariable();
         else if (!isOperator(token) && token[0] != '.')
             processor.push(std::stod(token));
         else if (token.size() < 2 && token[0] == '.')
             decimalJoin();
         else if (isOperator(token))
             peek2operate();
-        cout << processor << endl;
+        if (printtempResults) cout << processor << endl;
     }
     if (processor.size() > 0) {
         displayResult = processor.pop();
@@ -92,22 +93,35 @@ bool calculatorFindsResult(string str) {
     else return false;
 }
 
-void validateVariable(string token){
-    if (recorder.containsKey(token)) {
+void validateVariable(){
+    if (recorder.containsKey(token) &&
+        buffer.hasMoreTokens() && isOperator(buffer.peekToken())) {
+        processor.push(recorder.get(token));
+        token = buffer.nextToken();
+        peek2operate();
+    }
+    else if (recorder.containsKey(token)) {
         cout << recorder.get(token) << endl;
     }
     else if (buffer.hasMoreTokens() && buffer.peekToken() == "=") {
         buffer.skipToken();
-        recorder.put(token, std::stod(buffer.nextToken()));
+        string key = token;
+        token = buffer.nextToken();
+        if (buffer.peekToken() == ".") {
+            buffer.skipToken();
+            processor.push(std::stod(token));
+            decimalJoin();
+            recorder.put(key, processor.pop());
+        }
+        else recorder.put(key, std::stod(token));
     }
     else cerr << INPUT_ERROR << endl;
-
 }
 
 
 void peek2operate() {
     char opera = token[0];
-    if (buffer.hasMoreTokens()) {
+    if (buffer.hasMoreTokens() && isnumber(buffer.peekToken()[0])) {
         token = buffer.nextToken();
         processor.push(std::stod(token));
         if (buffer.hasMoreTokens()) {
@@ -117,10 +131,14 @@ void peek2operate() {
             }
             else buffer.reinsertToken(peek);
         }
-        double d2 =  processor.pop();
-        processor.push(calculateOperator(processor.pop(), d2, opera));
+
+    } else if (buffer.hasMoreTokens() && isalpha(buffer.peekToken()[0])) {
+        double temp = recorder.get(buffer.nextToken());
+        processor.push(temp);
     }
     else cerr << INPUT_ERROR << endl;
+    double d2 =  processor.pop();
+    processor.push(calculateOperator(processor.pop(), d2, opera));
 }
 void decimalJoin() {
     if (buffer.hasMoreTokens()) {
