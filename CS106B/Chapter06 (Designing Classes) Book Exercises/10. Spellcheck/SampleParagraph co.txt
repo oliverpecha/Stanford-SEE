@@ -1,1 +1,41 @@
-in3 Chapter 5555. 6 If the .9 word 0000.
+69.1+30.9
+
+20.4-3.6*2.5
+
+4+9-2*16+1/3*6-67+8*2-3+26-1/34+3/7+2-5
+
+{4}
+calculateOperator d1: 4+ d2: 9 = -5
+{13}
+calculateOperator d1: 13- d2: 2 = 11
+{11}
+calculateOperator d1: 11* d2: 16 = -5
+{176}
+calculateOperator d1: 176+ d2: 1 = 175
+{177}
+calculateOperator d1: 177/ d2: 3 = 174
+{59}
+calculateOperator d1: 59* d2: 6 = 53
+{354}
+calculateOperator d1: 354- d2: 67 = 287
+{287}
+calculateOperator d1: 287+ d2: 8 = 279
+{295}
+calculateOperator d1: 295* d2: 2 = 293
+{590}
+calculateOperator d1: 590- d2: 3 = 587
+{587}
+calculateOperator d1: 587+ d2: 26 = 561
+{613}
+calculateOperator d1: 613- d2: 1 = 612
+{612}
+calculateOperator d1: 612/ d2: 34 = 578
+{18}
+calculateOperator d1: 18+ d2: 3 = 15
+{21}
+calculateOperator d1: 21/ d2: 7 = 14
+{3}
+calculateOperator d1: 3+ d2: 2 = 1
+{5}
+calculateOperator d1: 5- d2: 5 = 0
+{0}
