@@ -1,0 +1,312 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 TimesNewRomanPSMT;\f1\froman\fcharset0 Times-Italic;\f2\froman\fcharset0 Times-Bold;
+\f3\froman\fcharset0 Times-BoldItalic;\f4\froman\fcharset0 Times-Roman;\f5\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue10;\red255\green255\blue10;
+}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c99942\c98555\c0;\cssrgb\c99942\c98555\c0;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid201\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid301\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid401\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid5}
+{\list\listtemplateid6\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat13\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid501\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid6}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}{\listoverride\listid6\listoverridecount0\ls6}}
+\margl1440\margr1440\vieww9000\viewh16380\viewkind0
+\deftab720
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa266\partightenfactor0
+\ls1\ilvl0
+\f0\fs26\fsmilli13333 \cf2 {\listtext	1.	}\expnd0\expndtw0\kerning0
+Define the terms 
+\f1\i recursive 
+\f0\i0 and 
+\f1\i iterative. 
+\f0\i0 Is it possible for a function to employ both strategies? \uc0\u8232 recursive: is a strategy to solve complex problems by breaking down the solution in smaller problems of the same nature (that solve themselves by calling themselves recurrently.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	2.	}\expnd0\expndtw0\kerning0
+iterative: find a solution to a problem by executing a function continuously until solution is found\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	3.	}\expnd0\expndtw0\kerning0
+No\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	4.	}\expnd0\expndtw0\kerning0
+What is the fundamental difference between recursion and traditional stepwise refinement? \uc0\u8232 Breaking down the problem in smaller pieces is recursion function must call itself\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	5.	}\expnd0\expndtw0\kerning0
+In the pseudocode for the 
+\f2\b\fs24 collectContributions 
+\f0\b0\fs26\fsmilli13333 function, the 
+\f2\b\fs24 if 
+\f0\b0\fs26\fsmilli13333 statement looks like this: \uc0\u8232 
+\f2\b\fs24 if (n <= 100)\uc0\u8232 
+\f0\b0\fs26\fsmilli13333 Why is it important to use the 
+\f2\b\fs24 <= 
+\f0\b0\fs26\fsmilli13333 operator instead of simply checking whether \uc0\u8232 
+\f2\b\fs24 n 
+\f0\b0\fs26\fsmilli13333 is exactly equal to 100? \uc0\u8232 otherwise calls to 
+\f2\b\fs24 collectContributions won\'92t stop
+\f0\b0\fs26\fsmilli13333 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	6.	}\expnd0\expndtw0\kerning0
+What is the standard recursive paradigm? \uc0\u8232 A formula in which the two necessary parts of a recursive process occur. First the simple case where the recursion stops, and second, the condition to evaluate recursively \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	7.	}\expnd0\expndtw0\kerning0
+What two properties must a problem have for recursion to make sense as a solution strategy? \uc0\u8232 1) a simple answer to resolve one of the smaller pieces of the problem 2) the strategy to solve the problem decomposing it into a simpler  problem of the same type\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	8.	}\expnd0\expndtw0\kerning0
+Why is the term 
+\f1\i divide and conquer 
+\f0\i0 appropriate to recursive techniques? \uc0\u8232 Because the solution depends on dividing hard problems into simpler instances of the same problem\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	9.	}\expnd0\expndtw0\kerning0
+What is meant by the 
+\f1\i recursive leap of faith? 
+\f0\i0 Why is this concept important to \uc0\u8232 you as a programmer? \u8232 thinking about a problem holistically allows you to resolve it using a strategy that doesn\'92t require going through each step of the solution, thus trusting and taking a leap of faith is advisable to the programmer, otherwise it\'92s not advisable to worry about the the entire implementation \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	10.	}\expnd0\expndtw0\kerning0
+In the section entitled \'93Tracing the recursive process,\'94 the text goes through a long analysis of what happens internally when 
+\f2\b\fs24 fact(4) 
+\f0\b0\fs26\fsmilli13333 is called. Using this section as a model, trace through the execution of 
+\f2\b\fs24 fib(3)
+\f0\b0\fs26\fsmilli13333 , sketching out each stack frame created in the process. \
+\pard\tx720\pardeftab720\sa266\partightenfactor0
+\ls1\ilvl0\cf2 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa266\partightenfactor0
+\ls1\ilvl0\cf2 int fib (int n) \{ \
+\pard\tx720\pardeftab720\sa266\partightenfactor0
+\cf2 	   if ( n < 2) \{\
+		return n;\
+	\} else \{\
+		return fib(n-1) + fib(n-2);\
+		return fib(3-1) + fib(3-2);\
+		return fib(2) + fib(1);\
+		return 2 + 1;\
+		\cb3 return 3;\cb1 \
+	\}\
+\}									n=3\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa266\partightenfactor0
+\ls2\ilvl0\cf2 int fib (int n) \{ \
+\pard\tx720\pardeftab720\sa266\partightenfactor0
+\cf2 	   if ( n < 2) \{\
+		return n;\
+	\} else \{\
+		return fib(n-1) + fib(n-2);\
+		return 1 + 1;\
+		\cb3 return 2;\cb1 \
+	\}\
+\}									n=2\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa266\partightenfactor0
+\ls3\ilvl0\cf2 int fib (int n) \{ \
+\pard\tx720\pardeftab720\sa266\partightenfactor0
+\cf2 	   if ( n < 2) \{\
+		return n;\
+		\cb3 return 1;\cb1 \
+	\} else \{\
+		return fib(n-1) + fib(n-2);\
+		\
+	\}\
+\}									n=1\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+======================\
+Int fact(int n) \{\
+	if (n == 0) \{\
+		return 1;\
+	\} else \{\
+		return n * fact(n-1);\
+		return 4 * 6;\
+		\cb4 return 24;\cb1 \
+	\}\
+\}								n = 4\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+Int fact(int n) \{\
+	if (n == 0) \{\
+		return 1;\
+	\} else \{\
+		return n * fact(n-1);\
+		return 3 * 2;\
+		\cb4 return 6;\cb1 \
+	\}\
+\}								n = 3\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+Int fact(int n) \{\
+	if (n == 0) \{\
+		return 1;\
+	\} else \{\
+		return n * fact(n-1);\
+		return 2 * 1;\
+		\cb4 return 2;\cb1 \
+	\}\
+\}								n = 2\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+Int fact(int n) \{\
+	if (n == 0) \{\
+		return 1;\
+	\} else \{\
+		return n * fact(n-1);\
+		return 1 * 1;\
+		\cb3 return 1;\cb1 \
+	\}\
+\}								n = 1\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+Int fact(int n) \{\
+	if (n == 0) \{\
+		\cb3 return 1;\cb1 \
+	\} else \{\
+		return n * fact(n-1);\
+	\}\
+\}								n = 0\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa266\partightenfactor0
+\ls4\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	1.	}\expnd0\expndtw0\kerning0
+\
+\ls4\ilvl0\kerning1\expnd0\expndtw0 {\listtext	2.	}\expnd0\expndtw0\kerning0
+What is a 
+\f1\i recurrence relation? \
+\pard\tx720\pardeftab720\sa266\partightenfactor0
+
+\f0\i0 \cf2 It\'92s the part of the solution that unfolds where the recursion takes places and the terms of it: each element of a sequence is defined in terms\
+of earlier elements, \uc0\u8232 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa266\partightenfactor0
+\ls5\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	1.	}\expnd0\expndtw0\kerning0
+Modify Fibonacci\'92s rabbit problem by introducing the additional rule that rabbit pairs stop reproducing after giving birth to three litters. How does this assumption change the recurrence relation? What changes do you need to make in the simple cases? \
+\ls5\ilvl0\kerning1\expnd0\expndtw0 {\listtext	2.	}Tn = Tn-1 + Tn-2 original\
+{\listtext	3.	}Tn=Tn-1 + Tn-2 - Tn-5  give birth from T2 until T5\
+{\listtext	4.	}Recurrence relation needs to include an operation to quantify the amount of rabbits passed their reproductive life, which is the amount of rabbits 5 months earlier. No changes to the simple cases.\
+\pard\tx720\pardeftab720\sa266\partightenfactor0
+\ls5\ilvl0\cf2 {\listtext	5.	}\expnd0\expndtw0\kerning0
+            if ( n =< 1) \{\
+{\listtext	6.	}return n;\
+\ls5\ilvl0\kerning1\expnd0\expndtw0 {\listtext	7.	}\expnd0\expndtw0\kerning0
+\
+\ls5\ilvl0\kerning1\expnd0\expndtw0 {\listtext	8.	}\expnd0\expndtw0\kerning0
+\} else \{\
+{\listtext	9.	}return fib(n-1) + fib(n-2) - fib(n-5);\uc0\u8232 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa266\partightenfactor0
+\ls5\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	10.	}\expnd0\expndtw0\kerning0
+How many times is 
+\f2\b\fs24 fib(1) 
+\f0\b0\fs26\fsmilli13333 called when calculating 
+\f2\b\fs24 fib(n) 
+\f0\b0\fs26\fsmilli13333 using the recursive implementation given in Figure 7-1? \uc0\u8232 one\
+\ls5\ilvl0\kerning1\expnd0\expndtw0 {\listtext	11.	}\expnd0\expndtw0\kerning0
+What is a wrapper function? Why are they often useful in writing recursive functions? \uc0\u8232 a wrapper holds the recursive relation in a way that obfuscates the private methods necessary to come up with the solution\
+\pard\tx720\pardeftab720\sa266\partightenfactor0
+\cf2       Simply return the result of another function, often after transforming the arguments in some way, are called 
+\f3\i\b wrapper 
+\f0\i0\b0 functions. Wrapper functions are extremely common in recursive programming. In most cases, a wrapper function is used\'97as it is here\'97 to supply additional arguments to a subsidiary function that solves a more general problem. 
+\f4\fs24 \
+
+\f0\fs26\fsmilli13333 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa266\partightenfactor0
+\ls6\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	13.	}\expnd0\expndtw0\kerning0
+What would happen if you eliminated the 
+\f2\b\fs24 if(n==1) 
+\f0\b0\fs26\fsmilli13333 check from the function 
+\f2\b\fs24 additiveSequence
+\f0\b0\fs26\fsmilli13333 , so that the implementation looked like this: \uc0\u8232 
+\f2\b\fs24            int additiveSequence(int n, int t0, int t1) \{\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa266\partightenfactor0
+\ls6\ilvl0\cf2 \kerning1\expnd0\expndtw0  \expnd0\expndtw0\kerning0
+              if (n == 0) return t0;\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls6\ilvl0\cf2 \kerning1\expnd0\expndtw0  \expnd0\expndtw0\kerning0
+              return additiveSequence(n - 1, t1, t0 + t1);\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls6\ilvl0
+\f5\b0\fs26\fsmilli13333 \cf2 \kerning1\expnd0\expndtw0 {\listtext	 	}     
+\f2\b\fs24 \expnd0\expndtw0\kerning0
+\} 
+\f0\b0\fs26\fsmilli13333 \uc0\u8232 Would the function still work? Why or why not? \u8232 It would not work because it would not take into account the population that was introduced at month one.\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa266\partightenfactor0
+\ls6\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	17.	}\expnd0\expndtw0\kerning0
+Why is it important that the implementation of 
+\f2\b\fs24 isPalindrome 
+\f0\b0\fs26\fsmilli13333 in Figure 7-3 checks for the empty string as well as the single character string? What would happen if the function didn\'92t check for the single character case and instead checked only whether the length is 0? Would the function still work correctly? \uc0\u8232 an empty string is a palindrome words with a single letter wouldn\'92t be considered palindrome and that would be wrong\
+\ls6\ilvl0\kerning1\expnd0\expndtw0 {\listtext	18.	}\expnd0\expndtw0\kerning0
+Explain the effect of the function call \uc0\u8232 
+\f2\b\fs24 isPalindrome(str, p1 + 1, p2 - 1)\uc0\u8232 
+\f0\b0\fs26\fsmilli13333 in the 
+\f2\b\fs24 isPalindrome 
+\f0\b0\fs26\fsmilli13333 implementation given in Figure 7-4. \uc0\u8232 given p1 and p2 which are at the edges of str are equal, positions are moved one position each to the inside of the str\
+\ls6\ilvl0\kerning1\expnd0\expndtw0 {\listtext	19.	}\expnd0\expndtw0\kerning0
+What is mutual recursion? \uc0\u8232 If a function is subdivided into subsidiary functions, the recursive call can occur at a deeper level of nesting\
+\ls6\ilvl0\kerning1\expnd0\expndtw0 {\listtext	20.	}\expnd0\expndtw0\kerning0
+What would happen if you defined 
+\f2\b\fs24 isEven 
+\f0\b0\fs26\fsmilli13333 and 
+\f2\b\fs24 isOdd 
+\f0\b0\fs26\fsmilli13333 as follows: \uc0\u8232 
+\f2\b\fs24            bool isEven(unsigned int n) \{\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa266\partightenfactor0
+\ls6\ilvl0\cf2 \kerning1\expnd0\expndtw0  	\expnd0\expndtw0\kerning0
+              return !isOdd(n);
+\f5\b0\fs26\fsmilli13333 \uc0\u8232 
+\f2\b\fs24 \} 
+\f0\b0\fs26\fsmilli13333 \uc0\u8232 
+\f2\b\fs24            bool isOdd(unsigned int n) \{\
+\ls6\ilvl0\kerning1\expnd0\expndtw0  	\expnd0\expndtw0\kerning0
+              return !isEven(n);
+\f5\b0\fs26\fsmilli13333 \kerning1\expnd0\expndtw0 	\expnd0\expndtw0\kerning0
+\uc0\u8232 
+\f2\b\fs24 \} 
+\f0\b0\fs26\fsmilli13333 \uc0\u8232 Which of the errors explained in the section \'93Avoiding the common pitfalls\'94 is illustrated in this example? \u8232 It would never end. simplification process eventually DOES NOT reach the simple cases, to finish the recursion\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa266\partightenfactor0
+\ls6\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	23.	}\expnd0\expndtw0\kerning0
+The following definitions of 
+\f2\b\fs24 isEven 
+\f0\b0\fs26\fsmilli13333 and 
+\f2\b\fs24 isOdd 
+\f0\b0\fs26\fsmilli13333 are also incorrect: \uc0\u8232 
+\f2\b\fs24            bool isEven(unsigned int n) \{\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls6\ilvl0\cf2 \kerning1\expnd0\expndtw0      \expnd0\expndtw0\kerning0
+              if (n == 0) \{\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls6\ilvl0
+\f5\b0\fs26\fsmilli13333 \cf2 \kerning1\expnd0\expndtw0 {\listtext	  	}\expnd0\expndtw0\kerning0
+\uc0\u8232 
+\f2\b\fs24                  return true;\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls6\ilvl0\cf2 \kerning1\expnd0\expndtw0  	\expnd0\expndtw0\kerning0
+              \} else \{\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls6\ilvl0
+\f5\b0\fs26\fsmilli13333 \cf2 \kerning1\expnd0\expndtw0  	\expnd0\expndtw0\kerning0
+\uc0\u8232 
+\f2\b\fs24                  return isOdd(n - 1);\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls6\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	  	}\expnd0\expndtw0\kerning0
+              \}\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls6\ilvl0
+\f5\b0\fs26\fsmilli13333 \cf2 \kerning1\expnd0\expndtw0 {\listtext	 	}\expnd0\expndtw0\kerning0
+\uc0\u8232 
+\f2\b\fs24 \} 
+\f0\b0\fs26\fsmilli13333 \uc0\u8232 \
+\pard\pardeftab720\partightenfactor0
+\ls6\ilvl0
+\f2\b\fs24 \cf2 \kerning1\expnd0\expndtw0 	 \expnd0\expndtw0\kerning0
+          bool isOdd(unsigned int n) \{\
+\ls6\ilvl0\kerning1\expnd0\expndtw0 {\listtext	 	}\expnd0\expndtw0\kerning0
+              if (n == 1) \{\
+\ls6\ilvl0\kerning1\expnd0\expndtw0 {\listtext	 	}\expnd0\expndtw0\kerning0
+                 return true;\
+\ls6\ilvl0\kerning1\expnd0\expndtw0 {\listtext	 	}\expnd0\expndtw0\kerning0
+              \} else \{\
+\ls6\ilvl0\kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+                 return isEven(n - 1);\
+\ls6\ilvl0\kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+              \}\
+\pard\pardeftab720\sa240\partightenfactor0
+\ls6\ilvl0\cf2 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\} 
+\f4\b0 \
+\pard\pardeftab720\sa240\partightenfactor0
+\ls6\ilvl0
+\f0\fs26\fsmilli13333 \cf2 \kerning1\expnd0\expndtw0 	\expnd0\expndtw0\kerning0
+Give an example that shows how this implementation can fail. What common pitfall is illustrated here? \
+With Odd numbers, it will recurse infinitely as no stop is found
+\f4\fs24 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls6\ilvl0
+\f0\fs26\fsmilli13333 \cf2 \kerning1\expnd0\expndtw0 {\listtext	 	}\expnd0\expndtw0\kerning0
+\
+}

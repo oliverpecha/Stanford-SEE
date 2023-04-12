@@ -25,43 +25,22 @@ const double RANDOM_RATIO = .5;
 
 
 int main() {
-    Vector<double> dTester;
-    Vector<string> sContainer;
-    string one = "3.14159e+000";
-    //TokenScanner buffer(oldE);
-    TokenScanner buffer(one);
-
-    //fillVector(dTester);
-    //string input = printVector(dTester, false);
+    TokenScanner buffer;
     buffer.setInput(lotsOfScientificNotation);
     buffer.ignorePunctuation();
     buffer.ignoreWhitespace();
     //buffer.ignoreNumbers();
     buffer.scanNumbers();
     buffer.scanStrings();
-    cout << endl;
-    cout << endl;
-    //cout << "P. input: " << input << endl;
-    cout << endl;
-    cout << endl;
-
+    cout << "Tokens are: " << endl;
     while  (buffer.hasMoreTokens()){
-        cout << "P. buffer: " << buffer.nextToken() << endl;
+        cout << buffer.nextToken() << endl;
     }
 
     return 0;
 }
 
 
-double str2anyDouble(string str){
-    string sFinal;
-    int pos = 0;
-    if (isnumber(str[pos])) {
-        sFinal += str[pos];
-        pos++;
-    }
-    return std::stod(sFinal);
-}
 
 void fillVector(Vector<double> & vector){
     //https://cplusplus.com/reference/ios/scientific/
@@ -100,18 +79,4 @@ string printVector(Vector<double> vector, bool randomness){
     }
     return result;
 
-}
-
-TokenScanner printbuffer(TokenScanner buffer) {
-    cout << "p. buffer: " << buffer.peekToken() << endl;
-    TokenScanner newBufer;
-    string helper;
-    while (buffer.hasMoreTokens()) {
-        helper = buffer.nextToken();
-        cout << helper << endl;
-        newBufer.reinsertToken(helper);
-    }
-    cout << endl;
-    cout << endl;
-    return newBufer;
 }
