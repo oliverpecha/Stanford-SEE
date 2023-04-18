@@ -20,15 +20,23 @@
 using namespace std;
 
 /* Function prototypes */
-void moveTower(int n, char start, char finish, char tmp);
+void moveTower(int n, char start, char finish, char tmp, int simpleCase);
 void moveSingleDisk(char start, char finish);
-int countHanoiMoves(int n);
+int countHanoiMoves(int n, int simpleCase);
 
 /* Main program */
     int main() {
-        int n = getInteger("Enter number of disks: ");
-        moveTower (n, 'A', 'B', 'C');
-        cout << countHanoiMoves(n) << endl;
+        int n = 0;
+        while (n > -1) {
+            n = getInteger("Enter number of disks: ");
+            cout << "With simple case == 0" << endl;
+            moveTower (n, 'A', 'B', 'C', 1);
+            cout << countHanoiMoves(n, 1) << endl;
+            cout << "\n\nWith simple case == 0" << endl;
+            moveTower (n, 'A', 'B', 'C', 0);
+            cout << countHanoiMoves(n, 0) << endl;
+        }
+
         return 0;
     }
 
@@ -38,13 +46,13 @@ int countHanoiMoves(int n);
 *
 * Moves a tower of size n from the start spire to the finish * spire using the tmp spire as the temporary repository.
 */
-    void moveTower (int n, char start, char finish, char tmp) {
-        if (n == 1) {
+    void moveTower (int n, char start, char finish, char tmp,  int simpleCase) {
+        if (n == simpleCase) {
             moveSingleDisk(start, finish);
         } else {
-            moveTower (n- 1, start, tmp, finish);
+            moveTower (n- 1, start, tmp, finish, simpleCase);
             moveSingleDisk(start, finish);
-            moveTower (n- 1, tmp, finish, start);
+            moveTower (n- 1, tmp, finish, start, simpleCase);
         }
     }
 
@@ -66,13 +74,13 @@ int countHanoiMoves(int n);
 *
 * computes the number of moves required to solve the Towers of Hanoi puzzle for n disks
 */
-    int countHanoiMoves(int n) {
+    int countHanoiMoves(int n, int simpleCase) {
         int result = 0;
-        if (n == 1) return 1;
+        if (n == simpleCase) return 1;
         else {
-            result += countHanoiMoves(n-1);
+            result += countHanoiMoves(n-1, simpleCase);
             result++;
-            result += countHanoiMoves(n-1);
+            result += countHanoiMoves(n-1, simpleCase);
             return result;
         }
     }
