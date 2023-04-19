@@ -112,12 +112,10 @@ int countHanoiMoves(int n, int simpleCase);
             // if n != 1, then brake down the task and add it to the stack
             if (!pending.isEmpty() && pending.peek().get(0) != 1) {
                 task = pending.pop();
-
                     Vector<int> taskBonus{task.get(0) -1, start, finish, tmp};
                     task[0] = 1;
                     pending.push(task);
                     pending.push(taskBonus);
-
             }
 
         }
