@@ -16,11 +16,13 @@
 #include <iostream>
 #include "simpio.h"
 #include "console.h"
+#include "stack.h"
 
 using namespace std;
 
 /* Function prototypes */
 void moveTower(int n, char start, char finish, char tmp, int simpleCase);
+void moveStackTower(int n, char start, char finish, char tmp);
 void moveSingleDisk(char start, char finish);
 int countHanoiMoves(int n, int simpleCase);
 
@@ -29,12 +31,15 @@ int countHanoiMoves(int n, int simpleCase);
         int n = 0;
         while (n > -1) {
             n = getInteger("Enter number of disks: ");
+            /*
             cout << "With simple case == 0" << endl;
             moveTower (n, 'A', 'B', 'C', 1);
             cout << countHanoiMoves(n, 1) << endl;
             cout << "\n\nWith simple case == 0" << endl;
             moveTower (n, 'A', 'B', 'C', 0);
             cout << countHanoiMoves(n, 0) << endl;
+            */
+            moveStackTower(n, 'A', 'B', 'C');
         }
 
         return 0;
@@ -83,4 +88,38 @@ int countHanoiMoves(int n, int simpleCase);
             result += countHanoiMoves(n-1, simpleCase);
             return result;
         }
+    }
+
+/*
+* Function: moveTower
+* Usage: moveTower (n, start, finish, tmp);
+*
+* computes the number of moves required to solve the Towers of Hanoi puzzle for n disks
+*/
+    void moveStackTower(int n, char start, char finish, char tmp) {
+        Stack<Vector<int>> pending;
+        Vector<int> task{n, start, finish, tmp};
+        pending.push(task);
+        cout << pending << endl;
+        // while there are pending tasks keep executing
+        while (!pending.isEmpty()) {
+        // to execute, look up the task
+            // if n = 1, then move
+            if (pending.peek().get(0) == 1) {
+                task = pending.pop();
+                cout << char(task.get(1)) << "->" << char(task.get(2)) << endl;
+            }
+            // if n != 1, then brake down the task and add it to the stack
+            if (!pending.isEmpty() && pending.peek().get(0) != 1) {
+                task = pending.pop();
+
+                    Vector<int> taskBonus{task.get(0) -1, start, finish, tmp};
+                    task[0] = 1;
+                    pending.push(task);
+                    pending.push(taskBonus);
+
+            }
+
+        }
+
     }
