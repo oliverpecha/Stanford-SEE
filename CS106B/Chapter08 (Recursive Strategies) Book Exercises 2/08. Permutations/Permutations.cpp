@@ -38,6 +38,7 @@
 #include "console.h"
 #include "simpio.h"
 #include "set.h"
+#include "map.h"
 
 using namespace std;
 
@@ -47,27 +48,36 @@ void listPermutations(string str);
 void listPermutRecurs(string str, int index);
 
 
+Map<string,string> permaList;
 
 int main() {
-    //string name = getLine("Enter starting word: ");
-    string name = "happy";
+    string name = getLine("Enter starting word: ");
+    //string name = "happy";
     int count = 0;
     Set<string> perms = generatePermutations(name);
+    cout << "Original." << endl;
     for (string candidate : perms) {
         count++;
-        //cout << "      " << candidate << ". " << candidate.length() << endl;
+        cout << "      " << candidate << ". " << endl;
     }
     cout << "      count: " << count << ".\n" << endl;
+    cout << "Exercise 8." << endl;
     count = 0;
     perms = generatePermutationsBis(name);
     for (string candidate : perms) {
         count++;
-        //cout << "      " << candidate << ". " << candidate.length() << endl;
+        cout << "      " << candidate << ". " << endl;
+    }
+    cout << "      count: " << count << ".\n" << endl;
+    cout << "Exercise 9." << endl;
+    listPermutations(name);
+    count = 0;
+    for (string candidate : permaList) {
+        count++;
+        cout << "      " << candidate << ". " << endl;
     }
     cout << "      count: " << count << "." << endl;
 
-
-    listPermutations(name);
     return 0;
 }
 
@@ -80,24 +90,17 @@ void listPermutations(string str){
 
 
 void listPermutRecurs(string str, int index){
-    if (str.length() - 1 == index) {
-        //cout << "*** " << str << endl;
+    if (str.length() == index) {
         return;
     } else {
-        for (int var = 0; var <= index; ++var) {
-            for (int t = 0; t < var; ++t) {
-                cout << str[t];
-            }
-            cout << "_";
-            ::swap(str[0],str[index]);
-
+        for (int var = index; var < str.length(); ++var) {
+            swap(str[index],str[var]);
+            permaList.put(str.substr(0,index) + str.substr(index), "");
             listPermutRecurs(str, index + 1);
+            swap(str[var],str[index]);
         }
-        cout << "\n" << endl;
     }
-
 }
-
 
 
 Set<string> generatePermutationsBis(string str) {
@@ -107,7 +110,7 @@ Set<string> generatePermutationsBis(string str) {
     } else {
             char ch = str[0];
             string rest = str.substr(1);
-            for (string s : generatePermutations(rest)) {
+            for (string s : generatePermutationsBis(rest)) {
                 for (int var = 0; var <= s.length(); ++var) {
                     result += s.substr(0, var) + ch + s.substr(var);
                 }
