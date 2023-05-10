@@ -19,6 +19,8 @@
 #include "simpio.h"
 #include "map.h"
 #include "set.h"
+#include "lexicon.h"
+
 using namespace std;
 
 void fillKeyboard();
@@ -27,19 +29,16 @@ void listMnemonics(string n);
 Map <int, string> keyboard;
 Set<string> mnemonics;
 
+
 int main() {
     fillKeyboard();
     string nEntered;
     while (nEntered != "-") {
         nEntered = getLine("What number to translate to Mnemonic?");
-
-        //cout << "MAX_TEST:" << keyboard.get(nEntered[1] - '0').substr(1,1) << endl;
-
         listMnemonics(nEntered);
         mnemonics.clear();
     }
     cout << "the end" << endl;
-
     return 0;
 }
 
@@ -61,6 +60,7 @@ Set<string> Mnemonics(string n, int index, int pos) {
 
 
 void listMnemonics(string n) {
+    Lexicon english("Englishwords.txt");
     int index = 0;
     for (int key = index; key < n.length(); ++key) {
         for (int pos = 0; pos < keyboard.get(n[key] - '0').length(); ++pos) {
@@ -71,7 +71,7 @@ void listMnemonics(string n) {
     }
 
     for (string s : mnemonics) {
-        if (n.length() == s.length()){
+        if (n.length() == s.length() && english.contains(s)){
             cout << s << endl;
         }
     }
