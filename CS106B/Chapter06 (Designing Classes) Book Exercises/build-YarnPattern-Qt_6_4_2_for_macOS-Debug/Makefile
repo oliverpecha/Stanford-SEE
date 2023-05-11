@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = YarnPattern1.0.0
-DISTDIR = /Users/oliverpecha/Documents/GitHub/Stanford-SEE/CS106B/Chapter0X\ (title)\ Book\ Exercises/build-YarnPattern-Qt_6_4_2_for_macOS-Debug/.tmp/YarnPattern1.0.0
+DISTDIR = /Users/oliverpecha/Documents/GitHub/Stanford-SEE/CS106B/Chapter06\ (Designing\ Classes)\ Book\ Exercises/build-YarnPattern-Qt_6_4_2_for_macOS-Debug/.tmp/YarnPattern1.0.0
 LINK          = @echo linking $@ && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
 LFLAGS        = -L'/Users/oliverpecha/Library/Application Support/cs106/lib' -headerpad_max_install_names $(EXPORT_ARCH_ARGS) -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=10.14 -Wl,-rpath,@executable_path/../Frameworks -Wl,-rpath,/Users/oliverpecha/Qt/6.4.2/macos/lib
 LIBS          = $(SUBLIBS) -F/Users/oliverpecha/Qt/6.4.2/macos/lib -lcs106 -lpthread -framework QtWidgets -framework QtGui -framework AppKit -framework ImageIO -framework Metal -framework QtNetwork -framework QtCore -framework IOKit -framework DiskArbitration -framework AGL -framework OpenGL   
@@ -214,7 +214,7 @@ EXPORT_VALID_ARCHS = x86_64 arm64
 EXPORT_DEFAULT_ARCHS = x86_64
 EXPORT_ARCHS = $(filter $(EXPORT_VALID_ARCHS), $(if $(ARCHS), $(ARCHS), $(if $(EXPORT_DEFAULT_ARCHS), $(EXPORT_DEFAULT_ARCHS), $(EXPORT_VALID_ARCHS))))
 EXPORT_ARCH_ARGS = $(foreach arch, $(if $(EXPORT_ARCHS), $(EXPORT_ARCHS), $(EXPORT_VALID_ARCHS)), -arch $(arch))
-EXPORT__PRO_FILE_ = /Users/oliverpecha/Documents/GitHub/Stanford-SEE/CS106B/Chapter0X (title) Book Exercises/04. YarnPattern/YarnPattern.pro
+EXPORT__PRO_FILE_ = /Users/oliverpecha/Documents/GitHub/Stanford-SEE/CS106B/Chapter06 (Designing Classes) Book Exercises/04. YarnPattern/YarnPattern.pro
 
 
 include /Users/oliverpecha/Qt/6.4.2/macos/mkspecs/features/mac/sdk.mk
