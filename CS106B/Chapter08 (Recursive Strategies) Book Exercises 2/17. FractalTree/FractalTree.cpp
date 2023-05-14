@@ -45,7 +45,7 @@ const double UPSIZE = 1.6;
 int main() {
     GWindow gw(900, 500);
     gw.setColor("BLACK");
-    GPoint center(gw.getWidth() / 2, gw.getHeight() / 2);
+    GPoint center(gw.getWidth() / 2, gw.getHeight() / 2 + SCALE / 3);
     drawTree(gw, center, SCALE, 0, ORDER);
     return 0;
 }
