@@ -206,3 +206,5 @@ void drawGuides(GWindow & gw, GPoint center, double length) {
     gw.drawLine(gw.getWidth() / 2, 0, gw.getWidth() / 2, gw.getHeight());
     gw.drawLine(0, gw.getHeight() / 2,  gw.getWidth(), gw.getHeight() / 2);
 }
+
+

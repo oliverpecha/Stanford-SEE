@@ -1,0 +1,77 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 TimesNewRomanPSMT;\f1\froman\fcharset0 Times-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat14\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww14820\viewh16380\viewkind0
+\deftab720
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa266\partightenfactor0
+\ls1\ilvl0
+\f0\fs26\fsmilli13333 \cf2 {\listtext	1.	}\expnd0\expndtw0\kerning0
+What is the principal characteristic of a backtracking algorithm? \uc0\u8232 It explores all possible paths until success or failure is found, and then backtracks to inform about it\'92s finding\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa266\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	2.	}\expnd0\expndtw0\kerning0
+Using your own words, state the right-hand rule for escaping from a maze. Would a left-hand rule work equally well? \uc0\u8232 place your right hand on the wall to the right and keep walking toward the direction that the wall takes you passing turns and corridors until the exit is found. If you return to the initial spot means that the maze is closed or that there is an infinite loop inside the maze. Yes as long as you stick to the same wall until an exit is found or are taken back to the original spot\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	3.	}\expnd0\expndtw0\kerning0
+What is the insight that makes it possible to solve a maze by recursive backtracking? \uc0\u8232 keep exploring all the possible directions until there is no room for exploration or an exit is found\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	4.	}\expnd0\expndtw0\kerning0
+What are the simple cases that apply in the recursive implementation of 
+\f1\b\fs24 solveMaze
+\f0\b0\fs26\fsmilli13333 ? \uc0\u8232 If the exit is found or you are forced to return to the path you already explored in this attempt\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	5.	}\expnd0\expndtw0\kerning0
+Why is important to mark squares as you proceed through the maze? What would happen in the 
+\f1\b\fs24 solveMaze 
+\f0\b0\fs26\fsmilli13333 function if you never marked any squares? \uc0\u8232 You couldn\'92t know if you are moving towards a path that has already been explored in the current attempt\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	6.	}\expnd0\expndtw0\kerning0
+What is the purpose of the 
+\f1\b\fs24 unmarkSquare 
+\f0\b0\fs26\fsmilli13333 call at the end of the 
+\f1\b\fs24 for 
+\f0\b0\fs26\fsmilli13333 loop in the 
+\f1\b\fs24 solveMaze 
+\f0\b0\fs26\fsmilli13333 implementation? Is this statement essential to the algorithm? \uc0\u8232 Yes, so that other subsequent recursive calls can find the square unexplored. Otherwise other calls to explore a new path would find marked squares on a path yet to explore on their own attempt and would declare the simple case wrongly\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	7.	}\expnd0\expndtw0\kerning0
+What is the purpose of the Boolean result returned by 
+\f1\b\fs24 solveMaze
+\f0\b0\fs26\fsmilli13333 ? \uc0\u8232 will keep returning false until it can\'92t further move forward or will return true once it finds a square outside of the maze\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	8.	}\expnd0\expndtw0\kerning0
+In your own words, explain how the backtracking process actually takes place \uc0\u8232 in the recursive implementation of 
+\f1\b\fs24 solveMaze
+\f0\b0\fs26\fsmilli13333 . \uc0\u8232 will keep returning false until it can\'92t further move forward or will return true once it finds a square outside of the maze\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	9.	}\expnd0\expndtw0\kerning0
+In the simple Nim game, the human player plays first and begins with a pile of \uc0\u8232 13 coins. Is this a good or a bad position? Why? \u8232 Good because it can decide how many coins to take and move the game in any direction\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	10.	}\expnd0\expndtw0\kerning0
+Write a simple C++ expression based on the value of 
+\f1\b\fs24 nCoins 
+\f0\b0\fs26\fsmilli13333 that has the \uc0\u8232 value 
+\f1\b\fs24 true 
+\f0\b0\fs26\fsmilli13333 if the position is good for the current player and 
+\f1\b\fs24 false 
+\f0\b0\fs26\fsmilli13333 otherwise. \uc0\u8232 bool goodPosition(int nCoins) \{ \
+                 If (nCoins - 3) return true;		\
+                  else return false		\
+\}\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	11.	}\expnd0\expndtw0\kerning0
+What is the minimax algorithm? What does its name signify? \uc0\u8232 It is a strategy to find the move that minimizes the maximum opportunity of the opponent\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	12.	}\expnd0\expndtw0\kerning0
+Why is it useful to develop an abstract implementation of the minimax algorithm that does not depend on the details of a particular game? \uc0\u8232 SO that it can apply to other games, not a particular one. By leaving the details away such general implementation can apply to more games\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	13.	}\expnd0\expndtw0\kerning0
+What is the role of the 
+\f1\b\fs24 depth 
+\f0\b0\fs26\fsmilli13333 argument in the functions 
+\f1\b\fs24 findBestMove 
+\f0\b0\fs26\fsmilli13333 and 
+\f1\b\fs24 evaluatePosition
+\f0\b0\fs26\fsmilli13333 ? \uc0\u8232 In many multiplayer games, there are so many possible outcomes to analyze that doing so could take a large number of years even using modern computers. With that in mind, it\'92s preferred to analyze only a particular number of moves forward and choose the one that damages the opponent the most at a particular time, leaving further possibilities away for now.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa266\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	14.	}\expnd0\expndtw0\kerning0
+Explain the role of the 
+\f1\b\fs24 evaluateStaticPosition 
+\f0\b0\fs26\fsmilli13333 function in the minimax implementation. \uc0\u8232 If the depth of the analysis doesn\'92t reach the end of the game, analysis should only be carried from the current static position until the depth defined permits\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa266\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	15.	}\expnd0\expndtw0\kerning0
+Suppose you are in a position in which the analysis for the next two moves shows the following rated outcomes from your original player\'92s point-of-view: \uc0\u8232 If you adopt the minimax strategy, what is the best move to make in this position? What is the rating of that move from your perspective?  \
+Second position. -2\uc0\u8232 \
+}
