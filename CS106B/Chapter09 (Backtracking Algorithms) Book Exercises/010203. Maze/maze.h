@@ -77,6 +77,15 @@ public:
    bool wallExists(GPoint pt, Direction dir);
 
 /*
+* Method: wallExists
+* Usage: if (maze.wallExists(pt, dir)) . . .
+* ------------------------------------------
+* Returns true if there is a wall in direction dir from the square at pt.
+*/
+
+  bool pathExisted(GPoint pt, Direction dir);
+
+/*
  * Method: markSquare
  * Usage: maze.markSquare(pt);
  * ---------------------------
@@ -95,13 +104,59 @@ public:
    void unmarkSquare(GPoint pt);
 
 /*
- * Method: isMarked
- * Usage: if (maze.isMarked(pt)) . . .
+* Method: blockedSquare
+* Usage: maze.blockSquare(pt);
+* -----------------------------
+* Sets the specified square in the maze as blocked.
+*/
+
+  void blockedSquare(GPoint pt, char type);
+
+/*
+* Method: isMarked
+* Usage: if (maze.isMarked(pt)) . . .
+* -----------------------------------
+* Returns true if the specified square is marked.
+*/
+
+bool isMarked(GPoint pt);
+
+/*
+ * Method: isBlocked
+ * Usage: if (maze.isBlocked(pt)) . . .
  * -----------------------------------
  * Returns true if the specified square is marked.
  */
 
-   bool isMarked(GPoint pt);
+   bool isBlocked(GPoint pt);
+
+/*
+* Method: isFlagged
+* Usage: if (maze.isFlagged(pt)) . . .
+* -----------------------------------
+* Returns true if the specified square is flagged.
+*/
+
+  bool isFlagged(GPoint pt);
+
+/*
+* Method: isPath
+* Usage: if (maze.isFlagged(pt)) . . .
+* -----------------------------------
+* Returns true if the specified square is flagged.
+*/
+
+    bool isPath(GPoint pt);
+
+
+/*
+* Method: lastFlagged
+* Usage:
+* -----------------------------------
+*
+*/
+
+   GPoint getLastFlagged();
 
 /* Private section */
 
@@ -110,6 +165,9 @@ private:
 /* Structure representing a single square */
 
    struct Square {
+      bool flagged;
+      bool blocked;
+      bool path;
       bool marked;
       bool walls[4];
    };
@@ -118,6 +176,7 @@ private:
 
    Grid<Square> maze;
    GPoint startSquare;
+   GPoint lastFlagged;
    GWindow *gp;
    double x0;
    double y0;
@@ -140,6 +199,7 @@ private:
    void drawMarks();
    void drawMark(GPoint pt);
    void eraseMark(GPoint pt);
+   void blockMark(GPoint pt, std::string color);
    GPoint adjacentGPoint(GPoint start, Direction dir);
 
 };

@@ -13,7 +13,7 @@
 #include "grid.h"
 #include "gwindow.h"
 #include "maze.h"
-//#include "GPoint.h"
+
 using namespace std;
 
 /* Constants */
@@ -61,9 +61,16 @@ bool Maze::wallExists(GPoint pt, Direction dir) {
    return (maze[pt.y][pt.x].walls[dir]);
 }
 
+bool Maze::pathExisted(GPoint pt, Direction dir) {
+    if (isPath(pt)) return true;
+    else return false;
+    }
+
 void Maze::markSquare(GPoint pt) {
    if (isOutside(pt)) error("Coordinates are out of range");
    maze[pt.y][pt.x].marked = true;
+   maze[pt.y][pt.x].path = true;
+
    if (gp != NULL) drawMark(pt);
 }
 
@@ -71,11 +78,54 @@ void Maze::unmarkSquare(GPoint pt) {
    if (isOutside(pt)) error("Coordinates are out of range");
    maze[pt.y][pt.x].marked = false;
    if (gp != NULL) eraseMark(pt);
+   if (isFlagged(pt) && pt != startSquare) {
+        lastFlagged = pt;
+   }
+
+}
+
+void Maze::blockedSquare(GPoint pt, char type) {
+   if (isOutside(pt)) error("Coordinates are out of range");
+
+   string color;
+   switch (type) {
+       case 'D':
+           maze[pt.y][pt.x].blocked = true;
+           color = "RED";
+           break;
+       case 'S':
+            color = "BLUE";
+           break;
+       case 'F':
+            color = "YELLOW";
+            maze[pt.y][pt.x].flagged = true;
+           break;   }
+
+   if (gp != NULL) blockMark(pt, color);
 }
 
 bool Maze::isMarked(GPoint pt) {
    if (isOutside(pt)) error("Coordinates are out of range");
    return maze[pt.y][pt.x].marked;
+}
+
+bool Maze::isBlocked(GPoint pt) {
+   if (isOutside(pt)) error("Coordinates are out of range");
+   return maze[pt.y][pt.x].blocked;
+}
+
+bool Maze::isFlagged(GPoint pt) {
+   if (isOutside(pt)) error("Coordinates are out of range");
+   return maze[pt.y][pt.x].flagged;
+}
+
+bool Maze::isPath(GPoint pt) {
+   if (isOutside(pt)) error("Coordinates are out of range");
+   return maze[pt.y][pt.x].path;
+}
+
+GPoint Maze::getLastFlagged() {
+   return lastFlagged;
 }
 
 /* Private methods */
@@ -99,7 +149,7 @@ void Maze::readMazeFile(std::string filename) {
          for (int i = 0; i < 4; i++) {
             maze[row][col].walls[i] = false;
          }
-         maze[row][col].marked = false;
+         maze[row][col].blocked = false;
       }
    }
    startSquare = GPoint(-1, -1);
@@ -198,7 +248,7 @@ void Maze::processDividerLine(string line, int y) {
  *
  * where the | symbols may be replaced by spaces to indicate a
  * corridor square.  One of the open passageway squares in the
- * file may also be marked with an 'S' to indicate the start
+ * file may also be blocked with an 'S' to indicate the start
  * square.  The y argument gives the index of the squares on
  * this line.
  */
@@ -329,7 +379,7 @@ void Maze::drawMarks() {
    for (int x = 0; x < cols; x++) {
       for (int y = 0; y < rows; y++) {
          GPoint pt(x, y);
-         if (isMarked(pt)) {
+         if (isBlocked(pt)) {
             drawMark(pt);
          }
       }
@@ -340,7 +390,7 @@ void Maze::drawMark(GPoint pt) {
    double x = x0 + (pt.x + 0.5) * SQUARE_SIZE;
    double y = y0 + (pt.y + 0.5) * SQUARE_SIZE;
    double delta = MARK_SIZE / 2;
-   gp->setColor("RED");
+   gp->setColor("GREEN");
    gp->drawLine(x - delta, y - delta, x + delta, y + delta);
    gp->drawLine(x - delta, y + delta, x + delta, y - delta);
    gp->setColor("BLACK");
@@ -352,6 +402,16 @@ void Maze::eraseMark(GPoint pt) {
    double y = y0 + (pt.y + 0.5) * SQUARE_SIZE;
    double delta = MARK_SIZE / 2;
    gp->setColor("WHITE");
+   gp->fillRect(x - delta - 1, y - delta - 1, MARK_SIZE + 2, MARK_SIZE + 2);
+   gp->setColor("BLACK");
+   pause(200);
+}
+
+void Maze::blockMark(GPoint pt, string color) {
+   double x = x0 + (pt.x + 0.5) * SQUARE_SIZE;
+   double y = y0 + (pt.y + 0.5) * SQUARE_SIZE;
+   double delta = MARK_SIZE / 2;
+   gp->setColor(color);
    gp->fillRect(x - delta - 1, y - delta - 1, MARK_SIZE + 2, MARK_SIZE + 2);
    gp->setColor("BLACK");
    pause(200);
