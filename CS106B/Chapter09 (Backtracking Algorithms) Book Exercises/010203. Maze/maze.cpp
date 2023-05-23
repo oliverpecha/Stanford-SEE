@@ -69,8 +69,7 @@ bool Maze::pathExisted(GPoint pt, Direction dir) {
 void Maze::markSquare(GPoint pt) {
    if (isOutside(pt)) error("Coordinates are out of range");
    maze[pt.y][pt.x].marked = true;
-   maze[pt.y][pt.x].path = true;
-
+   //maze[pt.y][pt.x].path = true;
    if (gp != NULL) drawMark(pt);
 }
 
@@ -84,23 +83,24 @@ void Maze::unmarkSquare(GPoint pt) {
 
 }
 
-void Maze::blockedSquare(GPoint pt, char type) {
+void Maze::setSquare(GPoint pt, char type) {
    if (isOutside(pt)) error("Coordinates are out of range");
 
    string color;
    switch (type) {
-       case 'D':
+       case 'B':
            maze[pt.y][pt.x].blocked = true;
            color = "RED";
-           break;
-       case 'S':
-            color = "BLUE";
            break;
        case 'F':
             color = "YELLOW";
             maze[pt.y][pt.x].flagged = true;
-           break;   }
-
+           break;
+       case 'P':
+            color = "BLUE";
+            maze[pt.y][pt.x].path = true;
+           break;
+   }
    if (gp != NULL) blockMark(pt, color);
 }
 
@@ -120,8 +120,24 @@ bool Maze::isFlagged(GPoint pt) {
 }
 
 bool Maze::isPath(GPoint pt) {
-   if (isOutside(pt)) error("Coordinates are out of range");
+   //if (isOutside(pt)) error("Coordinates are out of range");
+   if (isOutside(pt)) return false;
    return maze[pt.y][pt.x].path;
+}
+
+bool Maze::isAllowedPath(GPoint pt) {
+   if (isOutside(pt)) return false;
+   if (pathEntries.contains(pt)) return true;
+   return false;
+}
+
+
+void Maze::setPathEntry(GPoint pt) {
+    pathEntries.add(pt);
+}
+
+void Maze::removePathEntry(GPoint pt) {
+    pathEntries.remove(pt);
 }
 
 GPoint Maze::getLastFlagged() {

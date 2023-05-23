@@ -11,6 +11,7 @@
 #include "grid.h"
 #include "gwindow.h"
 #include "direction.h"
+#include "set.h"
 
 //#include "GPoint.h"
 
@@ -110,7 +111,7 @@ public:
 * Sets the specified square in the maze as blocked.
 */
 
-  void blockedSquare(GPoint pt, char type);
+  void setSquare(GPoint pt, char type);
 
 /*
 * Method: isMarked
@@ -148,6 +149,15 @@ bool isMarked(GPoint pt);
 
     bool isPath(GPoint pt);
 
+/*
+* Method: isAllowedPath
+* Usage: if (maze.isFlagged(pt)) . . .
+* -----------------------------------
+* Returns true if the specified square is flagged.
+*/
+
+bool isAllowedPath(GPoint pt);
+
 
 /*
 * Method: lastFlagged
@@ -157,6 +167,14 @@ bool isMarked(GPoint pt);
 */
 
    GPoint getLastFlagged();
+
+
+
+void setPathEntry(GPoint pt);
+
+void removePathEntry(GPoint pt);
+
+
 
 /* Private section */
 
@@ -182,6 +200,7 @@ private:
    double y0;
    int rows;
    int cols;
+   Set<GPoint> pathEntries;
 
 /* Private functions */
 
