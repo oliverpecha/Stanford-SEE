@@ -86,8 +86,8 @@ int main() {
 * a bonding point is included, which is then used to find it's immediate parent untill all sucessful branches get
 * from exit to the start.
 *
-* This strategy finds 6 paths with the highest acuracy in <100seconds
-* Second (the old questionbale)
+* This strategy finds 6 paths with the highest acuracy in <80seconds
+* Second (the old questionbale) only finds 4 paths (after all my efforts to cover all the cases) and takes ~155sec to get there.
 */
 
 void solveMazeProblemsFirstStrategy(Maze & maze) {

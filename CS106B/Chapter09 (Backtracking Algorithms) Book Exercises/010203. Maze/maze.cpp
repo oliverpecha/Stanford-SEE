@@ -66,11 +66,11 @@ bool Maze::pathExisted(GPoint pt, Direction dir) {
     else return false;
     }
 
-void Maze::markSquare(GPoint pt) {
+void Maze::markSquare(GPoint pt, string color) {
    if (isOutside(pt)) error("Coordinates are out of range");
    maze[pt.y][pt.x].marked = true;
    //maze[pt.y][pt.x].path = true;
-   if (gp != NULL) drawMark(pt);
+   if (gp != NULL) drawMark(pt, color);
 }
 
 void Maze::unmarkSquare(GPoint pt) {
@@ -396,17 +396,17 @@ void Maze::drawMarks() {
       for (int y = 0; y < rows; y++) {
          GPoint pt(x, y);
          if (isBlocked(pt)) {
-            drawMark(pt);
+            drawMark(pt, "GREEN");
          }
       }
    }
 }
 
-void Maze::drawMark(GPoint pt) {
+void Maze::drawMark(GPoint pt, string color) {
    double x = x0 + (pt.x + 0.5) * SQUARE_SIZE;
    double y = y0 + (pt.y + 0.5) * SQUARE_SIZE;
    double delta = MARK_SIZE / 2;
-   gp->setColor("GREEN");
+   gp->setColor(color);
    gp->drawLine(x - delta, y - delta, x + delta, y + delta);
    gp->drawLine(x - delta, y + delta, x + delta, y - delta);
    gp->setColor("BLACK");

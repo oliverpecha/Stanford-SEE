@@ -93,7 +93,7 @@ public:
  * Marks the specified square in the maze.
  */
 
-   void markSquare(GPoint pt);
+   void markSquare(GPoint pt, std::string color);
 
 /*
  * Method: unmarkSquare
@@ -216,7 +216,7 @@ private:
    void drawMazeGrid();
    void drawWalls();
    void drawMarks();
-   void drawMark(GPoint pt);
+   void drawMark(GPoint pt, std::string color);
    void eraseMark(GPoint pt);
    void blockMark(GPoint pt, std::string color);
    GPoint adjacentGPoint(GPoint start, Direction dir);
