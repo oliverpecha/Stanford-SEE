@@ -1,5 +1,5 @@
 /*
- * File: main.cpp
+ * File: NQueens.cpp
  * --------------
  * The most powerful piece in the game of chess is the queen, which can move any number
  * of squares in any direction, horizontally, vertically, or diagonally. For example,
@@ -23,9 +23,9 @@
 
 using namespace std;
 
-const int NQUEENS = 8;
+const int NQUEENS = 9;
 const int PIX_SIZE = 30;
-const int T_PAUSE = 900;
+const int T_PAUSE = 300;
 
 
 
@@ -33,72 +33,28 @@ void placeQueen(Grid<bool> & chessboard, Grid<bool> & queenPos, int row, int col
 void removeQueen(Grid<bool> & chessboard, Grid<bool> & queenPos, int row, int column);
 void blockRails(Grid<bool> & chessboard, int row, int column);
 void resetHelpers(int & x, int & y, int row, int column);
+void resetRails(Grid<bool> & chessboard, Grid<bool> & queenPos);
 void displayChessboard(GWindow & display, Grid<bool> chessboard, Grid<bool> queenPos, int pixSize);
-bool fillChessboard(GWindow & display, Grid<bool> & chessboard, Grid<bool> & queenPos, int column, int row);
+bool fillChessboard(GWindow & display, Grid<bool> & chessboard, Grid<bool> & queenPos, int column);
 
 int main() {
     GWindow gw;
-
     Grid<bool> chessboard(NQUEENS, NQUEENS);
     Grid<bool> queenPos(NQUEENS, NQUEENS, false);
     displayChessboard(gw, chessboard, queenPos, PIX_SIZE);
-    /*
-
-    */
-    if (fillChessboard(gw, chessboard, queenPos, chessboard.numRows() - 1, chessboard.numCols() - 1)) {
+    if (fillChessboard(gw, chessboard, queenPos, chessboard.numCols() - 1)) {
         cout << "POSSIBLE" << endl;
     }
     else cout << "NOT POSSIBLE!!!" << endl;
-   /*
-    placeQueen(chessboard, queenPos, 1, 5);
-    //[y column][x row]
-    cout << chessboard[0][7] << endl;
-    cout << chessboard[5][1] << endl;
-    if (chessboard[5][1] == false) {
-        cout << "POSSIBLE" << endl;
-    }
-    else cout << "NOPE" << endl;
-    */
     displayChessboard(gw, chessboard, queenPos, PIX_SIZE);
-    /*
-    placeQueen(chessboard, queenPos, 7, 0);
-    pause(T_PAUSE);
-    displayChessboard(gw, chessboard, queenPos, PIX_SIZE);
-    placeQueen(chessboard, queenPos, 6, 6);
-    pause(T_PAUSE);
-    displayChessboard(gw, chessboard, queenPos, PIX_SIZE);
-    placeQueen(chessboard, queenPos, 5, 4);
-    pause(T_PAUSE);
-    displayChessboard(gw, chessboard, queenPos, PIX_SIZE);
-    placeQueen(chessboard, queenPos, 4, 7);
-    pause(T_PAUSE);
-    displayChessboard(gw, chessboard, queenPos, PIX_SIZE);
-    placeQueen(chessboard, queenPos, 3, 1);
-    pause(T_PAUSE);
-    displayChessboard(gw, chessboard, queenPos, PIX_SIZE);
-    placeQueen(chessboard, queenPos, 2, 3);
-    pause(T_PAUSE);
-    displayChessboard(gw, chessboard, queenPos, PIX_SIZE);
-    placeQueen(chessboard, queenPos, 1, 5);
-    pause(T_PAUSE);
-    displayChessboard(gw, chessboard, queenPos, PIX_SIZE);
-    placeQueen(chessboard, queenPos, 0, 2);
-    pause(T_PAUSE);
-    displayChessboard(gw, chessboard, queenPos, PIX_SIZE);
-*/
-    // create simple grid
-    // fill recursively
     return 0;
 }
 
 
-bool fillChessboard(GWindow & gw, Grid<bool> & chessboard, Grid<bool> & queenPos, int column, int row) {
+bool fillChessboard(GWindow & gw, Grid<bool> & chessboard, Grid<bool> & queenPos, int column) {
     if (column == 0) {
         for (int var = 0; var < chessboard.numRows(); ++var) {
             if (chessboard[column][var] == false) {
-//            if (chessboard[var][column] == false) {
-                cout << "column " << column <<  "var " << var << endl;
-                //placeQueen(chessboard, queenPos, var, column);
                 placeQueen(chessboard, queenPos, column, var);
                 displayChessboard(gw, chessboard, queenPos, PIX_SIZE);
                 pause(T_PAUSE);
@@ -110,13 +66,10 @@ bool fillChessboard(GWindow & gw, Grid<bool> & chessboard, Grid<bool> & queenPos
     else {
         for (int var = 0; var < chessboard.numRows(); ++var) {
             if (chessboard[column][var] == false) {
-//            if (chessboard[var][column] == false) {
-                cout << "column " << column <<  "var " << var << endl;
-                //placeQueen(chessboard, queenPos, var, column);
                 placeQueen(chessboard, queenPos, column, var);
                 displayChessboard(gw, chessboard, queenPos, PIX_SIZE);
                 pause(T_PAUSE);
-                if (fillChessboard(gw, chessboard, queenPos, column - 1, var)) return true;
+                if (fillChessboard(gw, chessboard, queenPos, column - 1)) return true;
                 else {
                     removeQueen(chessboard, queenPos, column, var);
                     displayChessboard(gw, chessboard, queenPos, PIX_SIZE);
@@ -140,6 +93,11 @@ void placeQueen(Grid<bool> & chessboard, Grid<bool> & queenPos, int row, int col
     blockRails(chessboard, row, column);
 }
 
+void removeQueen(Grid<bool> & chessboard, Grid<bool> & queenPos, int row, int column) {
+    queenPos.set(row, column, false);
+    resetRails(chessboard, queenPos);
+}
+
 void resetRails(Grid<bool> & chessboard, Grid<bool> & queenPos) {
     chessboard.fill(false);
     for (int y = 0; y < queenPos.numCols(); ++y) {
@@ -150,12 +108,6 @@ void resetRails(Grid<bool> & chessboard, Grid<bool> & queenPos) {
         }
     }
 }
-
-void removeQueen(Grid<bool> & chessboard, Grid<bool> & queenPos, int row, int column) {
-    queenPos.set(row, column, false);
-    resetRails(chessboard, queenPos);
-}
-
 
 void blockRails(Grid<bool> & chessboard, int row, int column){
     int x = 0;
