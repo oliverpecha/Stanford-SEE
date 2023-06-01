@@ -25,9 +25,9 @@ using namespace std;
 
 const int BOARD_WIDTH = 8;
 const int PIX_SIZE = 30;
-const int T_PAUSE = 300;
+const int T_PAUSE = 10;
 
-void displayknightJourney(GWindow & gw, Grid<int> knightJourney, int pixSize);
+void displayknightJourney(GWindow & gw, Grid<int> knightJourney, int yLast, int xLast, int pixSize) ;
 void knightClockWise(int turn, int & y, int & x);
 bool knightMove(GWindow & gw, Grid<int> & knightJourney, int & moveCount, int yStart, int xStart);
 void undoMove(Grid<int> & knightJourney, int & moveCount, int yDest, int xDest);
@@ -51,7 +51,7 @@ int main(){
     */
 
 
-    displayknightJourney(gw, knightJourney, PIX_SIZE);
+    displayknightJourney(gw, knightJourney, 0, 0, PIX_SIZE);
     return 0;
 }
 
@@ -60,22 +60,23 @@ int main(){
 bool knightMove(GWindow & gw, Grid<int> & knightJourney, int & moveCount, int yStart, int xStart){
     moveCount++;
     makeMove(knightJourney, moveCount, yStart, xStart);
-    displayknightJourney(gw, knightJourney, PIX_SIZE);
+    //displayknightJourney(gw, knightJourney, yStart, xStart, PIX_SIZE);
+    //cout << "*7,7 " << knightJourney.get(7,7) << endl;
     if (moveCount == knightJourney.size()) {
-        cout << "&^&%^%^865486 completed " << moveCount << endl;
+        //cout << "&^&%^%^865486 completed " << moveCount << endl;
         return true;
     }
     else {
-        cout << "__" << moveCount << endl;
+        //cout << "__" << moveCount << endl;
         for (int clockPos = 1; clockPos <= 8; ++clockPos) {
             int yDest = yStart;
             int xDest = xStart;
             knightClockWise(clockPos, yDest, xDest);
             if (knightJourney.inBounds(yDest, xDest) && knightJourney[yDest][xDest] < 1) {
 
-                 cout << "possible. clockPos: " << clockPos << " yDest: " << yDest << " xDest: " << xDest << " moveCount: " << moveCount << "[][]" << knightJourney[yDest][xDest] << endl;
+                 //cout << "possible. clockPos: " << clockPos << " yDest: " << yDest << " xDest: " << xDest << " moveCount: " << moveCount << "[][]" << knightJourney[yDest][xDest] << endl;
                 if (knightMove(gw, knightJourney, moveCount, yDest, xDest)) {
-                    cout << "true" << endl;
+                    //cout << "true" << endl;
 
 
                     return true;
@@ -84,16 +85,24 @@ bool knightMove(GWindow & gw, Grid<int> & knightJourney, int & moveCount, int yS
                     /*
                     return false;
                     */
-                    cout << "false. moveCount:"  << moveCount << endl;
-                    undoMove(knightJourney, moveCount, yStart, xStart);
+                    //cout << "false. moveCount: "  << moveCount << endl;
+                    undoMove(knightJourney, moveCount, yDest, xDest);
+                    /*moveCount--;
+                    pause(1000);
+                    cout << "1000 pause: " << endl;
+                    */
+                    //displayknightJourney(gw, knightJourney, -1, -1, PIX_SIZE);
                 }
             }
         }
-        cout << "Superfalse" << endl;
+        //cout << "Superfalse" << endl;
         undoMove(knightJourney, moveCount, yStart, xStart);
         moveCount--;
+        /*
         pause(1000);
-        displayknightJourney(gw, knightJourney, PIX_SIZE);
+        cout << "1000 pause: " << endl;
+        */
+        //displayknightJourney(gw, knightJourney, yStart, xStart, PIX_SIZE);
         return false;
     }
 
@@ -149,17 +158,22 @@ void knightClockWise(int turn, int & y, int & x) {
 
 
 
-void displayknightJourney(GWindow & gw, Grid<int> knightJourney, int pixSize) {
+void displayknightJourney(GWindow & gw, Grid<int> knightJourney, int yLast, int xLast, int pixSize) {
 
     for (int y = 0; y < knightJourney.numRows(); ++y) {
         for (int x = 0; x < knightJourney.numCols(); ++x) {
             if (knightJourney[y][x] > 0) {
-                gw.setColor("PURPLE");
+                if (xLast == x && yLast == y) gw.setColor("GREEN");
+                else gw.setColor("PURPLE");
                 gw.fillOval(pixSize * x, pixSize * y, pixSize , pixSize);
                 gw.setColor("BLACK");
                 int stringHelper = pixSize / 3;
                 if (knightJourney[y][x] < 10) stringHelper = pixSize * 0.4;
-                gw.drawString( std::to_string(knightJourney[y][x]), pixSize * x + stringHelper, pixSize * y + pixSize * 0.6);
+                gw.drawString(std::to_string(knightJourney[y][x]), pixSize * x + stringHelper, pixSize * y + pixSize * 0.6);
+            }
+            else {
+                gw.setColor("WHITE");
+                gw.fillRect(pixSize * x, pixSize * y, pixSize , pixSize);
             }
         }
     }
