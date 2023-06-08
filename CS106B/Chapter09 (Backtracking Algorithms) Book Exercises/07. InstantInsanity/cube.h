@@ -17,6 +17,7 @@ public:
 
       // Rotating movements
      void rotator(Cube & element, char originFace, char targetFace);
+
      void rotator(Vector<Cube> & element, std::string instruction);
      void rotator(Vector<Cube> & element, int index, char originFace, char targetFace);
 
@@ -33,6 +34,7 @@ public:
 
      // GetState
      char getFace(char face);
+     char getFace(int face);
      char getFront();
      char getBack();
      char getLeft();

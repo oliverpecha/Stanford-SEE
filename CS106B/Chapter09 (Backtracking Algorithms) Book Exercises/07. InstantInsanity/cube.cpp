@@ -5,11 +5,18 @@ std::string charToColor(char color);
 int charFace2index(char face);
 Vector<char> input2instruction(std::string input);
 
+/*
+ * Constructors
+ * ------------------------------------------------------------
+ */
 Cube::Cube() {
-
+    faces.add('0');
+    faces.add('0');
+    faces.add('0');
+    faces.add('0');
+    faces.add('0');
+    faces.add('0');
 }
-
-
 
 Cube::Cube(char front, char back, char left, char right, char top, char bottom) {
     faces.add(front);
@@ -132,6 +139,10 @@ char Cube::getFace(char face) {
     return faces.get(charFace2index(face));
 }
 
+char Cube::getFace(int face) {
+    return faces.get(face);
+}
+
 char Cube::getFront() {
     return faces.get(0);
 }
@@ -183,9 +194,11 @@ void Cube::setBottom(char color) {
 
 void Cube::toString() {
     std::cout << "| " << charToColor(Cube::getFront()) << " | "
-                      << charToColor(Cube::getBack())  << " | "
+                      << charToColor(Cube::getBack())  << " || "
                       << charToColor(Cube::getLeft())  << " | "
-                      << charToColor(Cube::getRight()) << " | "
+                      << charToColor(Cube::getRight()) << " || "
+                      << charToColor(Cube::getTop()) << " | "
+                      << charToColor(Cube::getBottom()) << " | "
                       << std::endl;
 }
 
