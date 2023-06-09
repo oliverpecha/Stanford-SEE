@@ -255,7 +255,7 @@ void printCombinations(Vector<Vector<Cube>>combinations){
     for (Vector<Cube> s : combinations) {
         counter++;
         if (isAllfacesAllColors(s)) {
-            cout << "wohoaCube" << endl;
+            cout << "Solution to the cube: " << endl;
             printCubeBox(s);
 
         }
@@ -352,7 +352,7 @@ Vector<Cube> loadCubeBox(int control) {
             four.setBottom('W');
             break;
 
-        // YT Educational
+        // YT Educational https://www.youtube.com/watch?v=Lw1pF47N-0Q
         case 2:
             one.setFront('G');
             one.setBack('R');
@@ -383,7 +383,7 @@ Vector<Cube> loadCubeBox(int control) {
             four.setBottom('W');
             break;
 
-        // YT Puzzle nerd
+        // YT Puzzle nerd https://www.youtube.com/watch?v=hyoObx5dv9I
         case 3:
             one.setFront('W');
             one.setBack('G');
