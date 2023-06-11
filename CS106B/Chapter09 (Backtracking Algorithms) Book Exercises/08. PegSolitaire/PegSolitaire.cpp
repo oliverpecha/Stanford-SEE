@@ -20,26 +20,29 @@
 #include "console.h"
 #include "simpio.h"
 #include "grid.h"
+#include "set.h"
 #include "gwindow.h"
 using namespace std;
 
 // Strategy
-bool solveGame(GWindow & gw, Grid<int> & board, int & moveCount, GPoint start);
+bool solveGame(GWindow & gw, Grid<int> & board, Set<Grid<int>> & boardRecord, int & moveCount, GPoint start);
 
 // Helpers to Strategy
-int sticksleft(Grid<int> & board);
+bool solvedBoard(Grid<int> board);
+bool isNewBoard(Set<Grid<int>> & boardRecord, Grid<int> board);
 
 // Direction and moves
-bool makeMove(GWindow & gw, Grid<int> & board, int & moveCount, GPoint start, GPoint & mid, GPoint & dest);
-bool unMakeMove(GWindow & gw, Grid<int> & board, int & moveCount, GPoint start, GPoint mid, GPoint dest, int direction);
-
 bool isLegal(Grid<int> board, GPoint mid, GPoint dest);
 void travel(int direction, GPoint & mid, GPoint & dest);
-void unTravel(int direction, GPoint & mid, GPoint & dest);
+bool makeMove(GWindow & gw, Grid<int> & board, int & moveCount, GPoint start, GPoint & mid, GPoint & dest);
+bool unMakeMove(GWindow & gw, Grid<int> & board, int & moveCount, GPoint start, GPoint mid, GPoint dest, int direction);
+bool unInvisibleMove(GWindow & gw, Grid<int> & board, int & moveCount, GPoint start, GPoint mid, GPoint dest, int direction);
+bool invisibleMove(GWindow & gw, Grid<int> & board, int & moveCount, GPoint start, GPoint & mid, GPoint & dest);
 
 
 // Fill Board accoording to requirements
 Grid<int> startBoard();
+Grid<int> invertBoard(Grid<int> board);
 
 // Display Board
 void displayBoardState(GWindow & gw, Grid<int> board, double circleScale, int pixSize, int t);
@@ -48,7 +51,7 @@ void changeSlot(GWindow & gw, Grid<int> board, double circleScale, int pixSize, 
 
 const int BOARD_WIDTH = 7;
 const int PIX_SIZE = 30;
-const int T_PAUSE = 0;
+const int T_PAUSE = 5;
 
 
 
@@ -58,12 +61,11 @@ int main(){
     displayBoardState(gw, board, 0.1, PIX_SIZE, T_PAUSE);
     int moveCount = 0;
     GPoint start(1,3); // x,y
-
-
-    if (solveGame(gw, board, moveCount, start)) cout << "Completed :)" << sticksleft(board) << moveCount;
+    Set<Grid<int>> boardRecord;
+    if (solveGame(gw, board, boardRecord, moveCount, start)) cout << "Completed :)" ;
     else cout << "Can't complete :(" << moveCount;
 
-    //displayBoardState(gw, board, 0.1, PIX_SIZE, T_PAUSE);
+    displayBoardState(gw, board, 0.1, PIX_SIZE, T_PAUSE);
     return 0;
 }
 
@@ -73,53 +75,64 @@ int main(){
  * Stretegy
  * ---------------------------------------------------------------------------
  */
-bool solveGame(GWindow & gw, Grid<int> & board, int & moveCount, GPoint start) {
-    if (sticksleft(board) == 1) return true;
+
+
+bool solveGame(GWindow & gw, Grid<int> & board, Set<Grid<int>> & boardRecord, int & moveCount, GPoint start) {
+    if (solvedBoard(board)) return true;
     else {
         for (int y = 0; y < board.numRows(); ++y) {
             for (int x = 0; x < board.numCols(); ++x) {
-                if (board[x][y] != -1 && board[x][y] != 0) {
-                    start.x = x;
-                    start.y = y;
-                    GPoint mid;
-                    GPoint dest;
+                if (board[x][y] == 1) {
                     for (int direction = 0; direction < 4; ++direction) {
-                        mid = start;
-                        dest = start;
+                        start.x = x;
+                        start.y = y;
+                        GPoint mid = start;
+                        GPoint dest = start;
                         travel(direction, mid, dest);
                         if (isLegal(board, mid, dest)) {
-                            //cout << "legal:  " << direction << start << mid << dest << endl;
-                            makeMove(gw, board, moveCount, start, mid, dest);
-                            if (!solveGame(gw, board, moveCount, start)){
-                                unMakeMove(gw, board, moveCount, start, mid, dest, direction);
-                                //cout << "unmake: " << direction << start << mid << dest << " ----"<<endl;
-                                //++direction;
-                                //return false;
-                            } else return true;
-
+                           cout << "legal:  " << direction << start << mid << dest << endl;
+                           makeMove(gw, board, moveCount, start, mid, dest);
+                           invisibleMove(gw, board, moveCount, start, mid, dest);
+                           if (isNewBoard(boardRecord, board)) {
+                               if (!solveGame(gw, board, boardRecord, moveCount, start)){
+                                   unMakeMove(gw, board, moveCount, start, mid, dest, direction);
+                                   //unInvisibleMove(gw, board, moveCount, start, mid, dest, direction);
+                                   cout << "unmake1: " << direction << start << mid << dest << " ----"<<endl;
+                               } else return true;
+                            } else {
+                               unMakeMove(gw, board, moveCount, start, mid, dest, direction);
+                               //unInvisibleMove(gw, board, moveCount, start, mid, dest, direction);
+                               cout << "unmake2: " << direction << start << mid << dest << " ----"<<endl;
+                            }
                         }
                     }
-
                 }
             }
         }
-        //cout << "unmake" << endl;
-        return false;
     }
-    cout << "exit" << endl;
     return false;
 }
 
 
+
+
 // Helpers to Strategy
-int sticksleft(Grid<int> & board) {
-    int result = 0;
-    for (int y = 0; y < board.numRows(); ++y) {
-        for (int x = 0; x < board.numCols(); ++x) {
-            if(board[x][y] == 1) result++;
-        }
+
+
+bool isNewBoard(Set<Grid<int>> & boardRecord, Grid<int> board) {
+    if (boardRecord.contains(board)) {
+        cout << "board already seen"<< endl;
+       return false;
     }
-    return result;
+    else boardRecord.add(board);
+    cout << "new board #"<< boardRecord.size() << endl;
+    return true;
+}
+
+bool solvedBoard(Grid<int> board) {
+    Grid<int> solvedBoard = invertBoard(board);
+    if (board == solvedBoard) return true;
+    else return false;
 }
 
 /*
@@ -127,11 +140,6 @@ int sticksleft(Grid<int> & board) {
  * ---------------------------------------------------------------------------
  */
 bool makeMove(GWindow & gw, Grid<int> & board, int & moveCount, GPoint start, GPoint & mid, GPoint & dest){
-
-    board[start.x][start.y] = 0;
-    board[mid.x][mid.y] = 0;
-    board[dest.x][dest.y] = 1;
-    /*
     changeSlot(gw, board, 0.1, PIX_SIZE, T_PAUSE/6, start.x, start.y, 4);
     changeSlot(gw, board, 0.1, PIX_SIZE, T_PAUSE/6, start.x, start.y, 1);
     changeSlot(gw, board, 0.1, PIX_SIZE, T_PAUSE/6, mid.x, mid.y, 4);
@@ -150,16 +158,20 @@ bool makeMove(GWindow & gw, Grid<int> & board, int & moveCount, GPoint start, GP
         changeSlot(gw, board, 0.1, PIX_SIZE, T_PAUSE/2, dest.x, dest.y, 1);
     moveCount++;
     pause(T_PAUSE);
-    */
+    return true;
+}
 
+
+bool invisibleMove(GWindow & gw, Grid<int> & board, int & moveCount, GPoint start, GPoint & mid, GPoint & dest){
+    board[start.x][start.y] = 0;
+    board[mid.x][mid.y] = 0;
+    board[dest.x][dest.y] = 1;
+    moveCount++;
     return true;
 }
 
 bool unMakeMove(GWindow & gw, Grid<int> & board, int & moveCount, GPoint start, GPoint mid, GPoint dest, int direction){
-    board[start.x][start.y] = 1;
-    board[mid.x][mid.y] = 1;
-    board[dest.x][dest.y] = 0;
-    /*
+
     board[start.x][start.y] = 1;
         changeSlot(gw, board, 0.1, PIX_SIZE, T_PAUSE, start.x, start.y, 3);
         changeSlot(gw, board, 0.1, PIX_SIZE, T_PAUSE/2, start.x, start.y, 1);
@@ -169,7 +181,14 @@ bool unMakeMove(GWindow & gw, Grid<int> & board, int & moveCount, GPoint start, 
     board[dest.x][dest.y] = 0;
         changeSlot(gw, board, 0.1, PIX_SIZE, T_PAUSE/4, dest.x, dest.y, 3);
         changeSlot(gw, board, 0.1, PIX_SIZE, T_PAUSE/2, dest.x, dest.y, 0);
-    */
+    moveCount--;
+    return true;
+}
+
+bool unInvisibleMove(GWindow & gw, Grid<int> & board, int & moveCount, GPoint start, GPoint mid, GPoint dest, int direction){
+    board[start.x][start.y] = 1;
+    board[mid.x][mid.y] = 1;
+    board[dest.x][dest.y] = 0;
     moveCount--;
     return true;
 }
@@ -183,25 +202,6 @@ bool isLegal(Grid<int> board, GPoint mid, GPoint dest){
     else return false;
 }
 
-void unTravel(int direction, GPoint & mid, GPoint & dest){
-    switch (direction) {
-        case 0:
-            travel(2, mid, dest);
-            break;
-        case 1:
-            travel(3, mid, dest);
-            break;
-        case 2:
-            travel(0, mid, dest);
-            break;
-        case 3:
-            travel(1, mid, dest);
-            break;
-        default:
-            cerr << "direction error";
-            break;
-        }
-}
 
 void travel(int direction, GPoint & mid, GPoint & dest){
     switch (direction) {
@@ -246,6 +246,17 @@ Grid<int> startBoard(){
     result[3][3] = 0;
     return result;
 }
+Grid<int> invertBoard(Grid<int> board){
+    Grid<int> result = board;
+    for (int y = 0; y < result.numRows(); ++y) {
+        for (int x = 0; x < result.numCols(); ++x) {
+            if (result[x][y] == 1) result[x][y] = 0;
+            else if (result[x][y] == 0) result[x][y] = 1;
+        }
+    }
+    return result;
+}
+
 
 /*
  * Display Board
@@ -271,12 +282,6 @@ void displayBoardState(GWindow & gw, Grid<int> board, double circleScale, int pi
         }
     }
     pause(t);
-    /*gw.setColor("WHITE");
-    gw.fillRect(0 , board.numRows() * pixSize , board.numCols() * pixSize * 2, board.numRows() * pixSize * 2);
-    gw.fillRect(board.numCols() * pixSize, 0 , board.numCols() * pixSize * 2, board.numRows() * pixSize * 2);
-    gw.setColor("BLACK");
-    gw.drawLine(0 , board.numRows() * pixSize , board.numCols() * pixSize, board.numRows() * pixSize);
-    gw.drawLine(board.numCols() * pixSize, 0 , board.numCols() * pixSize, board.numRows() * pixSize);*/
 
 }
 
