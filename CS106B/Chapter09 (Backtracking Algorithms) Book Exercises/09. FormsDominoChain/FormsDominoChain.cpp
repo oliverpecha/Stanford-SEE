@@ -1,5 +1,5 @@
 /*
- * File: main.cpp
+ * File: FormsDominoChain.cpp
  * --------------
  * The game of dominos is played with rectangular pieces composed of two connected squares,
  * each of which is marked with a certain number of dots. For example, each of the
