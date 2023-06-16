@@ -42,8 +42,8 @@
 using namespace std;
 
 /* Constants */
-const int N_COINS = 13;         /* Initial number of coins */
-const int MAX_MOVE = 3;         /* Number of coins a player may take */
+const int N_COINS = 17;         /* Initial number of coins */
+const int MAX_MOVE = 4;         /* Number of coins a player may take */
 const int NO_GOOD_MOVE = -1;    /* Marker indicating there is no good move */
 const int MAX_DEPTH = 3;
 const int WINNING_POSITION  = 1000;
@@ -54,7 +54,7 @@ const int LOSING_POSITION   = -WINNING_POSITION;
 * --------------------------------------------
 * This enumerated type differentiates the human and computer players.
 */
-enum Player { HUMAN, COMPUTER };
+enum Player { HUMAN, COMPUTER, EVEN };
 
 /*
 * Method: opponent
@@ -90,6 +90,12 @@ struct Move {
 
 };
 
+
+/*
+* Type: Move
+* --------------------------------------------
+* Overloads operator for printing Moves to the console
+*/
 std::ostream & operator<<(std::ostream & os, Move p1);
 
 /*
@@ -103,22 +109,6 @@ class SimpleNim {
 
 public:
 
-
-
-
-
-    bool isShitPosition (int nCoins) {
-        if (nCoins == 1) return true;
-        return findGoodMove (nCoins) == NO_GOOD_MOVE;
-    }
-
-    int findAwesomeMove (int nCoins) {
-        int limit = (nCoins < MAX_MOVE) ? nCoins: MAX_MOVE;
-        for (int nTaken = 1; nTaken <= limit; nTaken++) {
-            if (isBadPosition (nCoins - nTaken)) return nTaken;
-        }
-        return NO_GOOD_MOVE;
-    }
 /*
 * Method: play
 * Usage: game.play();
@@ -191,7 +181,6 @@ private:
 
     Move getComputerMove() {
         Move result = findBestMove();
-        cout << "findBestMove:" << result << endl;
         if (result.nTaken == NO_GOOD_MOVE) {
             result.nTaken = 1;
             return result;
@@ -250,7 +239,7 @@ private:
     Move getUserMove() {
         Move result;
         while (true) {
-            int nTaken = getInteger("How many would you like? ");
+            int nTaken = getInteger("\nHow many would you like to take? ");
             int limit = (nCoins < MAX_MOVE) ? nCoins : MAX_MOVE;
             result.nTaken = nTaken;
             if (nTaken > 0 && nTaken <= limit) return result;
@@ -280,15 +269,16 @@ private:
 */
     void announceResult () {
         if (nCoins == 0) {
-            cout << "You took the last coin. You lose." << endl;
+            cout << "That was the last coin. You lose." << endl;
         } else {
             cout << "There is only one coin left." << endl;
-            if (whoseTurn == HUMAN) {
-                cout << "I win." << endl;
-            } else {
-                cout << "I lose." << endl;
-            }
         }
+        if (whoIsEven() == COMPUTER) {
+            cout << "I win." << endl;
+        } else if (whoIsEven() == HUMAN) {
+            cout << "I lose." << endl;
+        } else  cout << "We are even." << endl;
+        cout << "You removed total of " << coinPile[0] << " coins. I took: " << coinPile[1] << endl;
     }
 
 
@@ -355,7 +345,9 @@ private:
     }
 
     int evaluateStaticPosition() {
-        if (nCoins == 1) return -10;
+        if ((nCoins == 1 && whoIsEven() == COMPUTER )) return -10;
+         if ((nCoins == 1 && whoIsEven() == COMPUTER ) && (nCoins - 1 == 0 && whoIsEven() == COMPUTER ))  return -5;
+          /* && (nCoins - 1 == 0 && whoIsEven() == COMPUTER )) return -10;*/
         else return 10;
     }
 
@@ -371,25 +363,32 @@ private:
         printInstructions();
         nCoins = N_COINS;
         whoseTurn = STARTING_PLAYER;
+        Vector<int> coinPileStart {0,0};
+        coinPile = coinPileStart;
     }
 
     bool gameIsOver() {
-        if (nCoins > 1) return false;
+        if (nCoins > 0) return false;
         else return true;
     }
     void displayGame(){
-        cout << "There are " << nCoins << " coins in the pile." << endl;
+        cout << "There are " << nCoins << " coins in the table. \nSo far, you have removed " << coinPile[HUMAN] << " coins, and I have removed " << coinPile[COMPUTER] << ". "<< endl;
     }
     void displayMove(Move move){
         cout << "I'll take " << move.nTaken << "." << endl;
     }
 
     void makeMove(Move move) {
+        if (getCurrentPlayer() == HUMAN) {
+            coinPile[HUMAN] += move.nTaken;
+        }
+        else coinPile[COMPUTER] += move.nTaken;
         nCoins -= move.nTaken;
     }
 
     void retractMove(Move move){
         nCoins += move.nTaken;
+        coinPile[COMPUTER] -= move.nTaken;
     }
 
     Player getCurrentPlayer(){
@@ -400,11 +399,17 @@ private:
         whoseTurn = opponent(whoseTurn);
     }
 
-
+    Player whoIsEven(){
+        Player winner = HUMAN;
+        if (coinPile[HUMAN] % 2 == 0 && coinPile[COMPUTER] % 2 == 0) winner = EVEN;
+        else if (coinPile[HUMAN] % 2 != 0 && coinPile[COMPUTER] % 2 == 0) winner = COMPUTER;
+        return winner;
+    }
 
 /* Instance variables */
     int nCoins; /* Number of coins left on the table */
     Player whoseTurn; /* Identifies which player moves next */
+    Vector<int> coinPile; /* Pile of number of coins each player removed from on the table */
 
 
 };
@@ -417,6 +422,7 @@ int main() {
     return 0;
 }
 
+/* Overloads operator for printing Moves to the console*/
 std::ostream & operator<<(std::ostream & os, Move p1) {
     return os << p1.toString();
 }
