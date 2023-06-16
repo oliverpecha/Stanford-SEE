@@ -82,9 +82,15 @@ const Player STARTING_PLAYER = HUMAN;
 */
 struct Move {
           int nTaken;
+
+          string toString() {
+              return to_string(nTaken);
+          }
+
+
 };
 
-
+std::ostream & operator<<(std::ostream & os, Move p1);
 
 /*
 * Class: SimpleNim
@@ -185,6 +191,7 @@ private:
 
     Move getComputerMove() {
         Move result = findBestMove();
+        cout << "findBestMove:" << result << endl;
         if (result.nTaken == NO_GOOD_MOVE) {
             result.nTaken = 1;
             return result;
@@ -306,13 +313,13 @@ private:
     Move findBestMove (int depth, int & rating) {
         Vector<Move> moveList;
         Move bestMove;
-        int minRating = WINNING_POSITION + 1;    // WINNING_POSITION  = 1000; LOSING_POSITION = -WINNING_POSITION;
+        int minRating = WINNING_POSITION + 1;
         generateMoveList(moveList);
         if (moveList.isEmpty()) error ("No moves available");
         for (Move move : moveList) {
             makeMove(move);
             int moveRating = evaluatePosition(depth + 1);
-            if (moveRating < minRating) { // minRating = WINNING_POSITION + 1;   WINNING_POSITION  = 1000; LOSING_POSITION = -WINNING_POSITION;
+            if (moveRating < minRating) {
                 bestMove = move;
                 minRating = moveRating;
             }
@@ -320,11 +327,8 @@ private:
         }
         rating = -minRating;
         return bestMove;
-
     }
 
-
-    // --------------------------------------------------------------------- OWN UNTESTED CODE!!
     void generateMoveList(Vector<Move> & moveList){
         int limit = (nCoins < MAX_MOVE) ? nCoins: MAX_MOVE;
         for (int nTaken = 1; nTaken <= limit; nTaken++) {
@@ -332,7 +336,6 @@ private:
            result.nTaken = nTaken;
            moveList.add(result);
         }
-
     }
 
 /*
@@ -351,10 +354,11 @@ private:
         return rating;
     }
 
-    int evaluateStaticPosition() {          //<----------------------------------- FILL
-        return 999;
-
+    int evaluateStaticPosition() {
+        if (nCoins == 1) return -10;
+        else return 10;
     }
+
 
 
 /*
@@ -408,41 +412,11 @@ private:
 /* Main program */
 int main() {
     SimpleNim game;
-    /*
-    bool isShitPosition (int nCoins) {
-        if (nCoins == 1) return true;
-        return findGoodMove (nCoins) == NO_GOOD_MOVE;
-    }
-
-    if (game.findAwesomeMove(1) == NO_GOOD_MOVE) {
-        cout << "1" << endl;
-    }
-
-    if (game.findAwesomeMove(2) == NO_GOOD_MOVE) {
-        cout << "2" << endl;
-    }
-
-    if (game.findAwesomeMove(3) == NO_GOOD_MOVE) {
-        cout << "3" << endl;
-    }
-
-    if (game.isShitPosition(4)) {
-        cout << "4" << endl;
-    }
-
-    cout << "999" << endl;
-    */
-
-    if (-1 < 3) {
-        cout << "1" << endl;
-    }
-    if (-3 < -4) {
-        cout << "2" << endl;
-    }
-    if (-4 < -3) {
-        cout << "3" << endl;
-    }
     //game.printInstructions();
-    //game.play();
+    game.play();
     return 0;
+}
+
+std::ostream & operator<<(std::ostream & os, Move p1) {
+    return os << p1.toString();
 }
