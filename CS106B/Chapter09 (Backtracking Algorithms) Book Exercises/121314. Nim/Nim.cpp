@@ -41,9 +41,20 @@
 
 using namespace std;
 
+/*
+* Constant: VARIANT
+* --------------------------------------------
+* G_VARIANT, Indicates which exercise to run. The rest of variants get configurated by InitGame();
+*/
+const int G_VARIANT = 12;
+const int N_COINS = 0;
+const int MAX_MOVE = 0;
+const int ROWS = 3;
+const int MAX_X_ROW = 5;
+
+
+
 /* Constants */
-const int N_COINS = 17;         /* Initial number of coins */
-const int MAX_MOVE = 4;         /* Number of coins a player may take */
 const int NO_GOOD_MOVE = -1;    /* Marker indicating there is no good move */
 const int MAX_DEPTH = 3;
 const int WINNING_POSITION  = 1000;
@@ -117,19 +128,19 @@ public:
 */
 
     void play() {
-       initGame();
-       while (!gameIsOver()) {
-          displayGame();
-          if (getCurrentPlayer() == HUMAN) {
-             makeMove(getUserMove());
-          } else {
-             Move move = getComputerMove();
-             displayMove(move);
-             makeMove(move);
-          }
-          switchTurn();
-       }
-       announceResult();
+        initGame();
+        while (!gameIsOver()) {
+            displayGame();
+            if (getCurrentPlayer() == HUMAN) {
+            makeMove(getUserMove());
+            } else {
+                Move move = getComputerMove();
+                displayMove(move);
+                makeMove(move);
+            }
+            switchTurn();
+        }
+        announceResult();
     }
 
 
@@ -157,11 +168,11 @@ public:
 * This method explains the rules of the game to the user.
 */
     void printInstructions() {
-        cout << "Welcome to the game of Nim!" << endl;
-        cout << "In this game, we will start with a pile of" << endl;
-        cout << N_COINS << " coins on the table. On each turn, you" << endl;
-        cout << "and I will alternately take between 1 and" << endl;
-        cout << MAX_MOVE << " coins from the table. The player who" << endl;
+        cout << "Welcome to the game of Nim!\n" << endl;
+        cout << "In this variation of the game (exercise " << G_VARIANT << "), " << endl;
+        cout << "we will start with a pile of " << nCoins << " coins on the table." << endl;
+        cout << "On each turn, you and I will alternately take between 1 and" << endl;
+        cout << maxMove << " coins from the table. The player who" << endl;
         cout << "takes the last coin loses."<< endl << endl;
     }
 
@@ -174,7 +185,7 @@ private:
 * Usage: int nTaken = getComputerMove ();
 * --------------------------------------------
 * Figures out what move is best for the computer player and returns
-* the number of coins taken. The method first calls findGoodMove 
+* the number of coins taken. The method first calls findGoodMove
 * to see if a winning move exists. If none does, the program takes
 * only one coin to give the human player more chances to make a mistake.
 */
@@ -202,11 +213,11 @@ private:
 * of coins. If there is a winning move in that position, the method
 * returns that value; if not, the method returns the constant
 * NO_GOOD_MOVE. This method depends on the recursive insight that a
-* good move is one that leaves your opponent in a bad position and a bad 
+* good move is one that leaves your opponent in a bad position and a bad
 * position is one that offers no good moves.
 */
     int findGoodMove (int nCoins) {
-        int limit = (nCoins < MAX_MOVE) ? nCoins: MAX_MOVE;
+        int limit = (nCoins < maxMove) ? nCoins: maxMove;
         for (int nTaken = 1; nTaken <= limit; nTaken++) {
             if (isBadPosition (nCoins - nTaken)) return nTaken;
         }
@@ -239,12 +250,19 @@ private:
     Move getUserMove() {
         Move result;
         while (true) {
-            int nTaken = getInteger("\nHow many would you like to take? ");
-            int limit = (nCoins < MAX_MOVE) ? nCoins : MAX_MOVE;
+            int nTaken;
+            if (G_VARIANT == 14) nTaken = getInteger("\nHow many would you like to take from the current pile? ");
+            else nTaken = getInteger("\nHow many would you like to take? ");
+            updateCoinPile();
+            int limit = (nCoins < maxMove) ? nCoins : maxMove;
             result.nTaken = nTaken;
             if (nTaken > 0 && nTaken <= limit) return result;
-            cout << "That's cheating! Please choose a number";
-            cout << " between 1 and " << limit << "." << endl;
+            if (maxMove == 1) cout << "That's cheating! You may only remove 1 coin" << endl;
+            else {
+                cout << " between 1 and " << limit << "." << endl;
+                cout << "That's cheating! Please choose a number";
+                cout << " between 1 and " << limit << "." << endl;
+            }
             cout << "There are " << nCoins << " coins in the pile." << endl;
         }
         return result;
@@ -253,7 +271,7 @@ private:
     int oldGetUserMove() {
         while (true) {
             int nTaken = getInteger("How many would you like? ");
-            int limit = (nCoins < MAX_MOVE) ? nCoins : MAX_MOVE;
+            int limit = (nCoins < maxMove) ? nCoins : maxMove;
             if (nTaken > 0 && nTaken <= limit) return nTaken;
             cout << "That's cheating! Please choose a number";
             cout << " between 1 and " << limit << "." << endl;
@@ -273,12 +291,22 @@ private:
         } else {
             cout << "There is only one coin left." << endl;
         }
-        if (whoIsEven() == COMPUTER) {
-            cout << "I win." << endl;
-        } else if (whoIsEven() == HUMAN) {
-            cout << "I lose." << endl;
-        } else  cout << "We are even." << endl;
-        cout << "You removed total of " << coinPile[0] << " coins. I took: " << coinPile[1] << endl;
+        if (G_VARIANT == 13) {
+            cout << "You removed total of " << removedPile[0] << " coins. I took: " << removedPile[1] << endl;
+            if (whoIsEven() == COMPUTER) {
+                cout << "I win." << endl;
+            } else if (whoIsEven() == HUMAN) {
+                cout << "I lose." << endl;
+            } else  cout << "We are even." << endl;
+
+        }
+        else if (G_VARIANT == 12 || G_VARIANT == 14) {
+            if (whoseTurn == COMPUTER) {
+                cout << "I lose." << endl;
+            } else if (whoseTurn == HUMAN) {
+                cout << "I win." << endl;
+            }
+        }
     }
 
 
@@ -320,7 +348,8 @@ private:
     }
 
     void generateMoveList(Vector<Move> & moveList){
-        int limit = (nCoins < MAX_MOVE) ? nCoins: MAX_MOVE;
+        updateCoinPile();
+        int limit = (nCoins < maxMove) ? nCoins: maxMove;
         for (int nTaken = 1; nTaken <= limit; nTaken++) {
            Move result;
            result.nTaken = nTaken;
@@ -345,9 +374,11 @@ private:
     }
 
     int evaluateStaticPosition() {
-        if ((nCoins == 1 && whoIsEven() == COMPUTER )) return -10;
-         if ((nCoins == 1 && whoIsEven() == COMPUTER ) && (nCoins - 1 == 0 && whoIsEven() == COMPUTER ))  return -5;
-          /* && (nCoins - 1 == 0 && whoIsEven() == COMPUTER )) return -10;*/
+        if ((G_VARIANT == 12 || G_VARIANT == 14) && nCoins == 1) return -10;
+        else if (G_VARIANT == 13 && nCoins == 0 && whoIsEven() == COMPUTER ) return -10;
+        //else if (G_VARIANT == 14) {
+
+       // }
         else return 10;
     }
 
@@ -360,19 +391,48 @@ private:
 * that point. The depth parameter is used to limit the search depth.
 */
     void initGame(){
+        if (G_VARIANT == 11) {
+            nCoins = 13;
+            maxMove = 3;
+        } else if (G_VARIANT == 13) {
+            nCoins = 17;
+            maxMove = 4;
+        } else if (G_VARIANT == 14) {
+            int nXrow = MAX_X_ROW - 1 * (ROWS - 1);
+            Vector<int> tempRow;
+            for (int y = 0; y < ROWS; ++y) {
+                int tempColumn = 0;
+                for (int x = 0; x < nXrow; ++x) {
+                    tempColumn += 1;
+                }
+                nXrow++;
+                tempRow.add(tempColumn);
+            }
+            coinPile = tempRow;
+            updateCoinPile();
+        }
+
         printInstructions();
-        nCoins = N_COINS;
         whoseTurn = STARTING_PLAYER;
-        Vector<int> coinPileStart {0,0};
-        coinPile = coinPileStart;
+        Vector<int> initializer {0,0};
+        removedPile = initializer;
     }
 
+
     bool gameIsOver() {
-        if (nCoins > 0) return false;
+        int playtill = 1 ;
+        if (G_VARIANT == 13) playtill = 0;
+        if (nCoins > playtill) return false;
         else return true;
     }
     void displayGame(){
-        cout << "There are " << nCoins << " coins in the table. \nSo far, you have removed " << coinPile[HUMAN] << " coins, and I have removed " << coinPile[COMPUTER] << ". "<< endl;
+        cout << "There are " << nCoins << " coins in the table. " << endl;
+        if (G_VARIANT == 13) cout << "So far, you have removed " << removedPile[HUMAN] << " coins, and I have removed " << removedPile[COMPUTER] << ". "<< endl;
+        if (G_VARIANT == 14) {
+            updateCoinPile();
+            cout << "They are distributed in " << coinPile.size() << " piles. " << endl;
+            cout <<"You may remove as many as you would like from the last one, \nwhich now holds " << maxMove << " coins."<< endl;
+        }
     }
     void displayMove(Move move){
         cout << "I'll take " << move.nTaken << "." << endl;
@@ -380,18 +440,48 @@ private:
 
     void makeMove(Move move) {
         if (getCurrentPlayer() == HUMAN) {
-            coinPile[HUMAN] += move.nTaken;
+            removedPile[HUMAN] += move.nTaken;
         }
-        else coinPile[COMPUTER] += move.nTaken;
+        else removedPile[COMPUTER] += move.nTaken;
+        if (G_VARIANT == 14) coinPile[getCurrentRow()] -= move.nTaken;     /// <------------------------------------- POSSIBLE BUG IN EARLIER VARIANTS
         nCoins -= move.nTaken;
     }
 
     void retractMove(Move move){
         nCoins += move.nTaken;
-        coinPile[COMPUTER] -= move.nTaken;
+        removedPile[COMPUTER] -= move.nTaken;
+        if (G_VARIANT == 14) {
+            int currentRow = getCurrentRow();
+            int nExpected = MAX_X_ROW - ROWS + currentRow + 1;
+            if (coinPile[getCurrentRow()] == nExpected) {
+                // means the last coin is at the end of the current pile, and the revert move should go to the upper pile
+                currentRow++;
+            }
+            coinPile[currentRow] += move.nTaken;
+        }
+
+
     }
 
-    Player getCurrentPlayer(){
+    void updateCoinPile() {
+        if (G_VARIANT == 14) {
+            nCoins = 0;
+            for (int var = 0; var < coinPile.size(); ++var) {
+                nCoins += coinPile[var];
+            }
+            maxMove = coinPile[getCurrentRow()];
+        }
+
+    }
+
+    int getCurrentRow() {
+        for (int var = coinPile.size() - 1; var >= 0 ; --var) {
+            if (coinPile[var] > 0) return var;
+        }
+        return 0;
+    }
+
+    Player getCurrentPlayer() {
         return whoseTurn;
     }
 
@@ -401,23 +491,25 @@ private:
 
     Player whoIsEven(){
         Player winner = HUMAN;
-        if (coinPile[HUMAN] % 2 == 0 && coinPile[COMPUTER] % 2 == 0) winner = EVEN;
-        else if (coinPile[HUMAN] % 2 != 0 && coinPile[COMPUTER] % 2 == 0) winner = COMPUTER;
+        if (removedPile[HUMAN] % 2 == 0 && removedPile[COMPUTER] % 2 == 0) winner = EVEN;
+        else if (removedPile[HUMAN] % 2 != 0 && removedPile[COMPUTER] % 2 == 0) winner = COMPUTER;
         return winner;
     }
 
 /* Instance variables */
     int nCoins; /* Number of coins left on the table */
+    int coinsInRow;
+    int maxMove;
     Player whoseTurn; /* Identifies which player moves next */
-    Vector<int> coinPile; /* Pile of number of coins each player removed from on the table */
-
-
+    Vector<int> removedPile; /* Pile of number of coins each player removed from on the table */
+    Vector<int> coinPile;
 };
 
 /* Main program */
 int main() {
     SimpleNim game;
     //game.printInstructions();
+    //int variant = getInteger("What modality of Nim do you wish to play? \n Type 12, 13 or 14 - as descibed by textbook.");
     game.play();
     return 0;
 }
