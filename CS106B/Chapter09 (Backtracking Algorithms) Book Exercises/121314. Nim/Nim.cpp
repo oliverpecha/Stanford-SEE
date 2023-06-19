@@ -391,7 +391,7 @@ private:
 * that point. The depth parameter is used to limit the search depth.
 */
     void initGame(){
-        if (G_VARIANT == 11) {
+        if (G_VARIANT == 12) {
             nCoins = 13;
             maxMove = 3;
         } else if (G_VARIANT == 13) {
