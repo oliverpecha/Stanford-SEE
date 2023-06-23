@@ -434,6 +434,7 @@ private:
             cout <<"You may remove as many as you would like from the last one, \nwhich now holds " << maxMove << " coins."<< endl;
         }
     }
+
     void displayMove(Move move){
         cout << "I'll take " << move.nTaken << "." << endl;
     }
@@ -443,7 +444,7 @@ private:
             removedPile[HUMAN] += move.nTaken;
         }
         else removedPile[COMPUTER] += move.nTaken;
-        if (G_VARIANT == 14) coinPile[getCurrentRow()] -= move.nTaken;     /// <------------------------------------- POSSIBLE BUG IN EARLIER VARIANTS
+        if (G_VARIANT == 14) coinPile[getCurrentRow()] -= move.nTaken;
         nCoins -= move.nTaken;
     }
 
@@ -508,8 +509,6 @@ private:
 /* Main program */
 int main() {
     SimpleNim game;
-    //game.printInstructions();
-    //int variant = getInteger("What modality of Nim do you wish to play? \n Type 12, 13 or 14 - as descibed by textbook.");
     game.play();
     return 0;
 }
