@@ -60,14 +60,10 @@ const Player STARTING_PLAYER = COMPUTER;
 */
 struct Move {
         int nDestination;
-
         Player turn;
-
         string toString() {
             return "Move dest: " + to_string(nDestination) + to_string(turn);
         }
-
-
 };
 
 
@@ -93,7 +89,6 @@ public:
     void play() {
         initGame();
         while (!gameIsOver()) {
-            //displayGame();
             if (getCurrentPlayer() == HUMAN) {
                 makeMove(getUserMove(), HUMAN);
             } else {
@@ -121,12 +116,8 @@ void initGame(){
 }
 
 bool gameIsOver() {
-    //int playtill = 1 ;
     if (lineFound() || fullBoard()) return true;
-    else {
-        //cout << "go..";
-        return false;
-    }
+    else return false;
 }
 
 
@@ -138,7 +129,6 @@ void displayBoard(){
 void displayMove(Move move){
     displayBoard();
 }
-
 
 Player getCurrentPlayer() {
     return whoseTurn;
@@ -299,9 +289,6 @@ char list2gridContent(int n) {
     int x;
     pos2Axis(n, y, x);
     int content = board[x][y];
-    //if (n == 6) cout << "cc" << board[x][y] << board << endl;
-    //if (content == 0 && n == 6) return '!';
-
     if (content == 0) return 'O';
     else if (content == 1) return 'X';
     else if (content == -1) return ' ';
