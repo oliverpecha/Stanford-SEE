@@ -1,0 +1,99 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Bold;\f2\fmodern\fcharset0 Courier;
+\f3\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid1\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid101\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww19680\viewh16380\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 1. The simplest recursive implementation of the Fibonacci function is considerably less efficient than the iterative version. Does this fact allow you to make any general conclusions about the relative efficiency of recursive and iterative solutions?\
+	No\
+\
+2. What is the sorting problem?\
+	Given a number of values at a particular order, they get rearranged in an order that each of the elements is greater or smaller than the preceding one\
+\
+3. The implementation of sort shown in Figure 10-1 runs through the code to exchange the values at positions lh and rh even if these values happen to be the same. If you change the program so that it checks to make sure lh and rh are different before making the exchange, it is likely to run more slowly than the original algorithm. Why might this be so?\
+	Because the loop will keep executing until the end and the data list could be very long, and doing a blind swap would actually save time.\
+\
+4. Suppose that you are using the selection sort algorithm to sort a vector of 250 values and find that it takes 50 milliseconds to complete the operation. What would you expect the running time to be if you used the same algorithm to sort a vector of 1000 values on the same machine?\
+200 milliseconds\
+\
+5. What is the closed-form expression that computes the sum of the series\
+N + N\'961 + N\'962 + . . . + 3 + 2 + 1\
+\
+(N + (N(2))  ) / 2\
+\
+6. In your own words, define the concept of computational complexity.\
+It is the measure for which we use to illustrate the amount of effort it takes to resolve a problem, usually expressed in time\
+\
+7. True or false: Big-O notation was invented as a means to express computational complexity.\
+	False\
+8. What are the two rules presented in this chapter for simplifying big-O notation?\
+	Constant values should be eliminated\
+	Values that as the size of the problem grows, become irrelevant\
+9. Is it technically correct to say that selection sort runs in\
+O((N(2)+N)/2)\
+time? What, if anything, is wrong with doing so?\
+	NO. Big O is a measure of complexity, it not only applies to time, also to memory and other fields.	\
+10. Is it technically correct to say that selection sort runs in O(N3) time? Again, what, if anything, is wrong with doing so?\
+	That is not how we simplify the formula, we simply eliminate one of the terms instead of adding it inside the formula\
+11. Why is it customary to omit the base of the logarithm in big-O expressions such as O(N log N)?\
+12. What is the computational complexity of the following function:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f1\b \cf2 	\expnd0\expndtw0\kerning0
+int mystery1(int n) \{\
+              int sum = 0;
+\f2\b0 \uc0\u8232 
+\f1\b      for (int i = 0; i < n; i++) \{\
+                         for (int j = 0; j < i; j++) \{
+\f2\b0 \uc0\u8232 
+\f1\b 		sum += i * j; \} 
+\f3\b0 \uc0\u8232 
+\f1\b 	\} 
+\f3\b0 \uc0\u8232 
+\f1\b return sum; \
+\} 
+\f3\b0 \uc0\u8232 N(2)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 13. What is the computational complexity of this function:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\f1\b \cf2 \expnd0\expndtw0\kerning0
+ int mystery2(int n) \{\
+              int sum = 0;\
+              for (int i = 0; i < 10; i++) \{\
+                 for (int j = 0; j < i; j++) \{
+\f2\b0 \uc0\u8232 
+\f1\b sum += j * n; \} 
+\f3\b0 \uc0\u8232 
+\f1\b \} 
+\f3\b0 \uc0\u8232 
+\f1\b return sum; \} 
+\f3\b0 \uc0\u8232 (N)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\ls2\ilvl0
+\f0 \cf0 \kerning1\expnd0\expndtw0 4. Explain the difference between worst-case and average-case complexity. In general, which of these measures is harder to compute?\
+Worst case considered the maximum effort required to find a solution to a problem. Yet, majority of times, solution will be fined earlier than in the worst case. To quantify the effort, we calculate the average between all the different cases from shorter (best case) to longer (worst case). Harder is Average case\
+15. State the formal definition of big-O.\
+express the relationship between two functions, in an expression t(N) = O(\'83(N)). \
+16. In your own words, explain why the merge function runs in linear time.\
+It only needs to compare two elements and move on without repeating or going back\
+17. The last two lines of the merge function are\
+{\listtext	.	}           while (p1 < n1) vec.add(v1[p1++]);\
+{\listtext	.	}           while (p2 < n2) vec.add(v2[p2++]);\
+{\listtext	.	}Would it matter if these two lines were reversed? Why or why not? \
+		Certainly, because v2 contains bigger values, and doing so would add all the bigger numbers before the pivot and smaller ones after\
+18. What are the seven complexity classes identified in this chapter as the most common classes encountered in practice?\
+	Constant O(1), Logarithmic O(log N), Linear O(N), N log N O(N log N), Quadratic O (N(2)), Cubic O(N(3)), Exponential O(2(N))  \
+19. What does the term polynomial algorithm mean?\
+When it falls into the categories of Constant, Linear, Quadratic, or Cubic \
+20. What criterion do computer scientists use to differentiate tractable and intractable problems?\
+21. In the Quicksort algorithm, what conditions must be true at the conclusion of the partitioning step?\
+22. What are the worst- and average-case complexities for Quicksort?\
+23. Describe the two steps involved in a proof by mathematical induction.\
+24. In your own words, describe the relationship between recursion and mathematical induction.}
