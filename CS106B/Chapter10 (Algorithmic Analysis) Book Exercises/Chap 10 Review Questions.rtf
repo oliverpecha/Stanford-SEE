@@ -91,9 +91,20 @@ It only needs to compare two elements and move on without repeating or going bac
 18. What are the seven complexity classes identified in this chapter as the most common classes encountered in practice?\
 	Constant O(1), Logarithmic O(log N), Linear O(N), N log N O(N log N), Quadratic O (N(2)), Cubic O(N(3)), Exponential O(2(N))  \
 19. What does the term polynomial algorithm mean?\
-When it falls into the categories of Constant, Linear, Quadratic, or Cubic \
+	When it falls into the categories of Constant, Linear, Quadratic, or Cubic \
 20. What criterion do computer scientists use to differentiate tractable and intractable problems?\
+	As a general rule of thumb, computer scientists classify problems that can be solved using algorithms that run in polynomial time as tractable, in the sense that they are amenable to implementation on a computer. Problems for which no polynomial time algorithm exists are regarded as intractable.\
+\
 21. In the Quicksort algorithm, what conditions must be true at the conclusion of the partitioning step?\
+	All the values on the first partition must be smaller than the pivot and on the second partition, all the values must be greater.\
+	\
 22. What are the worst- and average-case complexities for Quicksort?\
+	Worst: That the pivot that gets chosen at each pass is consistently very small or very large and the triage isn\'92t as efficient as in the pivot was constantly in the middle range of all the values.\
+	Average: Pivot is chosen at roughly an average between all the values as the numbers get assigned without a particular order and / or an option to choose the pivot randomly isn\'92t computationally heavy. \
+	\
 23. Describe the two steps involved in a proof by mathematical induction.\
-24. In your own words, describe the relationship between recursion and mathematical induction.}
+	Proof that N + 1 is true\
+	Because N + 1 is proofed, N + 2 and subsequencial numbers (3, 4, 5\'85) are true as well.\
+\
+24. In your own words, describe the relationship between recursion and mathematical induction.\
+	Both assume a result is true, and deduct the rest of the results from the same logic. Difference is that recursion assumes N - 1 being sub sequentially called will arrive to a simple case for which we know the answer and the result will be replicated and adjusted across the stream of calls to arrive at the desired result. With induction, we know and proof of a  simple case starting in N + 1 and we use that to proof as many N values as needed }
